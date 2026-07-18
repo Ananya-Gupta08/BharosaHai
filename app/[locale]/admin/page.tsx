@@ -1,5 +1,6 @@
 import {Clock3, Search, ShieldCheck, UserCheck, UserX, Users} from "lucide-react";
 import {getTranslations} from "next-intl/server";
+import type {ProviderStatus} from "@prisma/client";
 
 import {MotionSection} from "@/components/motion-section";
 import {Card, PageHero, SectionHeader, Timeline, container, pageY} from "@/components/premium-ui";
@@ -12,6 +13,13 @@ import {prisma} from "@/lib/db/prisma";
 export const dynamic = "force-dynamic";
 
 const statIcons = [Clock3, UserCheck, UserX, Users];
+
+type ProviderStatusCount = {
+  status: ProviderStatus;
+  _count: {
+    _all: number;
+  };
+};
 
 type Props = {
   params: Promise<{locale: string}>;
@@ -33,7 +41,7 @@ export default async function AdminDashboardPage({params}: Props) {
     _count: {_all: true}
   });
   const totalProviders = await prisma.provider.count();
-  const countByStatus = new Map(statusCounts.map((item) => [item.status, item._count._all]));
+  const countByStatus = new Map((statusCounts as ProviderStatusCount[]).map((item) => [item.status, item._count._all]));
   const stats = [
     {label: t("stats.pending"), value: String(countByStatus.get("PENDING") ?? 0)},
     {label: t("stats.approved"), value: String(countByStatus.get("APPROVED") ?? 0)},
