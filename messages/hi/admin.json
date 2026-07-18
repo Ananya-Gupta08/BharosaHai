@@ -1,0 +1,31 @@
+{
+  "dashboard": {
+    "metadata": {"title": "Admin Dashboard", "description": "Bharosa Hai admins ke liye provider governance dashboard."},
+    "hero": {"eyebrow": "Admin dashboard", "title": "Provider review ke liye clear operational dashboard.", "copy": "Admin team yahan live provider applications, status aur review actions dekh sakti hai.", "imageAlt": "Provider governance review karti operations team"},
+    "stats": {"pending": "Pending providers", "approved": "Approved", "rejected": "Rejected", "total": "Total providers"},
+    "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Approved", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
+    "list": {"eyebrow": "Provider list", "title": "Provider applications review karein.", "copy": "Yeh dashboard ab database se live provider applications read karta hai.", "search": "Providers khojein", "headers": ["Name", "Category", "City", "Status", "Action"], "review": "Review", "notProvided": "Abhi nahi diya"},
+    "logout": "Log out",
+    "secure": {"title": "Secure admin-only access", "copy": "Full auth provider se pehle admin access server-side access token se protected hai."},
+    "timeline": [{"title": "Application kholein", "copy": "Identity, profile, category, experience aur city review karein."}, {"title": "Documents check karein", "copy": "Document records ko category requirements se compare karein."}, {"title": "Decision chunein", "copy": "Approve, reject ya more documents request karein."}, {"title": "Audit trail record karein", "copy": "Admin decisions system mein traceable record ke saath save hote hain."}]
+  },
+  "detail": {
+    "metadata": {"title": "Provider Review", "description": "Bharosa Hai admin dashboard mein provider application review karein."},
+    "hero": {"eyebrow": "Provider review", "title": "Onboarding aur documents review karein.", "copy": "Live provider application, document records aur verification status review karein.", "imageAlt": "Provider documents review karta admin", "back": "Admin par wapas"},
+    "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Approved", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
+    "profile": {"eyebrow": "Profile summary", "notProvided": "Abhi nahi diya", "years": "{count, plural, one {# year} other {# years}}", "fields": {"category": "Category", "experience": "Experience", "city": "City", "status": "Status", "languages": "Languages", "office": "Office"}},
+    "documents": {"eyebrow": "Documents", "title": "Required uploads", "copy": "Provider registration ke time capture hue document records.", "empty": "Koi document record nahi mila.", "type": "Document type", "originalFileName": "Original file name", "uploadDate": "Upload date", "fileSize": "File size", "preview": "Preview", "download": "Download", "unavailable": "Document unavailable."},
+    "actions": {"title": "Decision actions", "copy": "Admin decisions provider status update karte hain aur audit trail likhte hain.", "noteLabel": "Admin note", "notePlaceholder": "Provider ke liye note add karein", "approve": "Provider approve karein", "more": "More documents request karein", "reject": "Application reject karein", "success": "Provider status update ho gaya.", "validationError": "Provider decision invalid hai.", "unauthorized": "Provider status change karne se pehle admin login karein.", "error": "Provider status update nahi ho paya. Dobara try karein."},
+    "checklist": {"eyebrow": "Review checklist", "title": "Admins ke liye structured review flow.", "items": [{"title": "Identity confirm karein", "copy": "Name, city, phone aur email consistency check karein."}, {"title": "Credentials review karein", "copy": "Document records ko category requirements se compare karein."}, {"title": "Profile quality assess karein", "copy": "Bio, experience, languages aur office details customer-ready honi chahiye."}, {"title": "Decision record karein", "copy": "Decision system mein status aur audit trail ke saath save hota hai."}]}
+  },
+  "login": {
+    "metadata": {"title": "Admin Login", "description": "Bharosa Hai admins ke liye secure access."},
+    "hero": {"eyebrow": "Admin access", "title": "Providers review karne ke liye sign in karein.", "copy": "Protected provider operations kholne ke liye admin access token enter karein.", "imageAlt": "Provider governance review karti operations team"},
+    "tokenLabel": "Admin access token",
+    "placeholder": "Access token enter karein",
+    "submit": "Admin dashboard kholein",
+    "pending": "Check ho raha hai...",
+    "invalid": "Access token incorrect hai.",
+    "configError": "Admin access correctly configure nahi hai."
+  }
+}

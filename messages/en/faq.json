@@ -1,0 +1,32 @@
+{
+  "metadata": {"title": "FAQ", "description": "Answers about Bharosa Hai provider onboarding, customer launch, verification and current MVP scope."},
+  "hero": {"eyebrow": "FAQ", "title": "Everything early customers and partners should know.", "copy": "Answers about provider onboarding, verification, customer launch, admin review and current Tier 1 MVP boundaries.", "imageAlt": "Professional team reviewing a FAQ document"},
+  "section": {"eyebrow": "Questions", "title": "Clear answers, no overpromising.", "copy": "This FAQ keeps the current scope honest: provider onboarding and dashboard surfaces are in; customer requests, leads, payments and subscriptions are not."},
+  "items": [
+    {"question": "What is Bharosa Hai?", "answer": "Bharosa Hai is a verification-first platform for high-trust professional services such as legal, CA, GST, property, documentation and government-service support."},
+    {"question": "Is the client access live?", "answer": "Not yet. The client access is currently a coming-soon experience while provider onboarding is prepared."},
+    {"question": "Can customers submit service requests now?", "answer": "No. Customer requests and lead management are outside the current Tier 1 MVP scope."},
+    {"question": "Who can become a provider?", "answer": "Lawyers, CAs, GST consultants, property advisors, documentation experts and local service professionals can apply."},
+    {"question": "Is provider registration free?", "answer": "Yes. Registration is free during the founding partner launch phase."},
+    {"question": "Does registration guarantee approval?", "answer": "No. Admins can approve, reject or request more documents."},
+    {"question": "What documents are required?", "answer": "Requirements depend on provider category. Examples include Aadhaar, PAN, Bar Council Certificate, ICAI Certificate, business registration and professional credentials."},
+    {"question": "Why does verification matter?", "answer": "The supported categories involve sensitive documents, money, property or legal decisions. Verification improves the customer’s starting point."},
+    {"question": "Which cities are covered first?", "answer": "The launch focus is Mathura, Vrindavan and nearby districts."},
+    {"question": "Will Bharosa Hai expand to other cities?", "answer": "Yes, expansion is planned after the first provider network and operating model are stable."},
+    {"question": "Can I suggest a city?", "answer": "Yes. You can contact the team with city or category suggestions."},
+    {"question": "What happens after provider registration?", "answer": "The profile and documents are reviewed by admins. The provider dashboard can show the current verification status."},
+    {"question": "Can providers edit their profiles?", "answer": "The dashboard currently presents the planned profile-management surface. Full backend editing is not part of this frontend-only scope."},
+    {"question": "Are payments available?", "answer": "No. Payments and subscriptions are intentionally not included in the current scope."},
+    {"question": "Are customer reviews available?", "answer": "No. Reviews are planned for a later phase after customer workflows launch."},
+    {"question": "Does the admin dashboard work with live data?", "answer": "Not yet. The frontend shows the intended interface, but backend integration is separate."},
+    {"question": "How are providers approved?", "answer": "Admins review profile information and uploaded category documents before making a decision."},
+    {"question": "Can admins request more documents?", "answer": "The UI includes this action, and the database model supports the state. Full action wiring is backend work for later."},
+    {"question": "Is my data safe?", "answer": "The production product should include secure auth, protected access, validated uploads and storage controls before launch."},
+    {"question": "Can a provider apply in more than one category?", "answer": "The current registration UI focuses on one primary category to keep onboarding clear."},
+    {"question": "What languages are supported?", "answer": "English and Hindi are supported now, and the architecture is ready for more languages."},
+    {"question": "Why focus on professionals first?", "answer": "The marketplace needs a trusted provider base before customer workflows can create a reliable experience."},
+    {"question": "Is this for businesses or individuals?", "answer": "Both. The categories support individuals, families and small business owners."},
+    {"question": "Can I contact support?", "answer": "Yes. Use the contact page for partnership, admin-access or early product questions."},
+    {"question": "Will there be lead management?", "answer": "Not in this scope. Lead management is reserved for a later phase."}
+  ]
+}

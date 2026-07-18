@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "title": "Verified Professionals for Important Work",
+    "description": "Find verified professionals for legal, property, documentation, compliance and government-service work in Indian cities."
+  },
+  "hero": {
+    "eyebrow": "Trusted professional services network",
+    "title": "Right expert. Right guidance. Right outcome.",
+    "copy": "Bharosa Hai is a trust-driven professional services network that helps people find verified experts for legal matters, government documentation, compliance, licensing, municipal work and local consulting.",
+    "primary": "Become a Partner",
+    "secondary": "Client Access",
+    "imageAlt": "Indian professionals in a modern office discussion",
+    "badges": ["Verified professionals", "Local process knowledge", "Transparent guidance"]
+  },
+  "stats": [
+    {"value": "500+", "label": "Launch providers", "copy": "Targeted across Mathura, Vrindavan and nearby districts."},
+    {"value": "27+", "label": "Provider categories", "copy": "Advocates, CAs, GST, RTO, passport, insurance, property and government documentation."},
+    {"value": "4-step", "label": "Verification", "copy": "Identity, credentials, work profile and document review."},
+    {"value": "24h", "label": "Partner response", "copy": "Launch support for serious provider applications."}
+  ],
+  "services": {
+    "eyebrow": "Service categories",
+    "title": "High-trust categories, presented with clarity.",
+    "copy": "The MVP focuses on categories where credentials, local knowledge and correct documents matter more than quick generic listings.",
+    "items": [
+      {"title": "Legal Services", "copy": "Lawyers for agreements, notices, property paperwork, affidavits and documentation review."},
+      {"title": "CA & Tax", "copy": "Chartered accountants for tax filing, registrations, compliance support and business advisory."},
+      {"title": "Property Services", "copy": "Property consultants for renting, sale support, mutation help and local documentation."},
+      {"title": "GST & Compliance", "copy": "GST registration, filing support, notice handling and recurring compliance guidance."},
+      {"title": "Documentation", "copy": "Aadhaar, PAN, certificates, affidavits, business paperwork and form preparation support."},
+      {"title": "Government Services", "copy": "Guided assistance for official forms, department submissions and process navigation."}
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "A simple path from discovery to verified help.",
+    "copy": "The customer journey will stay calm and guided: choose a category, describe the work and connect with a professional who has already passed onboarding checks.",
+    "imageAlt": "Professional team reviewing service requirements",
+    "items": [
+      {"title": "Choose the work type", "copy": "Customers start with a clear service category and local city context."},
+      {"title": "Share the requirement", "copy": "The platform captures timeline, documents and expected outcome in plain language."},
+      {"title": "Match with verified help", "copy": "Only approved professionals are eligible for visibility in customer workflows."},
+      {"title": "Complete with confidence", "copy": "Future workflows will add status updates, support and document-safe handoffs."}
+    ]
+  },
+  "verificationMatter": {
+    "eyebrow": "Why verification matters",
+    "title": "Trust is the product, not a badge added later.",
+    "copy": "Bharosa Hai is designed for categories where customers need confidence before they share personal details, property documents or business information.",
+    "items": [
+      {"title": "Reduces confusion", "copy": "Profiles show service focus, city coverage, experience and required professional documents."},
+      {"title": "Improves accountability", "copy": "Every provider starts with a traceable record and an admin-reviewed status."},
+      {"title": "Protects brand trust", "copy": "The platform can grow only if the first provider network feels credible."}
+    ]
+  },
+  "verification": {
+    "eyebrow": "Verification process",
+    "title": "A structured process before marketplace visibility.",
+    "copy": "Provider onboarding is deliberately more careful than a generic sign-up form. It is built for quality control from day one.",
+    "imageAlt": "Professional documents being reviewed on a desk",
+    "items": [
+      {"title": "Identity review", "copy": "We ask for basic identity and contact information so every listed professional starts with a traceable profile."},
+      {"title": "Credential screening", "copy": "Profession-specific documents are reviewed before providers can represent themselves on the platform."},
+      {"title": "Profile quality check", "copy": "Experience, city coverage, languages and service focus are checked for customer clarity."},
+      {"title": "Admin decision", "copy": "Admins approve, reject or request more documents before a provider is marked ready."}
+    ]
+  },
+  "professionals": {
+    "eyebrow": "Featured professionals",
+    "title": "Sample launch profiles for the founding network.",
+    "copy": "These sample cards show how verified providers will be presented: restrained, credential-led and easy to scan.",
+    "badge": "Verification sample",
+    "items": [
+      {"name": "Adv. Riya Sharma", "role": "Civil lawyer", "focus": "Property disputes, agreements and notices"},
+      {"name": "CA Arjun Mehta", "role": "Chartered accountant", "focus": "ITR, GST and registration support"},
+      {"name": "Nisha Verma", "role": "Documentation expert", "focus": "Government forms and certificates"}
+    ]
+  },
+  "cities": {
+    "eyebrow": "Cities we serve",
+    "title": "Starting local, then expanding with discipline.",
+    "copy": "The first launch area is designed around dense local trust and operational learning before scaling.",
+    "cta": "Request city expansion",
+    "items": ["Mathura", "Vrindavan", "Agra Road", "Goverdhan", "Barsana", "Nearby districts"]
+  },
+  "visionMission": {
+    "visionTitle": "Vision",
+    "visionCopy": "Build India’s most trusted network for everyday professional services where verified local expertise is easy to find.",
+    "missionTitle": "Mission",
+    "missionCopy": "Make important work easier to start, understand, track and complete without customers feeling lost in paperwork or uncertainty."
+  },
+  "why": {
+    "eyebrow": "Why choose us",
+    "title": "Designed for seriousness, not noise.",
+    "items": [
+      "Verification-first onboarding for professionals",
+      "Clean customer experience planned around trust and clarity",
+      "Local Indian service categories with practical workflows",
+      "Premium interface suitable for partners, admins and customers",
+      "Built to add future workflows without changing the MVP scope"
+    ]
+  },
+  "testimonials": {
+    "customerLabel": "Customer sample",
+    "customerQuote": "The promise is simple: I should know who I am speaking to before sharing property or business documents.",
+    "customerCredit": "Sample early customer feedback",
+    "partnerLabel": "Partner sample",
+    "partnerQuote": "A professional profile with verification can help serious providers stand apart from casual listings.",
+    "partnerCredit": "Sample founding partner feedback"
+  },
+  "faqPreview": {
+    "eyebrow": "FAQ preview",
+    "title": "Questions early users ask.",
+    "copy": "The full FAQ covers provider onboarding, customer launch, verification, cities and support.",
+    "cta": "View complete FAQ",
+    "items": [
+      {"question": "Is Bharosa Hai already open for customers?", "answer": "The public customer workflow is being prepared for verified providers. The current Tier 1 focus is provider onboarding and verification."},
+      {"question": "Who can become a provider?", "answer": "Lawyers, CAs, GST consultants, property advisors, documentation experts and local government-service specialists can apply."},
+      {"question": "Why is verification important?", "answer": "These categories involve trust, documents and personal or business decisions. Verification creates a stronger starting point for customers and partners."},
+      {"question": "Which cities are included first?", "answer": "The launch is focused on Mathura, Vrindavan and nearby districts before expanding to more Indian cities."}
+    ]
+  },
+  "cta": {
+    "title": "Join the founding provider network.",
+    "copy": "Apply during launch if you want to be part of a trusted professional network built for long-term quality.",
+    "primary": "Start registration",
+    "secondary": "Learn about partnership"
+  },
+  "newsletter": {
+    "eyebrow": "Launch updates",
+    "title": "Get notified when customer access opens.",
+    "copy": "No spam. Only major launch updates, city expansion notes and provider-network milestones.",
+    "emailLabel": "Email address",
+    "placeholder": "you@example.com",
+    "button": "Notify me"
+  }
+}

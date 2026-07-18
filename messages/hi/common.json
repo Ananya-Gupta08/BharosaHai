@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "brand": "Bharosa Hai",
+    "title": "Bharosa Hai | भरोसेमंद प्रोफेशनल, सही सलाह, बेहतर समाधान",
+    "description": "Bharosa Hai लोगों को verified lawyers, consultants, documentation experts और local professional service providers से जोड़ता है।"
+  },
+  "brand": {
+    "name": "Bharosa Hai",
+    "initials": "BH",
+    "homeLabel": "Bharosa Hai होम"
+  },
+  "nav": {
+    "label": "मुख्य नेविगेशन",
+    "toggle": "मेन्यू खोलें या बंद करें",
+    "home": "होम",
+    "services": "सेवाएं",
+    "partner": "पार्टनर बनें",
+    "about": "हमारे बारे में",
+    "faq": "सवाल",
+    "contact": "संपर्क",
+    "customerPortal": "कस्टमर पोर्टल",
+    "joinProvider": "प्रोवाइडर बनें"
+  },
+  "language": {
+    "label": "भाषा",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "modalTitle": "अपनी पसंद की भाषा चुनें",
+    "modalCopy": "जिस भाषा में आप सहज हैं उसे चुनें। बाद में ऊपर दिए गए भाषा स्विच से इसे कभी भी बदल सकते हैं।",
+    "continue": "जारी रखें",
+    "englishOption": "🇬🇧 English",
+    "hindiOption": "🇮🇳 हिन्दी"
+  },
+  "footer": {
+    "description": "लीगल, प्रॉपर्टी, कंप्लायंस, डॉक्यूमेंटेशन और सरकारी कामों के लिए सत्यापित भारतीय प्रोफेशनल।",
+    "company": "कंपनी",
+    "providers": "प्रोवाइडर के लिए",
+    "support": "सहायता",
+    "about": "हमारे बारे में",
+    "services": "सेवाएं",
+    "faq": "सवाल",
+    "becomePartner": "पार्टनर बनें",
+    "registration": "रजिस्ट्रेशन",
+    "providerDashboard": "प्रोवाइडर डैशबोर्ड",
+    "contact": "संपर्क",
+    "customerPortal": "कस्टमर पोर्टल",
+    "admin": "एडमिन"
+  },
+  "ui": {
+    "nextStep": "अगला कदम",
+    "learnMore": "और जानें",
+    "back": "वापस",
+    "continue": "जारी रखें",
+    "submit": "सबमिट करें",
+    "chooseFile": "फाइल चुनें"
+  }
+}

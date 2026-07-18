@@ -1,0 +1,189 @@
+[browser] Image with src "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+⨯ ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  [90m19 |[0m };
+  [90m20 |[0m
+[31m[1m>[0m [90m21 |[0m [36mimport[0m { [33mProviders[0m } [36mfrom[0m [32m"./providers"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m22 |[0m
+  [90m23 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mRootLayout[0m({
+  [90m24 |[0m   children,
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/layout.tsx:21:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./app/layout.tsx:21:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Array.map (<anonymous>)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./app/layout.tsx:21:1
+Module not found: Can't resolve './providers'
+  19 | };
+  20 |
+> 21 | import { Providers } from "./providers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |
+  23 | export default function RootLayout({
+  24 |   children,
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/en/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="__next_bui...">
+                      <SegmentTrieNode>
+                      <script>
+                      <script>
+                      <DefaultLayout>
+                        <html
+-                         lang="en"
+                        >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Ananya Gupta/Desktop/mini desktop/kaamhojaye/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)

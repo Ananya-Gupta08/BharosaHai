@@ -1,0 +1,31 @@
+{
+  "dashboard": {
+    "metadata": {"title": "Admin Dashboard", "description": "Provider governance dashboard for Bharosa Hai admins."},
+    "hero": {"eyebrow": "Admin dashboard", "title": "Provider governance that feels calm and operational.", "copy": "The admin surface is styled for repeated review work: clear status, readable tables, restrained actions and no visual mismatch with the public website.", "imageAlt": "Operations team reviewing provider governance"},
+    "stats": {"pending": "Pending providers", "approved": "Approved", "rejected": "Rejected", "total": "Total providers"},
+    "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Approved", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
+    "list": {"eyebrow": "Provider list", "title": "Review provider applications.", "copy": "This dashboard now reads provider applications directly from the database.", "search": "Search providers", "headers": ["Name", "Category", "City", "Status", "Action"], "review": "Review", "notProvided": "Not provided"},
+    "logout": "Log out",
+    "secure": {"title": "Secure admin-only access", "copy": "Admin access is protected by a server-side access token while the full auth provider is prepared."},
+    "timeline": [{"title": "Open application", "copy": "Review identity, profile, category, experience and city."}, {"title": "Check documents", "copy": "Compare uploads against category-specific requirements."}, {"title": "Choose decision", "copy": "Approve, reject or ask for more documents."}, {"title": "Record audit trail", "copy": "Admin decisions are saved with a traceable system record."}]
+  },
+  "detail": {
+    "metadata": {"title": "Provider Review", "description": "Review a provider application in the Bharosa Hai admin dashboard."},
+    "hero": {"eyebrow": "Provider review", "title": "Review onboarding and documents.", "copy": "Review the live provider application, recorded documents and verification status.", "imageAlt": "Admin reviewing provider documents", "back": "Back to admin"},
+    "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Approved", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
+    "profile": {"eyebrow": "Profile summary", "notProvided": "Not provided", "years": "{count, plural, one {# year} other {# years}}", "fields": {"category": "Category", "experience": "Experience", "city": "City", "status": "Status", "languages": "Languages", "office": "Office"}},
+    "documents": {"eyebrow": "Documents", "title": "Required uploads", "copy": "Document records captured during provider registration.", "empty": "No document records found.", "type": "Document type", "originalFileName": "Original file name", "uploadDate": "Upload date", "fileSize": "File size", "preview": "Preview", "download": "Download", "unavailable": "Document unavailable."},
+    "actions": {"title": "Decision actions", "copy": "Admin decisions update provider status and write an audit trail.", "noteLabel": "Admin note", "notePlaceholder": "Add a note for the provider", "approve": "Approve provider", "more": "Request more documents", "reject": "Reject application", "success": "Provider status updated.", "validationError": "Invalid provider decision.", "unauthorized": "Please log in as admin before changing provider status.", "error": "Could not update provider status. Please try again."},
+    "checklist": {"eyebrow": "Review checklist", "title": "A structured review flow for admins.", "items": [{"title": "Confirm identity", "copy": "Check name, city, phone and email consistency."}, {"title": "Review credentials", "copy": "Compare uploaded documents with category requirements."}, {"title": "Assess profile quality", "copy": "Make sure bio, experience, languages and office details are customer-ready."}, {"title": "Record decision", "copy": "Decision is persisted with status and audit trail."}]}
+  },
+  "login": {
+    "metadata": {"title": "Admin Login", "description": "Secure access for Bharosa Hai admins."},
+    "hero": {"eyebrow": "Admin access", "title": "Sign in to review providers.", "copy": "Enter the admin access token to open protected provider operations.", "imageAlt": "Operations team reviewing provider governance"},
+    "tokenLabel": "Admin access token",
+    "placeholder": "Enter access token",
+    "submit": "Open admin dashboard",
+    "pending": "Checking...",
+    "invalid": "The access token is incorrect.",
+    "configError": "Admin access is not configured correctly."
+  }
+}

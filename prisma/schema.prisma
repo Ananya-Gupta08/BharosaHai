@@ -1,0 +1,245 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id              String   @id @default(cuid())
+  clerkId         String?  @unique
+  email           String   @unique
+  name            String?
+  mobile          String?
+  profilePhotoUrl String?
+  emailVerified   Boolean  @default(false)
+  phoneVerified   Boolean  @default(false)
+  role            Role     @default(VISITOR)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  provider  Provider?
+  admin     Admin?
+  auditLogs AuditLog[]
+
+  @@index([role])
+  @@index([email])
+  @@index([mobile])
+}
+
+enum Role {
+  VISITOR
+  PROVIDER
+  ADMIN
+  VERIFICATION_ADMIN
+  SUPER_ADMIN
+}
+
+model Provider {
+  id                   String                @id @default(cuid())
+  userId               String                @unique
+  user                 User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name                 String
+  mobile               String?
+  email                String
+  profilePhotoUrl      String?
+  fatherOrHusbandName  String?
+  dateOfBirth          DateTime?
+  gender               String?
+  profileType          String?
+  address              String?
+  state                String?
+  district             String?
+  tehsil               String?
+  city                 String?
+  area                 String?
+  pincode              String?
+  categoryId           String?
+  category             Category?             @relation(fields: [categoryId], references: [id])
+  subCategoryId        String?
+  subCategory          SubCategory?          @relation(fields: [subCategoryId], references: [id])
+  specialization       String?
+  services             String[]              @default([])
+  highestQualification String?
+  professionalQualification String?
+  professionalMembership String?
+  awards               String?
+  industriesServed     String?
+  experienceYears      Int?
+  languages            String[]              @default([])
+  availability         String[]              @default([])
+  workingDays          String[]              @default([])
+  officeTiming         String?
+  officeName           String?
+  officeAddress        String?
+  officeLandmark       String?
+  googleMapLocation    String?
+  registrationNumber   String?
+  registrationAuthority String?
+  registrationValidity String?
+  serviceAreas         String[]              @default([])
+  feeType              String?
+  minimumFee           Int?
+  maximumFee           Int?
+  bankName             String?
+  bankAccountNumber    String?
+  bankIfsc             String?
+  upiId                String?
+  websiteUrl           String?
+  googleBusinessUrl    String?
+  facebookUrl          String?
+  instagramUrl         String?
+  linkedinUrl          String?
+  youtubeUrl           String?
+  bio                  String?
+  declarationAcceptedAt DateTime?
+  status               ProviderStatus        @default(DRAFT)
+  verificationLevel    VerificationLevel     @default(NOT_VERIFIED)
+  verifiedAt           DateTime?
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+  documents            ProviderDocument[]
+  verificationRequests VerificationRequest[]
+
+  @@index([status])
+  @@index([city])
+  @@index([categoryId])
+  @@index([subCategoryId])
+  @@index([email])
+  @@index([mobile])
+  @@index([state])
+  @@index([district])
+}
+
+enum ProviderStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+  NEEDS_MORE_DOCUMENTS
+}
+
+enum VerificationLevel {
+  NOT_VERIFIED
+  BASIC_VERIFIED
+  PROFESSIONAL_VERIFIED
+  BHAROSA_HAI_VERIFIED
+  BHAROSA_HAI_TRUSTED
+}
+
+model Category {
+  id            String        @id @default(cuid())
+  name          String        @unique
+  slug          String        @unique
+  description   String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  providers     Provider[]
+  subCategories SubCategory[]
+  services      Service[]
+
+  @@index([slug])
+}
+
+model SubCategory {
+  id         String     @id @default(cuid())
+  name       String
+  slug       String
+  categoryId String
+  category   Category   @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  providers  Provider[]
+  services   Service[]
+
+  @@unique([categoryId, name])
+  @@unique([categoryId, slug])
+  @@index([slug])
+}
+
+model Service {
+  id            String       @id @default(cuid())
+  name          String
+  slug          String
+  categoryId    String
+  category      Category     @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  subCategoryId String?
+  subCategory   SubCategory? @relation(fields: [subCategoryId], references: [id], onDelete: Cascade)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@unique([categoryId, slug])
+  @@index([slug])
+  @@index([subCategoryId])
+}
+
+model ProviderDocument {
+  id           String         @id @default(cuid())
+  providerId   String
+  provider     Provider       @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  documentType String
+  fileName     String
+  originalFileName String?
+  storagePath  String
+  fileSize     Int?
+  mimeType     String?
+  status       DocumentStatus @default(PENDING)
+  uploadedAt   DateTime       @default(now())
+  reviewedAt   DateTime?
+  verified     Boolean        @default(false)
+
+  @@index([providerId])
+  @@index([documentType])
+  @@index([status])
+}
+
+enum DocumentStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model VerificationRequest {
+  id         String             @id @default(cuid())
+  providerId String
+  provider   Provider           @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  status     VerificationStatus @default(PENDING)
+  message    String?
+  createdAt  DateTime           @default(now())
+  updatedAt  DateTime           @updatedAt
+
+  @@index([providerId])
+  @@index([status])
+}
+
+enum VerificationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  NEEDS_MORE_DOCUMENTS
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String?
+  actor      User?    @relation(fields: [actorId], references: [id], onDelete: SetNull)
+  action     String
+  entityType String
+  entityId   String
+  details    Json?
+  createdAt  DateTime @default(now())
+
+  @@index([actorId])
+  @@index([action])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}

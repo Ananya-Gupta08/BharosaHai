@@ -1,0 +1,32 @@
+{
+  "metadata": {"title": "सवाल", "description": "Provider onboarding, customer launch, verification और MVP scope से जुड़े जवाब।"},
+  "hero": {"eyebrow": "FAQ", "title": "Early customers और partners के जरूरी सवाल।", "copy": "Provider onboarding, verification, customer launch, admin review और Tier 1 MVP boundaries के जवाब।", "imageAlt": "FAQ document review करती professional team"},
+  "section": {"eyebrow": "Questions", "title": "Clear answers, बिना overpromise.", "copy": "यह FAQ current scope साफ रखता है: provider onboarding और dashboard surfaces शामिल हैं; customer requests, leads, payments और subscriptions नहीं।"},
+  "items": [
+    {"question": "Bharosa Hai क्या है?", "answer": "Bharosa Hai high-trust professional services जैसे legal, CA, GST, property, documentation और government-service support के लिए verification-first platform है।"},
+    {"question": "क्या client access live है?", "answer": "अभी नहीं। Provider onboarding prepare होने तक client access coming-soon experience है।"},
+    {"question": "क्या customer अभी service requests submit कर सकते हैं?", "answer": "नहीं। Customer requests और lead management current Tier 1 MVP scope से बाहर हैं।"},
+    {"question": "Provider कौन बन सकता है?", "answer": "Lawyers, CAs, GST consultants, property advisors, documentation experts और local service professionals apply कर सकते हैं।"},
+    {"question": "क्या provider registration free है?", "answer": "हां। Founding partner launch phase में registration free है।"},
+    {"question": "क्या registration से approval guarantee है?", "answer": "नहीं। Admin approve, reject या more documents request कर सकता है।"},
+    {"question": "कौन से documents required हैं?", "answer": "Requirements provider category पर depend करती हैं। Examples में Aadhaar, PAN, Bar Council Certificate, ICAI Certificate, business registration और professional credentials शामिल हैं।"},
+    {"question": "Verification क्यों जरूरी है?", "answer": "Supported categories में sensitive documents, money, property या legal decisions शामिल होते हैं। Verification customer की शुरुआत बेहतर बनाता है।"},
+    {"question": "पहले कौन से शहर cover होंगे?", "answer": "Launch focus Mathura, Vrindavan और nearby districts पर है।"},
+    {"question": "क्या Bharosa Hai दूसरे शहरों में expand करेगा?", "answer": "हां। पहला provider network और operating model stable होने के बाद expansion planned है।"},
+    {"question": "क्या मैं city suggest कर सकता हूं?", "answer": "हां। Contact page से city या category suggestion भेज सकते हैं।"},
+    {"question": "Provider registration के बाद क्या होता है?", "answer": "Profile और documents admin review करते हैं। Provider dashboard current verification status दिखा सकता है।"},
+    {"question": "क्या providers profile edit कर पाएंगे?", "answer": "Dashboard planned profile-management surface दिखाता है। Full backend editing इस frontend-only scope में नहीं है।"},
+    {"question": "क्या payments available हैं?", "answer": "नहीं। Payments और subscriptions current scope में intentionally शामिल नहीं हैं।"},
+    {"question": "क्या customer reviews available हैं?", "answer": "नहीं। Reviews customer workflows launch होने के बाद later phase में planned हैं।"},
+    {"question": "क्या admin dashboard live data से चलता है?", "answer": "अभी नहीं। Frontend intended interface दिखाता है, backend integration अलग है।"},
+    {"question": "Providers approve कैसे होंगे?", "answer": "Admins profile information और uploaded category documents review करके decision लेते हैं।"},
+    {"question": "क्या admins more documents request कर सकते हैं?", "answer": "UI में action है और database model state support करता है। Full action wiring backend work है।"},
+    {"question": "क्या मेरा data safe रहेगा?", "answer": "Production launch से पहले secure auth, protected access, validated uploads और storage controls होने चाहिए।"},
+    {"question": "क्या provider एक से ज्यादा category में apply कर सकता है?", "answer": "Current registration UI clarity के लिए one primary category पर focused है।"},
+    {"question": "कौन सी languages supported हैं?", "answer": "अभी English और Hindi supported हैं, और architecture future languages के लिए ready है।"},
+    {"question": "Professionals first क्यों?", "answer": "Reliable customer experience के लिए पहले trusted provider base जरूरी है।"},
+    {"question": "यह businesses के लिए है या individuals के लिए?", "answer": "दोनों के लिए। Categories individuals, families और small business owners support करती हैं।"},
+    {"question": "Support से contact कर सकता हूं?", "answer": "हां। Partnership, admin-access या early product questions के लिए contact page use करें।"},
+    {"question": "क्या lead management होगा?", "answer": "इस scope में नहीं। Lead management later phase के लिए reserved है।"}
+  ]
+}

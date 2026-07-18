@@ -1,0 +1,142 @@
+{
+  "register": {
+    "metadata": {"title": "Provider Registration", "description": "Apply to join Bharosa Hai as a verified professional provider."},
+    "hero": {"eyebrow": "Provider registration", "title": "Apply to join the verified provider network.", "copy": "Submit your professional details for admin review. The team will verify your profile before future customer visibility.", "imageAlt": "Provider completing professional onboarding"},
+    "stepsLabel": "Application steps",
+    "active": "Active",
+    "completed": "Completed",
+    "pending": "Pending",
+    "locked": "Locked",
+    "locked": "Locked",
+    "steps": ["Personal", "Professional", "Office", "Working details", "Bank & social", "Documents"],
+    "personal": {"title": "Personal information", "copy": "Create a clear identity record for verification.", "name": "Full name", "mobile": "Mobile number", "email": "Email address", "father": "Father/Husband name", "dob": "Date of birth", "gender": "Gender", "genderOptions": [{"value": "Male", "label": "Male"}, {"value": "Female", "label": "Female"}, {"value": "Other", "label": "Other"}], "profileType": "Profile type", "profileTypeOptions": [{"value": "Individual", "label": "Individual"}, {"value": "Firm", "label": "Firm"}, {"value": "Company", "label": "Company"}, {"value": "Partnership", "label": "Partnership"}, {"value": "LLP", "label": "LLP"}, {"value": "NGO", "label": "NGO"}, {"value": "Trust", "label": "Trust"}], "city": "City", "address": "Residential address"},
+    "professional": {"title": "Professional information", "copy": "Select the category, specialization and services customers should find you for.", "category": "Provider category", "subcategory": "Specialization", "specialization": "Additional specialization", "services": "Services offered", "experience": "Experience in years", "highestQualification": "Highest qualification", "professionalQualification": "Professional qualification", "languages": "Languages spoken", "office": "Office address", "bio": "About your professional work"},
+    "office": {"title": "Office details", "copy": "Office and location details help customers and admins understand your local presence.", "state": "State", "district": "District", "tehsil": "Tehsil", "area": "Area", "pincode": "Pincode", "name": "Office name", "timing": "Office timing", "landmark": "Landmark", "map": "Google Map location"},
+    "working": {"title": "Working details", "copy": "Add availability, service area, registration and fee information.", "availability": "Availability modes, comma separated", "days": "Working days, comma separated", "serviceAreas": "Service areas, comma separated", "feeType": "Fee type", "feeTypeOptions": [{"value": "Free", "label": "Free"}, {"value": "Paid", "label": "Paid"}, {"value": "Free and Paid", "label": "Free and Paid"}], "minimumFee": "Minimum fee", "maximumFee": "Maximum fee", "registrationNumber": "Registration number", "registrationAuthority": "Registration authority", "registrationValidity": "Registration validity", "membership": "Professional membership", "industries": "Industries served", "awards": "Awards and achievements"},
+    "bank": {"title": "Bank and social links", "copy": "These details remain internal unless the product later asks to show them.", "name": "Bank name", "account": "Account number", "ifsc": "IFSC", "upi": "UPI ID", "website": "Website", "google": "Google Business link", "facebook": "Facebook", "instagram": "Instagram", "linkedin": "LinkedIn", "youtube": "YouTube"},
+    "documents": {"eyebrow": "Documents", "title": "Upload verification documents.", "copy": "Upload identity, professional, qualification and office documents. Optional documents can be added now or later.", "uploadRequired": "Upload {document}.", "required": [{"value": "Passport Size Photo", "label": "Passport size photo", "required": true}, {"value": "Aadhaar Card", "label": "Aadhaar card", "required": true}, {"value": "PAN Card", "label": "PAN card", "required": true}, {"value": "Professional Certificate", "label": "Professional certificate", "required": true}, {"value": "Qualification Certificate", "label": "Qualification certificate", "required": true}, {"value": "Office Front Photo", "label": "Office front photo", "required": true}, {"value": "Office Interior Photo", "label": "Office interior photo", "required": true}, {"value": "Office Name Board Photo", "label": "Office name board photo", "required": true}, {"value": "Office Proof", "label": "Office proof", "required": true}, {"value": "GST Certificate", "label": "GST certificate"}, {"value": "Cancelled Cheque", "label": "Cancelled cheque"}, {"value": "Visiting Card", "label": "Visiting card"}]},
+    "declaration": {"eyebrow": "Declaration", "title": "Confirm before admin review.", "copy": "Please verify that your details are accurate before submitting your application.", "checkbox": "I confirm that the submitted information and documents are accurate to the best of my knowledge.", "submit": "Submit application"},
+    "errors": {"name": "Full name is required.", "mobile": "Please enter a valid mobile number.", "email": "Please enter a valid email.", "profileType": "Please select a profile type.", "category": "Please select a category.", "services": "Please select at least one service.", "experience": "Experience is required.", "highestQualification": "Highest qualification is required.", "professionalQualification": "Professional qualification is required.", "languages": "Languages are required.", "bio": "Please add at least 20 characters about your work.", "state": "State is required.", "district": "District is required.", "city": "City is required.", "pincode": "Pincode is required.", "officeName": "Office name is required.", "officeTiming": "Office timing is required.", "address": "Residential address is required.", "officeAddress": "Office address is required.", "availability": "Availability is required.", "workingDays": "Working days are required.", "serviceAreas": "Service areas are required.", "feeType": "Please select a fee type.", "declaration": "Please accept the declaration."},
+    "submission": {"pending": "Submitting...", "success": "Application submitted. The admin team can now review it.", "validationError": "Please complete all required fields and accept the declaration.", "verificationRequired": "Please verify your email and add your mobile number before submitting the application.", "error": "Something went wrong while submitting the application. Please try again."},
+    "next": {"eyebrow": "What happens next", "title": "A clear path after registration.", "items": [{"title": "Application review", "copy": "The admin team reviews profile details and category documents."}, {"title": "Status update", "copy": "Your account can be approved, rejected or marked as needing more documents."}, {"title": "Profile readiness", "copy": "Approved providers are prepared for future customer visibility."}]}
+  },
+  "dashboard": {
+    "metadata": {"title": "Provider Dashboard", "description": "Manage your Bharosa Hai provider verification status."},
+    "logout": "Logout",
+    "hero": {"eyebrow": "Provider dashboard", "title": "Welcome {name}", "copy": "Track your account status, submit required details and documents, and see when admin approval is complete.", "imageAlt": "Provider dashboard workspace"},
+    "stats": {"verification": "Verification", "profile": "Profile", "documents": "Documents", "access": "Access"},
+    "statusValue": {"DRAFT": "Details required", "PENDING": "Pending review", "APPROVED": "Verified provider", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
+    "profileValue": {"incomplete": "Incomplete", "submitted": "Submitted"},
+    "documentValue": "{count, plural, =0 {0 uploaded} one {# uploaded} other {# uploaded}}",
+    "accessValue": {"limited": "Limited", "full": "Full dashboard"},
+    "states": {
+      "draft": {"eyebrow": "Action required", "title": "Upload verification documents and complete your details.", "copy": "Your account is created, but admin review cannot start until you submit your professional details and required category documents.", "items": ["Complete professional profile details", "Upload category-specific verification documents", "Accept the declaration and submit for admin review"], "cta": "Complete details and documents"},
+      "pending": {"eyebrow": "Under review", "title": "Your verification is pending admin approval.", "copy": "Your profile and documents have been submitted. The admin team will review them before marking you as verified.", "items": ["Application submitted", "Documents received", "Admin verification pending"]},
+      "approved": {"eyebrow": "Verified provider", "title": "You are a verified provider.", "copy": "Your provider account has been approved. The dashboard is now open for verified-provider workspace tools.", "items": ["Email verified", "Provider details approved", "Verification documents approved"]},
+      "rejected": {"eyebrow": "Review complete", "title": "Your application was not approved.", "copy": "You can update your details and documents before submitting again for admin review.", "items": ["Review your submitted details", "Replace unclear or incorrect documents", "Submit the application again"], "cta": "Update application"},
+      "needsMoreDocuments": {"eyebrow": "Documents needed", "title": "Admin needs more information.", "copy": "Please update your provider details or upload clearer documents so the team can continue verification.", "items": ["Check category requirements", "Upload the requested documents", "Submit again for review"], "cta": "Update documents"}
+    },
+    "statusCards": {
+      "draft": {"title": "Verification not started", "copy": "Submit your details and documents to start admin review."},
+      "pending": {"title": "Pending verification", "copy": "Your application is waiting for admin review."},
+      "approved": {"title": "Verified provider", "copy": "Your profile is approved and ready for verified-provider access."},
+      "rejected": {"title": "Application rejected", "copy": "Update your application before submitting again."},
+      "needsMoreDocuments": {"title": "More documents required", "copy": "Upload the requested documents to continue review."}
+    },
+    "adminNotes": {"title": "Admin notes", "empty": "No admin note has been added yet.", "missing": "{count, plural, one {# document needs attention} other {# documents need attention}}"},
+    "systemMessages": {"applicationSubmitted": "Application submitted.", "applicationApproved": "Application approved.", "applicationRejected": "Application rejected.", "moreDocumentsRequested": "More documents requested."},
+    "modules": {
+      "eyebrow": "Dashboard modules",
+      "lockedTitle": "Available after verification.",
+      "lockedCopy": "These modules stay locked until the admin team approves your provider account.",
+      "unlockedTitle": "Verified-provider modules are open.",
+      "unlockedCopy": "Your account is approved. These modules are ready for the next product phases.",
+      "available": "Available",
+      "locked": "Available after verification",
+      "items": ["Leads", "Reviews", "Analytics", "Subscription", "Messages", "Profile", "Documents"]
+    },
+    "documents": {"eyebrow": "Documents", "title": "Verification documents", "copy": "Review uploaded documents and replace them when admin asks for updated files.", "empty": "No verification documents uploaded yet.", "uploaded": "Uploaded {date}", "preview": "Preview", "download": "Download", "replace": "Replace document"},
+    "documentStatus": {"PENDING": "Pending review", "APPROVED": "Approved", "REJECTED": "Rejected"},
+    "notifications": {
+      "eyebrow": "Notifications",
+      "title": "Verification updates",
+      "copy": "Important lifecycle updates will appear here.",
+      "empty": "No notifications yet.",
+      "applicationSubmitted": {"title": "Application submitted", "copy": "Your application has been sent for admin review."},
+      "moreDocumentsRequested": {"title": "More documents requested", "copy": "Admin needs updated information or clearer documents."},
+      "applicationApproved": {"title": "Application approved", "copy": "You are now a verified provider."},
+      "applicationRejected": {"title": "Application rejected", "copy": "Your application was not approved. You can update and reapply."},
+      "generic": {"title": "Verification update", "copy": "Your provider verification status changed."}
+    },
+    "timeline": {"eyebrow": "Timeline", "title": "Verification lifecycle", "accountCreated": "Account Created", "emailVerified": "Email Verified", "phoneAdded": "Phone Added", "documentsUploaded": "Documents Uploaded", "submitted": "Submitted", "underReview": "Under Review", "moreDocuments": "More Documents Requested", "approved": "Approved", "pending": "Pending", "active": "Active", "notRequested": "Not requested"},
+    "profile": {
+      "eyebrow": "Profile",
+      "title": "Editable provider profile",
+      "copy": "Keep your professional details ready. Verified email and mobile stay read-only.",
+      "save": "Save profile",
+      "saving": "Saving...",
+      "success": "Profile updated.",
+      "validationError": "Please check the profile fields.",
+      "authRequired": "Please complete account onboarding first.",
+      "choosePhoto": "Choose photo",
+      "photoSaved": "Profile photo saved.",
+      "photoError": "Profile photo could not be saved.",
+      "fields": {"email": "Email", "mobile": "Mobile", "city": "City", "address": "Address", "specialization": "Specialization", "experience": "Experience", "languages": "Languages", "officeAddress": "Office address", "bio": "Bio", "photo": "Profile photo"}
+    },
+    "later": {"title": "Planned business tools", "copy": "Lead management, earnings, analytics, payments, subscriptions and reviews are intentionally out of scope."},
+    "journey": {"eyebrow": "Provider journey", "title": "What this dashboard should support.", "items": [{"title": "Submit profile", "copy": "Complete the registration flow and upload required documents."}, {"title": "Wait for review", "copy": "Admin review determines whether more documents are required."}, {"title": "Prepare for visibility", "copy": "Approved providers become ready for future customer-facing workflows."}]}
+  },
+  "auth": {
+    "signIn": {
+      "metadata": {"title": "Provider Login", "description": "Login securely to your Bharosa Hai provider account."},
+      "hero": {"eyebrow": "Provider login", "title": "Login to your provider account.", "copy": "Use your verified email and password to continue your provider onboarding.", "imageAlt": "Professional logging into a secure account"}
+    },
+    "signUp": {
+      "metadata": {"title": "Provider Signup", "description": "Create a secure Bharosa Hai provider account."},
+      "hero": {"eyebrow": "Provider signup", "title": "Create your permanent provider account.", "copy": "Start with a secure account, verify your email, then add your mobile number before submitting your professional profile.", "imageAlt": "Provider creating a secure account"}
+    }
+  },
+  "onboarding": {
+    "metadata": {"title": "Provider Account Onboarding", "description": "Complete your provider account details."},
+    "hero": {"eyebrow": "Account onboarding", "title": "Finish your provider account setup.", "copy": "Your account is created. Add your mobile number and optional profile photo to open the dashboard.", "imageAlt": "Secure provider account setup"},
+    "card": {"eyebrow": "Account details", "title": "Email, mobile and profile photo", "copy": "Email verification is handled first. Your mobile number is saved to your provider profile for future contact."},
+    "loading": "Loading account...",
+    "signedOut": "Please login again to continue.",
+    "saving": "Saving...",
+    "logout": "Logout",
+    "photoSaved": "Profile photo saved.",
+    "photoError": "Profile photo could not be saved. Please try again.",
+    "email": {"title": "Email verification", "verified": "Email verified through Clerk.", "pending": "Please complete email verification first."},
+    "photo": {"title": "Profile photo", "copy": "Optional. Add a clear professional photo to your account.", "choose": "Choose photo"},
+    "phone": {"title": "Mobile number", "copy": "Enter the mobile number the team can use for provider onboarding contact.", "placeholder": "+91 98765 43210", "continue": "Continue to dashboard", "validationError": "Enter a valid mobile number.", "saveError": "Mobile number could not be saved. Please try again."}
+  },
+  "workspace": {
+    "brand": "Provider Workspace",
+    "homeLabel": "Provider workspace home",
+    "navLabel": "Provider navigation",
+    "breadcrumbRoot": "Workspace",
+    "logout": "Logout",
+    "locked": "Locked",
+    "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Verified", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
+    "nav": {"dashboard": "Dashboard", "leads": "Leads", "profile": "My Profile", "documents": "Documents", "verification": "Verification", "reviews": "Reviews", "analytics": "Analytics", "subscription": "Subscription", "messages": "Messages", "settings": "Settings"},
+    "feature": {
+      "locked": "Feature locked",
+      "available": "Feature available",
+      "lockedEyebrow": "Locked module",
+      "readyEyebrow": "Verified workspace",
+      "lockedTitle": "Feature locked",
+      "lockedCopy": "Unlock after your verification is approved. Until then, continue verification from the dashboard.",
+      "readyTitle": "{feature} workspace",
+      "readyCopy": "This page is available for verified providers and will connect to deeper workflows as each module enters scope.",
+      "cta": "View verification status",
+      "lockedItems": ["Visible in the workspace", "Unlocks automatically after approval", "Prepared for future workflows"],
+      "readyItems": ["Verified-provider access", "Premium empty state", "Prepared for service operations"]
+    }
+  },
+  "customerPortal": {
+    "metadata": {"title": "Client Access", "description": "The Bharosa Hai client access is being prepared for verified providers."},
+    "hero": {"eyebrow": "Customer portal", "title": "A guided customer experience is being prepared for verified providers.", "copy": "The portal will launch after verified provider onboarding is ready. Until then, this page explains the planned experience without enabling customer requests yet.", "imageAlt": "Family and professional discussing paperwork", "emailLabel": "Email address", "placeholder": "you@example.com", "button": "Notify me"},
+    "coming": {"eyebrow": "What’s coming", "title": "A calm way to start important work.", "copy": "The portal will help customers move from uncertainty to a clear next step.", "items": [{"title": "Guided category selection", "copy": "Choose the right professional service without guessing where to begin."}, {"title": "Verified provider visibility", "copy": "See professionals only after they pass onboarding review."}, {"title": "Document readiness", "copy": "Understand what information or files may be needed before work begins."}, {"title": "Clear communication", "copy": "Future workflows can keep expectations, timelines and messages organized."}, {"title": "Launch notifications", "copy": "Customers can register interest before the public workflow opens."}, {"title": "Timeline clarity", "copy": "The portal will communicate what is available now and what comes next."}]},
+    "features": {"eyebrow": "Expected features", "title": "The planned customer experience.", "panelTitle": "Future portal features", "items": ["Service category discovery", "City and requirement intake", "Verified provider matching", "Document checklist guidance", "Support-led status updates"], "timeline": [{"title": "Now", "copy": "Provider onboarding and public website readiness."}, {"title": "Next", "copy": "Admin review and first verified professional network."}, {"title": "Then", "copy": "Controlled client access launch for selected categories and cities."}, {"title": "Later", "copy": "Broader workflows after the Tier 1 MVP is stable."}]}
+  }
+}

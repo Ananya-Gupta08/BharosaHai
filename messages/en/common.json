@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "brand": "Bharosa Hai",
+    "title": "Bharosa Hai | Trusted Professionals. Genuine Guidance. Reliable Solutions.",
+    "description": "Bharosa Hai connects people with verified lawyers, consultants, documentation experts and local professional service providers across India."
+  },
+  "brand": {
+    "name": "Bharosa Hai",
+    "initials": "BH",
+    "homeLabel": "Bharosa Hai home"
+  },
+  "nav": {
+    "label": "Primary navigation",
+    "toggle": "Toggle navigation menu",
+    "home": "Home",
+    "services": "Services",
+    "partner": "Become a Partner",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "customerPortal": "Client Access",
+    "joinProvider": "Join as Provider"
+  },
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "modalTitle": "Choose Your Preferred Language",
+    "modalCopy": "Select the language you are most comfortable with. You can change it anytime from the navigation.",
+    "continue": "Continue",
+    "englishOption": "🇬🇧 English",
+    "hindiOption": "🇮🇳 हिन्दी"
+  },
+  "footer": {
+    "description": "Verified Indian professionals for legal, property, compliance, documentation and government-service work.",
+    "company": "Company",
+    "providers": "For Providers",
+    "support": "Support",
+    "about": "About",
+    "services": "Services",
+    "faq": "FAQ",
+    "becomePartner": "Become a Partner",
+    "registration": "Registration",
+    "providerDashboard": "Provider Dashboard",
+    "contact": "Contact",
+    "customerPortal": "Client Access",
+    "admin": "Admin"
+  },
+  "ui": {
+    "nextStep": "Next step",
+    "learnMore": "Learn more",
+    "back": "Back",
+    "continue": "Continue",
+    "submit": "Submit",
+    "chooseFile": "Choose file"
+  }
+}

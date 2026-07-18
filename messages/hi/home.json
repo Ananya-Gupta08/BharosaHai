@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "title": "जरूरी कामों के लिए सत्यापित प्रोफेशनल",
+    "description": "लीगल, प्रॉपर्टी, डॉक्यूमेंटेशन, कंप्लायंस और सरकारी कामों के लिए भरोसेमंद प्रोफेशनल खोजें।"
+  },
+  "hero": {
+    "eyebrow": "भारत के लिए सत्यापित प्रोफेशनल सेवाएं",
+    "title": "जरूरी काम, भरोसेमंद लोगों के साथ।",
+    "copy": "Bharosa Hai लीगल, प्रॉपर्टी, डॉक्यूमेंटेशन, कंप्लायंस और सरकारी कामों के लिए verification-first प्लेटफॉर्म बना रहा है।",
+    "primary": "पार्टनर बनें",
+    "secondary": "कस्टमर पोर्टल",
+    "imageAlt": "मॉडर्न ऑफिस में भारतीय प्रोफेशनल बातचीत करते हुए",
+    "badges": ["सत्यापित प्रोवाइडर", "लोकल शहरों पर फोकस", "कस्टमर पोर्टल जल्द"]
+  },
+  "stats": [
+    {"value": "500+", "label": "लॉन्च प्रोवाइडर", "copy": "मथुरा, वृंदावन और आसपास के जिलों पर शुरुआती फोकस।"},
+    {"value": "6", "label": "सेवा कैटेगरी", "copy": "लीगल, CA, प्रॉपर्टी, GST, डॉक्यूमेंटेशन और सरकारी सहायता।"},
+    {"value": "4-step", "label": "वेरिफिकेशन", "copy": "पहचान, credentials, काम की प्रोफाइल और document review।"},
+    {"value": "24h", "label": "पार्टनर response", "copy": "गंभीर provider applications के लिए launch support।"}
+  ],
+  "services": {
+    "eyebrow": "सेवा कैटेगरी",
+    "title": "भरोसे वाले कामों को साफ तरीके से पेश किया गया है।",
+    "copy": "MVP उन categories पर focused है जहां credentials, local knowledge और सही documents सबसे ज्यादा मायने रखते हैं।",
+    "items": [
+      {"title": "लीगल सर्विस", "copy": "Agreements, notices, property paperwork, affidavits और document review के लिए वकील।"},
+      {"title": "CA और Tax", "copy": "Tax filing, registrations, compliance support और business advisory के लिए chartered accountants।"},
+      {"title": "प्रॉपर्टी सर्विस", "copy": "Renting, sale support, mutation help और local documentation के लिए property consultants।"},
+      {"title": "GST और Compliance", "copy": "GST registration, filing support, notice handling और regular compliance guidance।"},
+      {"title": "डॉक्यूमेंटेशन", "copy": "Aadhaar, PAN, certificates, affidavits, business paperwork और form preparation support।"},
+      {"title": "सरकारी काम", "copy": "Official forms, department submissions और process navigation में guided assistance।"}
+    ]
+  },
+  "how": {
+    "eyebrow": "कैसे काम करेगा",
+    "title": "जरूरत से verified help तक आसान रास्ता।",
+    "copy": "Customer journey simple रहेगी: category चुनें, requirement बताएं और ऐसे professional से जुड़ें जिसका onboarding check पूरा हो चुका है।",
+    "imageAlt": "Professional team service requirement review करते हुए",
+    "items": [
+      {"title": "काम की category चुनें", "copy": "Customer साफ service category और local city context से शुरुआत करता है।"},
+      {"title": "Requirement बताएं", "copy": "Platform timeline, documents और expected outcome को आसान भाषा में capture करता है।"},
+      {"title": "Verified help से जुड़ें", "copy": "Customer workflows में visibility सिर्फ approved professionals को मिलेगी।"},
+      {"title": "Confidence के साथ पूरा करें", "copy": "Future workflows में status updates, support और document-safe handoff जोड़े जाएंगे।"}
+    ]
+  },
+  "verificationMatter": {
+    "eyebrow": "Verification क्यों जरूरी है",
+    "title": "Trust हमारा product है, सिर्फ badge नहीं।",
+    "copy": "इन categories में customer personal details, property documents या business information share करने से पहले भरोसा चाहता है।",
+    "items": [
+      {"title": "Confusion कम करता है", "copy": "Profiles में service focus, city coverage, experience और required documents साफ दिखते हैं।"},
+      {"title": "Accountability बढ़ाता है", "copy": "हर provider traceable record और admin-reviewed status से शुरू करता है।"},
+      {"title": "Brand trust बचाता है", "copy": "Platform तभी grow करेगा जब पहला provider network credible लगेगा।"}
+    ]
+  },
+  "verification": {
+    "eyebrow": "Verification process",
+    "title": "Marketplace visibility से पहले structured process.",
+    "copy": "Provider onboarding generic sign-up से ज्यादा careful है। इसे day one से quality control के लिए बनाया गया है।",
+    "imageAlt": "Desk पर professional documents review होते हुए",
+    "items": [
+      {"title": "Identity review", "copy": "Basic identity और contact information ली जाती है ताकि हर profile traceable हो।"},
+      {"title": "Credential screening", "copy": "Provider live होने से पहले profession-specific documents review होते हैं।"},
+      {"title": "Profile quality check", "copy": "Experience, city coverage, languages और service focus customer clarity के लिए check होते हैं।"},
+      {"title": "Admin decision", "copy": "Admin approve, reject या more documents request कर सकता है।"}
+    ]
+  },
+  "professionals": {
+    "eyebrow": "Featured professionals",
+    "title": "Founding network के sample launch profiles.",
+    "copy": "ये sample cards दिखाते हैं कि verified providers को कैसे साफ और professional तरीके से दिखाया जाएगा।",
+    "badge": "Verification sample",
+    "items": [
+      {"name": "Adv. Riya Sharma", "role": "Civil lawyer", "focus": "Property disputes, agreements और notices"},
+      {"name": "CA Arjun Mehta", "role": "Chartered accountant", "focus": "ITR, GST और registration support"},
+      {"name": "Nisha Verma", "role": "Documentation expert", "focus": "Government forms और certificates"}
+    ]
+  },
+  "cities": {
+    "eyebrow": "शहर",
+    "title": "Local शुरुआत, फिर disciplined expansion.",
+    "copy": "पहला launch area local trust और operations सीखने के लिए चुना गया है।",
+    "cta": "City expansion request करें",
+    "items": ["Mathura", "Vrindavan", "Agra Road", "Goverdhan", "Barsana", "Nearby districts"]
+  },
+  "visionMission": {
+    "visionTitle": "Vision",
+    "visionCopy": "भारत का सबसे भरोसेमंद network बनाना जहां verified local expertise आसानी से मिले।",
+    "missionTitle": "Mission",
+    "missionCopy": "जरूरी कामों को शुरू करना, समझना, track करना और पूरा करना आसान बनाना।"
+  },
+  "why": {
+    "eyebrow": "हमें क्यों चुनें",
+    "title": "Serious कामों के लिए बनाया गया, noise के लिए नहीं।",
+    "items": [
+      "Professionals के लिए verification-first onboarding",
+      "Trust और clarity पर focused customer experience",
+      "Indian local service categories के practical workflows",
+      "Partners, admins और customers के लिए premium interface",
+      "Future workflows जोड़ने के लिए clean MVP foundation"
+    ]
+  },
+  "testimonials": {
+    "customerLabel": "Customer sample",
+    "customerQuote": "Property या business documents share करने से पहले मुझे पता होना चाहिए कि मैं किससे बात कर रहा हूं।",
+    "customerCredit": "Sample early customer feedback",
+    "partnerLabel": "Partner sample",
+    "partnerQuote": "Verification वाली professional profile serious providers को अलग पहचान दे सकती है।",
+    "partnerCredit": "Sample founding partner feedback"
+  },
+  "faqPreview": {
+    "eyebrow": "FAQ preview",
+    "title": "Early users के common सवाल.",
+    "copy": "Full FAQ में provider onboarding, customer launch, verification, cities और support covered हैं।",
+    "cta": "पूरा FAQ देखें",
+    "items": [
+      {"question": "क्या Bharosa Hai customers के लिए live है?", "answer": "Customer workflow जल्द आएगा। अभी Tier 1 focus provider onboarding और verification है।"},
+      {"question": "Provider कौन बन सकता है?", "answer": "Lawyers, CAs, GST consultants, property advisors, documentation experts और local service professionals apply कर सकते हैं।"},
+      {"question": "Verification क्यों जरूरी है?", "answer": "इन categories में documents, trust और personal या business decisions शामिल होते हैं। Verification शुरुआत को भरोसेमंद बनाता है।"},
+      {"question": "पहले कौन से शहर शामिल हैं?", "answer": "Launch focus Mathura, Vrindavan और आसपास के districts पर है।"}
+    ]
+  },
+  "cta": {
+    "title": "Founding provider network से जुड़ें।",
+    "copy": "अगर आप long-term quality वाले trusted professional network का हिस्सा बनना चाहते हैं तो launch phase में apply करें।",
+    "primary": "Registration शुरू करें",
+    "secondary": "Partnership जानें"
+  },
+  "newsletter": {
+    "eyebrow": "Launch updates",
+    "title": "Customer access open होने पर update पाएं।",
+    "copy": "Spam नहीं। सिर्फ important launch updates, city expansion और provider-network milestones।",
+    "emailLabel": "Email address",
+    "placeholder": "you@example.com",
+    "button": "Notify me"
+  }
+}
