@@ -1,6 +1,5 @@
 import {Clock3, Search, ShieldCheck, UserCheck, UserX, Users} from "lucide-react";
 import {getTranslations} from "next-intl/server";
-import type {ProviderStatus} from "@prisma/client";
 
 import {MotionSection} from "@/components/motion-section";
 import {Card, PageHero, SectionHeader, Timeline, container, pageY} from "@/components/premium-ui";
@@ -15,7 +14,7 @@ export const dynamic = "force-dynamic";
 const statIcons = [Clock3, UserCheck, UserX, Users];
 
 type ProviderStatusCount = {
-  status: ProviderStatus;
+  status: string;
   _count: {
     _all: number;
   };
