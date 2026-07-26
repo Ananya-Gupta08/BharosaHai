@@ -14,11 +14,11 @@
     "toggle": "Toggle navigation menu",
     "home": "Home",
     "services": "Services",
-    "partner": "Become a Partner",
+    "partner": "Become a Provider",
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
-    "customerPortal": "Client Access",
+    "customerPortal": "Customer Access",
     "joinProvider": "Join as Provider"
   },
   "language": {
@@ -39,11 +39,11 @@
     "about": "About",
     "services": "Services",
     "faq": "FAQ",
-    "becomePartner": "Become a Partner",
+    "becomePartner": "Become a Provider",
     "registration": "Registration",
     "providerDashboard": "Provider Dashboard",
     "contact": "Contact",
-    "customerPortal": "Client Access",
+    "customerPortal": "Customer Access",
     "admin": "Admin"
   },
   "ui": {

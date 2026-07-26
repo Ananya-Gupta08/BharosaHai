@@ -1,0 +1,91 @@
+{
+  "metadata": {"title": "Customer Experience Coming Soon", "description": "A premium preview of the upcoming Bharosa Hai customer experience."},
+  "commonBadge": "Coming Soon",
+  "hero": {
+    "badge": "Launching Soon",
+    "title": "Customer Experience Coming Soon",
+    "supporting": "A smarter way to discover trusted professionals, compare verified providers, and manage your service requests all in one place.",
+    "copy": "We're building a customer experience that makes finding trusted professionals simple, transparent, and reliable. Stay tuned as we prepare to launch.",
+    "primary": "Notify Me",
+    "secondary": "Back to Homepage"
+  },
+  "preview": {
+    "title": "Customer preview",
+    "copy": "One place for trusted service discovery",
+    "items": {
+      "verified": {"label": "Verified providers", "value": "Profiles reviewed before launch"},
+      "cities": {"label": "City-first rollout", "value": "Launching across key North Indian cities"},
+      "updates": {"label": "Request updates", "value": "Built for clear status visibility"}
+    }
+  },
+  "features": {
+    "eyebrow": "Customer support",
+    "title": "HOW BHAROSA HAI WILL HELP YOU",
+    "copy": "Making it easier to find trusted professionals and manage your service journey.",
+    "items": {
+      "find": {"title": "Find Verified Professionals", "copy": "Discover providers who have completed the Bharosa Hai verification process."},
+      "compare": {"title": "Compare Trusted Providers", "copy": "Review city, service focus, experience and profile details before choosing."},
+      "track": {"title": "Track Service Requests", "copy": "Follow your service journey from request to completion."},
+      "save": {"title": "Save Favourite Professionals", "copy": "Keep trusted providers ready for future work."},
+      "updates": {"title": "Receive Real-Time Updates", "copy": "Get clear updates as your service request moves forward."},
+      "history": {"title": "View Service History", "copy": "See previous requests, providers and service records in one place."}
+    }
+  },
+  "categories": {
+    "eyebrow": "Explore service categories",
+    "title": "Services customers will soon be able to explore.",
+    "copy": "The first customer experience will focus on important local services where verified providers matter.",
+    "items": {
+      "legal": "Legal Services",
+      "gst": "GST & Taxation",
+      "business": "Business Registration",
+      "property": "Property Documentation",
+      "police": "Police Verification",
+      "electricity": "Electricity",
+      "insurance": "Insurance",
+      "municipal": "Municipal Services",
+      "schemes": "Government Schemes",
+      "licenses": "Licenses & Permits",
+      "documentation": "Documentation",
+      "labour": "Labour Compliance"
+    }
+  },
+  "cities": {
+    "eyebrow": "Cities we are launching in",
+    "title": "Launching Across Multiple Cities",
+    "copy": "We're expanding our trusted network of verified professionals city by city.",
+    "items": {
+      "mathura": "Mathura",
+      "vrindavan": "Vrindavan",
+      "agra": "Agra",
+      "delhi": "Delhi",
+      "noida": "Noida",
+      "gurugram": "Gurugram",
+      "faridabad": "Faridabad",
+      "sonipat": "Sonipat"
+    }
+  },
+  "why": {
+    "eyebrow": "Why customers will love Bharosa Hai",
+    "title": "Designed around trust, clarity and simplicity.",
+    "copy": "The customer product is being built for people who want reliable guidance without confusing calls or random listings.",
+    "items": {
+      "verified": {"title": "Verified Professionals", "copy": "Every provider goes through a verification process before being shown to customers."},
+      "transparent": {"title": "Transparent Experience", "copy": "Know what to expect with clear information and a straightforward process."},
+      "network": {"title": "Growing Trusted Network", "copy": "Access professionals across multiple service categories and cities."},
+      "simple": {"title": "Designed Around Simplicity", "copy": "An easy-to-use website built for everyone, even first-time internet users."}
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "copy": "Clear answers about the upcoming customer experience.",
+    "items": {
+      "launch": {"question": "When will the customer experience launch?", "answer": "The customer experience is currently being prepared. Bharosa Hai is first building a verified provider network city by city."},
+      "free": {"question": "Will Bharosa Hai be free to use?", "answer": "Customer access details will be announced before launch. Provider onboarding is currently free during the launch phase."},
+      "verified": {"question": "How are professionals verified?", "answer": "Providers submit profile details and documents. The admin team reviews identity, service category, credentials and profile quality."},
+      "cities": {"question": "Which cities will be available first?", "answer": "The initial city focus includes Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad and Sonipat."},
+      "provider": {"question": "Can I register as a provider today?", "answer": "Yes. Service providers can create an account and complete the verification process now."}
+    }
+  }
+}

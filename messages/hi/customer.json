@@ -1,0 +1,91 @@
+{
+  "metadata": {"title": "Customer Experience Coming Soon", "description": "Bharosa Hai customer experience ka premium preview."},
+  "commonBadge": "Coming Soon",
+  "hero": {
+    "badge": "Launching Soon",
+    "title": "Customer Experience Coming Soon",
+    "supporting": "Verified providers discover karne, compare karne aur service requests manage karne ka smarter tareeka, sab ek jagah.",
+    "copy": "Hum ek aisa customer experience bana rahe hain jahan trusted professionals dhoondhna simple, transparent aur reliable ho. Launch ke liye stay tuned.",
+    "primary": "Notify Me",
+    "secondary": "Back to Homepage"
+  },
+  "preview": {
+    "title": "Customer preview",
+    "copy": "Trusted service discovery ke liye ek jagah",
+    "items": {
+      "verified": {"label": "Verified providers", "value": "Launch se pehle profiles review honge"},
+      "cities": {"label": "City-first rollout", "value": "Key North Indian cities mein launch"},
+      "updates": {"label": "Request updates", "value": "Clear status visibility ke liye built"}
+    }
+  },
+  "features": {
+    "eyebrow": "Customer support",
+    "title": "HOW BHAROSA HAI WILL HELP YOU",
+    "copy": "Making it easier to find trusted professionals and manage your service journey.",
+    "items": {
+      "find": {"title": "Find Verified Professionals", "copy": "Bharosa Hai verification complete kar chuke providers discover karein."},
+      "compare": {"title": "Compare Trusted Providers", "copy": "Choose karne se pehle city, service focus, experience aur profile details dekhein."},
+      "track": {"title": "Track Service Requests", "copy": "Request se completion tak apni service journey follow karein."},
+      "save": {"title": "Save Favourite Professionals", "copy": "Future work ke liye trusted providers save rakhein."},
+      "updates": {"title": "Receive Real-Time Updates", "copy": "Service request aage badhne par clear updates paayein."},
+      "history": {"title": "View Service History", "copy": "Previous requests, providers aur service records ek jagah dekhein."}
+    }
+  },
+  "categories": {
+    "eyebrow": "Explore service categories",
+    "title": "Services jo customers jald explore kar payenge.",
+    "copy": "First customer experience important local services par focus karega jahan verified providers matter karte hain.",
+    "items": {
+      "legal": "Legal Services",
+      "gst": "GST & Taxation",
+      "business": "Business Registration",
+      "property": "Property Documentation",
+      "police": "Police Verification",
+      "electricity": "Electricity",
+      "insurance": "Insurance",
+      "municipal": "Municipal Services",
+      "schemes": "Government Schemes",
+      "licenses": "Licenses & Permits",
+      "documentation": "Documentation",
+      "labour": "Labour Compliance"
+    }
+  },
+  "cities": {
+    "eyebrow": "Cities we are launching in",
+    "title": "Multiple cities mein launch",
+    "copy": "Hum verified professionals ka trusted network city by city expand kar rahe hain.",
+    "items": {
+      "mathura": "Mathura",
+      "vrindavan": "Vrindavan",
+      "agra": "Agra",
+      "delhi": "Delhi",
+      "noida": "Noida",
+      "gurugram": "Gurugram",
+      "faridabad": "Faridabad",
+      "sonipat": "Sonipat"
+    }
+  },
+  "why": {
+    "eyebrow": "Customers ko Bharosa Hai kyun pasand aayega",
+    "title": "Trust, clarity aur simplicity ke around designed.",
+    "copy": "Customer product un logon ke liye ban raha hai jo random listings ya confusing calls ke bina reliable guidance chahte hain.",
+    "items": {
+      "verified": {"title": "Verified Professionals", "copy": "Platform join karne se pehle har provider verification process se guzarta hai."},
+      "transparent": {"title": "Transparent Experience", "copy": "Clear information aur straightforward process ke saath pehle se samjhein kya expect karna hai."},
+      "network": {"title": "Growing Trusted Network", "copy": "Multiple service categories aur cities mein professionals access karein."},
+      "simple": {"title": "Designed Around Simplicity", "copy": "Aisi easy-to-use website jo first-time internet users ke liye bhi simple ho."}
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "copy": "Upcoming customer experience ke baare mein clear answers.",
+    "items": {
+      "launch": {"question": "Customer experience kab launch hoga?", "answer": "Customer experience currently prepare ho raha hai. Bharosa Hai pehle verified provider network city by city build kar raha hai."},
+      "free": {"question": "Kya Bharosa Hai use karna free hoga?", "answer": "Customer access details launch se pehle announce hongi. Provider onboarding launch phase mein currently free hai."},
+      "verified": {"question": "Professionals kaise verify hote hain?", "answer": "Providers profile details aur documents submit karte hain. Admin team identity, service category, credentials aur profile quality review karti hai."},
+      "cities": {"question": "Pehle kaun se cities available honge?", "answer": "Initial city focus Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad aur Sonipat par hai."},
+      "provider": {"question": "Kya main aaj provider ke roop mein register kar sakta hoon?", "answer": "Haan. Service providers account create karke verification process complete kar sakte hain."}
+    }
+  }
+}

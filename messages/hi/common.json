@@ -14,11 +14,11 @@
     "toggle": "मेन्यू खोलें या बंद करें",
     "home": "होम",
     "services": "सेवाएं",
-    "partner": "पार्टनर बनें",
+    "partner": "प्रोवाइडर बनें",
     "about": "हमारे बारे में",
     "faq": "सवाल",
     "contact": "संपर्क",
-    "customerPortal": "कस्टमर पोर्टल",
+    "customerPortal": "Customer Access",
     "joinProvider": "प्रोवाइडर बनें"
   },
   "language": {
@@ -39,11 +39,11 @@
     "about": "हमारे बारे में",
     "services": "सेवाएं",
     "faq": "सवाल",
-    "becomePartner": "पार्टनर बनें",
+    "becomePartner": "प्रोवाइडर बनें",
     "registration": "रजिस्ट्रेशन",
     "providerDashboard": "प्रोवाइडर डैशबोर्ड",
     "contact": "संपर्क",
-    "customerPortal": "कस्टमर पोर्टल",
+    "customerPortal": "Customer Access",
     "admin": "एडमिन"
   },
   "ui": {

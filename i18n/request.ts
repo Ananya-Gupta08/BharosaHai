@@ -12,6 +12,7 @@ const namespaces = [
   "admin",
   "contact",
   "faq",
+  "customer",
 ] as const;
 
 export async function getMessagesForLocale(locale: string) {

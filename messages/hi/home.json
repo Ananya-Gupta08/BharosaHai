@@ -1,137 +1,139 @@
 {
-  "metadata": {
-    "title": "जरूरी कामों के लिए सत्यापित प्रोफेशनल",
-    "description": "लीगल, प्रॉपर्टी, डॉक्यूमेंटेशन, कंप्लायंस और सरकारी कामों के लिए भरोसेमंद प्रोफेशनल खोजें।"
-  },
+  "metadata": {"title": "Bharosa Hai | Apne Shehar Mein Verified Services", "description": "Legal, business, government aur essential services ke liye verified professionals dhoondhein."},
   "hero": {
-    "eyebrow": "भारत के लिए सत्यापित प्रोफेशनल सेवाएं",
-    "title": "जरूरी काम, भरोसेमंद लोगों के साथ।",
-    "copy": "Bharosa Hai लीगल, प्रॉपर्टी, डॉक्यूमेंटेशन, कंप्लायंस और सरकारी कामों के लिए verification-first प्लेटफॉर्म बना रहा है।",
-    "primary": "पार्टनर बनें",
-    "secondary": "कस्टमर पोर्टल",
-    "imageAlt": "मॉडर्न ऑफिस में भारतीय प्रोफेशनल बातचीत करते हुए",
-    "badges": ["सत्यापित प्रोवाइडर", "लोकल शहरों पर फोकस", "कस्टमर पोर्टल जल्द"]
+    "eyebrow": "Trusted service marketplace",
+    "title": "Har Seva Ka Ek Hi Bharosa.",
+    "subheading": "Apne shehar mein legal, business, government aur essential services ke liye verified professionals dhoondhein.",
+    "copy": "Bharosa Hai customers ko trusted aur verified service providers se jodta hai, taaki har zaroori kaam ke liye sahi expert dhoondhna simple ho.",
+    "primary": "Verified Service Dhoondhein",
+    "secondary": "Service Provider Banein",
+    "searchLabel": "Services search karein",
+    "searchPlaceholder": "GST, lawyer, property, documents search karein...",
+    "locationLabel": "City select karein",
+    "searchButton": "Search",
+    "imageAlt": "Indian service professional customer ko documents mein help karta hua"
   },
-  "stats": [
-    {"value": "500+", "label": "लॉन्च प्रोवाइडर", "copy": "मथुरा, वृंदावन और आसपास के जिलों पर शुरुआती फोकस।"},
-    {"value": "6", "label": "सेवा कैटेगरी", "copy": "लीगल, CA, प्रॉपर्टी, GST, डॉक्यूमेंटेशन और सरकारी सहायता।"},
-    {"value": "4-step", "label": "वेरिफिकेशन", "copy": "पहचान, credentials, काम की प्रोफाइल और document review।"},
-    {"value": "24h", "label": "पार्टनर response", "copy": "गंभीर provider applications के लिए launch support।"}
-  ],
-  "services": {
-    "eyebrow": "सेवा कैटेगरी",
-    "title": "भरोसे वाले कामों को साफ तरीके से पेश किया गया है।",
-    "copy": "MVP उन categories पर focused है जहां credentials, local knowledge और सही documents सबसे ज्यादा मायने रखते हैं।",
-    "items": [
-      {"title": "लीगल सर्विस", "copy": "Agreements, notices, property paperwork, affidavits और document review के लिए वकील।"},
-      {"title": "CA और Tax", "copy": "Tax filing, registrations, compliance support और business advisory के लिए chartered accountants।"},
-      {"title": "प्रॉपर्टी सर्विस", "copy": "Renting, sale support, mutation help और local documentation के लिए property consultants।"},
-      {"title": "GST और Compliance", "copy": "GST registration, filing support, notice handling और regular compliance guidance।"},
-      {"title": "डॉक्यूमेंटेशन", "copy": "Aadhaar, PAN, certificates, affidavits, business paperwork और form preparation support।"},
-      {"title": "सरकारी काम", "copy": "Official forms, department submissions और process navigation में guided assistance।"}
-    ]
+  "popular": {
+    "eyebrow": "Popular services",
+    "title": "Jis service ki zaroorat hai, wahi se start karein.",
+    "copy": "Sabse zyada requested Bharosa Hai categories pehle dikhai gayi hain taaki customers jaldi action le saken.",
+    "items": {
+      "legal": {"title": "Legal Services", "copy": "Notices, agreements aur case guidance ke liye lawyers."},
+      "gst": {"title": "GST & Taxation", "copy": "GST registration, filing, notices aur tax support."},
+      "business": {"title": "Business Registration", "copy": "Company, firm, shop aur local business setup help."},
+      "property": {"title": "Property Documentation", "copy": "Registry, mutation, rent agreement aur property papers."},
+      "electricity": {"title": "Electricity", "copy": "Connection, bill issue, meter aur department work."},
+      "insurance": {"title": "Insurance", "copy": "Policy guidance, claims aur documentation support."},
+      "police": {"title": "Police Verification", "copy": "Verification, affidavits aur local police paperwork."},
+      "municipal": {"title": "Municipal Services", "copy": "Nagar nigam, local certificates aur civic services."},
+      "schemes": {"title": "Government Schemes", "copy": "Eligible schemes samajhne aur apply karne mein help."},
+      "documentation": {"title": "Documentation", "copy": "Aadhaar, PAN, certificates, affidavits aur forms."},
+      "licenses": {"title": "Licenses", "copy": "Trade, food, shop aur license assistance."},
+      "labour": {"title": "Labour Compliance", "copy": "Labour registration, compliance aur contractor paperwork."}
+    }
   },
-  "how": {
-    "eyebrow": "कैसे काम करेगा",
-    "title": "जरूरत से verified help तक आसान रास्ता।",
-    "copy": "Customer journey simple रहेगी: category चुनें, requirement बताएं और ऐसे professional से जुड़ें जिसका onboarding check पूरा हो चुका है।",
-    "imageAlt": "Professional team service requirement review करते हुए",
-    "items": [
-      {"title": "काम की category चुनें", "copy": "Customer साफ service category और local city context से शुरुआत करता है।"},
-      {"title": "Requirement बताएं", "copy": "Platform timeline, documents और expected outcome को आसान भाषा में capture करता है।"},
-      {"title": "Verified help से जुड़ें", "copy": "Customer workflows में visibility सिर्फ approved professionals को मिलेगी।"},
-      {"title": "Confidence के साथ पूरा करें", "copy": "Future workflows में status updates, support और document-safe handoff जोड़े जाएंगे।"}
-    ]
-  },
-  "verificationMatter": {
-    "eyebrow": "Verification क्यों जरूरी है",
-    "title": "Trust हमारा product है, सिर्फ badge नहीं।",
-    "copy": "इन categories में customer personal details, property documents या business information share करने से पहले भरोसा चाहता है।",
-    "items": [
-      {"title": "Confusion कम करता है", "copy": "Profiles में service focus, city coverage, experience और required documents साफ दिखते हैं।"},
-      {"title": "Accountability बढ़ाता है", "copy": "हर provider traceable record और admin-reviewed status से शुरू करता है।"},
-      {"title": "Brand trust बचाता है", "copy": "Platform तभी grow करेगा जब पहला provider network credible लगेगा।"}
-    ]
-  },
-  "verification": {
-    "eyebrow": "Verification process",
-    "title": "Marketplace visibility से पहले structured process.",
-    "copy": "Provider onboarding generic sign-up से ज्यादा careful है। इसे day one से quality control के लिए बनाया गया है।",
-    "imageAlt": "Desk पर professional documents review होते हुए",
-    "items": [
-      {"title": "Identity review", "copy": "Basic identity और contact information ली जाती है ताकि हर profile traceable हो।"},
-      {"title": "Credential screening", "copy": "Provider live होने से पहले profession-specific documents review होते हैं।"},
-      {"title": "Profile quality check", "copy": "Experience, city coverage, languages और service focus customer clarity के लिए check होते हैं।"},
-      {"title": "Admin decision", "copy": "Admin approve, reject या more documents request कर सकता है।"}
-    ]
-  },
-  "professionals": {
-    "eyebrow": "Featured professionals",
-    "title": "Founding network के sample launch profiles.",
-    "copy": "ये sample cards दिखाते हैं कि verified providers को कैसे साफ और professional तरीके से दिखाया जाएगा।",
-    "badge": "Verification sample",
-    "items": [
-      {"name": "Adv. Riya Sharma", "role": "Civil lawyer", "focus": "Property disputes, agreements और notices"},
-      {"name": "CA Arjun Mehta", "role": "Chartered accountant", "focus": "ITR, GST और registration support"},
-      {"name": "Nisha Verma", "role": "Documentation expert", "focus": "Government forms और certificates"}
-    ]
+  "categories": {
+    "eyebrow": "All service categories",
+    "title": "Zaroori services ko clearly grouped kiya gaya hai.",
+    "copy": "Bharosa Hai un Indian service needs ke liye bana hai jahan trust, documents aur local process knowledge important hote hain.",
+    "badge": "Coming Soon",
+    "items": {
+      "business": {"title": "Business & Tax", "copy": "GST, taxation, business registration, accounting, licenses aur compliance work.", "cta": "Explore Services"},
+      "government": {"title": "Government & Documentation", "copy": "Certificates, affidavits, government schemes, applications aur official forms.", "cta": "Explore Services"},
+      "property": {"title": "Property & Housing", "copy": "Property documents, registry, mutation, rent agreements aur local property support.", "cta": "Explore Services"},
+      "personal": {"title": "Personal Documents", "copy": "Aadhaar, PAN, passport, police verification aur identity paperwork.", "cta": "Explore Services"},
+      "compliance": {"title": "Licenses & Labour", "copy": "Trade license, shop registration, labour compliance aur business permissions.", "cta": "Explore Services"},
+      "local": {"title": "Essential Local Services", "copy": "Electricity, municipal work, insurance support aur city-level service help.", "cta": "Explore Services"}
+    }
   },
   "cities": {
-    "eyebrow": "शहर",
-    "title": "Local शुरुआत, फिर disciplined expansion.",
-    "copy": "पहला launch area local trust और operations सीखने के लिए चुना गया है।",
-    "cta": "City expansion request करें",
-    "items": ["Mathura", "Vrindavan", "Agra Road", "Goverdhan", "Barsana", "Nearby districts"]
-  },
-  "visionMission": {
-    "visionTitle": "Vision",
-    "visionCopy": "भारत का सबसे भरोसेमंद network बनाना जहां verified local expertise आसानी से मिले।",
-    "missionTitle": "Mission",
-    "missionCopy": "जरूरी कामों को शुरू करना, समझना, track करना और पूरा करना आसान बनाना।"
+    "eyebrow": "Cities we serve",
+    "title": "Apne shehar mein trusted help dhoondhein.",
+    "copy": "Bharosa Hai city by city launch ho raha hai taaki service quality practical aur local rahe.",
+    "searchLabel": "City search karein",
+    "searchPlaceholder": "Apna shehar search karein",
+    "items": {
+      "mathura": {"name": "Mathura", "copy": "Legal, GST, property aur documents ke liye core launch city."},
+      "vrindavan": {"name": "Vrindavan", "copy": "Families, businesses aur property work ke liye verified providers."},
+      "agra": {"name": "Agra", "copy": "Business, tax aur documentation ke liye professional services."},
+      "delhi": {"name": "Delhi", "copy": "High-demand urban service categories ke liye expanded support."},
+      "noida": {"name": "Noida", "copy": "Business, property aur compliance providers onboard ho rahe hain."},
+      "gurugram": {"name": "Gurugram", "copy": "Company, tax, license aur property needs ke liye providers."},
+      "faridabad": {"name": "Faridabad", "copy": "Documents aur business services ke liye local professionals."},
+      "sonipat": {"name": "Sonipat", "copy": "Regional service coverage prepare ho raha hai."},
+      "comingSoon": {"name": "More cities soon", "copy": "Provider verification ke baad naye cities open honge."}
+    }
   },
   "why": {
-    "eyebrow": "हमें क्यों चुनें",
-    "title": "Serious कामों के लिए बनाया गया, noise के लिए नहीं।",
-    "items": [
-      "Professionals के लिए verification-first onboarding",
-      "Trust और clarity पर focused customer experience",
-      "Indian local service categories के practical workflows",
-      "Partners, admins और customers के लिए premium interface",
-      "Future workflows जोड़ने के लिए clean MVP foundation"
-    ]
+    "eyebrow": "Why Bharosa Hai",
+    "title": "Transaction se pehle trust.",
+    "copy": "Customer ko documents, money ya personal details share karne se pehle pata hona chahiye ki woh kisse baat kar raha hai.",
+    "items": {
+      "verification": {"title": "Verified Professionals", "copy": "Provider identity, profile aur documents visibility se pehle review hote hain."},
+      "process": {"title": "Transparent Process", "copy": "Clear categories, city context aur connect karne se pehle next steps."},
+      "platform": {"title": "Trusted Website", "copy": "Important work ke liye designed, random listings ya confusing calls ke liye nahi."},
+      "speed": {"title": "Fast & Reliable Assistance", "copy": "Sahi service path jaldi dhoondhein aur confidence ke saath aage badhein."}
+    }
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "Right provider tak simple path.",
+    "copy": "Homepage is tarah designed hai ki customers kuch seconds mein services discover kar saken.",
+    "stepLabel": "Step",
+    "items": {
+      "choose": {"title": "Choose a Service"},
+      "city": {"title": "Select Your City"},
+      "connect": {"title": "Connect with Verified Providers"},
+      "compare": {"title": "Compare & Choose"},
+      "done": {"title": "Get Your Work Done"}
+    }
+  },
+  "providers": {
+    "eyebrow": "Featured providers",
+    "title": "Verified professionals jinko customer easily samajh sake.",
+    "copy": "Sample featured cards dikhate hain ki verification ke baad Bharosa Hai providers ko clearly kaise present karega.",
+    "badge": "Verified",
+    "cta": "View Profile",
+    "items": {
+      "advocate": {"name": "Adv. Riya Sharma", "profession": "Civil Lawyer", "city": "Mathura", "experience": "8 yrs exp.", "rating": "4.8 rating"},
+      "accountant": {"name": "CA Arjun Mehta", "profession": "GST & Tax Consultant", "city": "Agra", "experience": "10 yrs exp.", "rating": "4.9 rating"},
+      "documentation": {"name": "Nisha Verma", "profession": "Documentation Expert", "city": "Vrindavan", "experience": "6 yrs exp.", "rating": "4.7 rating"},
+      "property": {"name": "Kavita Singh", "profession": "Property Documentation", "city": "Noida", "experience": "9 yrs exp.", "rating": "4.8 rating"},
+      "insurance": {"name": "Rohit Bansal", "profession": "Insurance Advisor", "city": "Delhi", "experience": "7 yrs exp.", "rating": "4.6 rating"},
+      "electricity": {"name": "Amit Chauhan", "profession": "Electricity Services", "city": "Faridabad", "experience": "5 yrs exp.", "rating": "4.7 rating"}
+    }
   },
   "testimonials": {
-    "customerLabel": "Customer sample",
-    "customerQuote": "Property या business documents share करने से पहले मुझे पता होना चाहिए कि मैं किससे बात कर रहा हूं।",
-    "customerCredit": "Sample early customer feedback",
-    "partnerLabel": "Partner sample",
-    "partnerQuote": "Verification वाली professional profile serious providers को अलग पहचान दे सकती है।",
-    "partnerCredit": "Sample founding partner feedback"
+    "eyebrow": "Testimonials",
+    "title": "Trust se pehle clarity zaroori hai.",
+    "copy": "Ye sample launch stories wahi confidence dikhati hain jo Bharosa Hai create karna chahta hai.",
+    "items": {
+      "customerOne": {"label": "Customer", "quote": "Mujhe property documents review karwane the aur reliable professional chahiye tha. Verified provider profile first call easy bana deti hai.", "credit": "Saurabh Gupta, Mathura"},
+      "customerTwo": {"label": "Business Owner", "quote": "GST aur license work ke liye random numbers nahi chahiye. Mujhe professional background visible chahiye.", "credit": "Priya Jain, Agra"},
+      "provider": {"label": "Provider", "quote": "Clean verified profile serious professionals ko alag identity deta hai aur services better explain karta hai.", "credit": "Founding provider feedback"}
+    }
+  },
+  "knowledge": {
+    "eyebrow": "Knowledge centre",
+    "title": "Start karne se pehle useful guidance.",
+    "copy": "Simple articles customers ko documents, timelines aur provider selection samajhne mein help karenge.",
+    "items": {
+      "gstConsultant": {"meta": "GST Guide", "title": "How to Choose the Right GST Consultant", "copy": "Small businesses ko GST support hire karne se pehle kya check karna chahiye."},
+      "propertyRegistration": {"meta": "Property", "title": "Documents Required for Property Registration", "copy": "Registry work se pehle usually required documents ki practical list."},
+      "businessRegistration": {"meta": "Business", "title": "How to Register Your Business", "copy": "Firm, shop aur company registration ka basic path samjhein."},
+      "legalMistakes": {"meta": "Legal", "title": "Common Legal Mistakes Small Businesses Make", "copy": "Simple mistakes jo baad mein avoidable problems create kar sakti hain."}
+    }
   },
   "faqPreview": {
-    "eyebrow": "FAQ preview",
-    "title": "Early users के common सवाल.",
-    "copy": "Full FAQ में provider onboarding, customer launch, verification, cities और support covered हैं।",
-    "cta": "पूरा FAQ देखें",
-    "items": [
-      {"question": "क्या Bharosa Hai customers के लिए live है?", "answer": "Customer workflow जल्द आएगा। अभी Tier 1 focus provider onboarding और verification है।"},
-      {"question": "Provider कौन बन सकता है?", "answer": "Lawyers, CAs, GST consultants, property advisors, documentation experts और local service professionals apply कर सकते हैं।"},
-      {"question": "Verification क्यों जरूरी है?", "answer": "इन categories में documents, trust और personal या business decisions शामिल होते हैं। Verification शुरुआत को भरोसेमंद बनाता है।"},
-      {"question": "पहले कौन से शहर शामिल हैं?", "answer": "Launch focus Mathura, Vrindavan और आसपास के districts पर है।"}
-    ]
-  },
-  "cta": {
-    "title": "Founding provider network से जुड़ें।",
-    "copy": "अगर आप long-term quality वाले trusted professional network का हिस्सा बनना चाहते हैं तो launch phase में apply करें।",
-    "primary": "Registration शुरू करें",
-    "secondary": "Partnership जानें"
-  },
-  "newsletter": {
-    "eyebrow": "Launch updates",
-    "title": "Customer access open होने पर update पाएं।",
-    "copy": "Spam नहीं। सिर्फ important launch updates, city expansion और provider-network milestones।",
-    "emailLabel": "Email address",
-    "placeholder": "you@example.com",
-    "button": "Notify me"
+    "eyebrow": "FAQ",
+    "title": "Common questions.",
+    "copy": "Customers aur service providers ke liye clear answers.",
+    "items": {
+      "providerVerification": {"question": "Bharosa Hai providers ko kaise verify karta hai?", "answer": "Providers profile details aur documents submit karte hain. Admin team identity, category fit, credentials aur profile quality review karti hai."},
+      "free": {"question": "Kya Bharosa Hai use karna free hai?", "answer": "Customer access prepare ho raha hai. Launch phase mein provider onboarding free hai."},
+      "compare": {"question": "Kya main multiple providers compare kar sakta hoon?", "answer": "Homepage discovery first ke liye prepare hai. Customer features launch hone par comparison workflows add honge."},
+      "becomeProvider": {"question": "Verified provider kaise banun?", "answer": "Provider account banayein, profile complete karein, required documents upload karein aur admin review ka wait karein."},
+      "cities": {"question": "Currently kaun se cities supported hain?", "answer": "Launch focus Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad aur Sonipat par hai."}
+    }
   }
 }
