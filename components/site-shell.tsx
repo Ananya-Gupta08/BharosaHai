@@ -2,6 +2,7 @@
 
 import {motion} from "framer-motion";
 import {ChevronDown, Languages, Menu, X} from "lucide-react";
+import Image from "next/image";
 import {useLocale, useTranslations} from "next-intl";
 import {useEffect, useRef, useState, type CSSProperties, type ReactNode} from "react";
 
@@ -22,6 +23,12 @@ const locales: Array<{value: AppLocale; short: string; labelKey: "hindi" | "engl
   {value: "hi", short: "HI", labelKey: "hindi", optionKey: "hindiOption"},
   {value: "en", short: "EN", labelKey: "english", optionKey: "englishOption"}
 ];
+
+const brandLogo = {
+  src: "/brand/bharosa-hai-logo.png",
+  width: 735,
+  height: 385
+} as const;
 
 const indianMarketplaceTheme = {
   "--background": "#FFFDF8",
@@ -88,10 +95,14 @@ export function SiteShell({children, visualStyle = "default"}: {children: ReactN
       >
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
           <Link href="/" className="group flex shrink-0 items-center gap-2.5" aria-label={t("brand.homeLabel")}>
-            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[var(--primary)] font-heading text-base font-bold text-white shadow-[var(--shadow-soft)] sm:h-10 sm:w-10 sm:text-lg">
-              {t("brand.initials")}
-            </span>
-            <span className="whitespace-nowrap font-heading text-lg font-bold text-[var(--primary)] sm:text-xl">{t("brand.name")}</span>
+            <Image
+              src={brandLogo.src}
+              alt={t("brand.name")}
+              width={brandLogo.width}
+              height={brandLogo.height}
+              priority
+              className="h-12 w-auto object-contain sm:h-14"
+            />
           </Link>
 
           <nav className="mx-4 hidden flex-1 items-center justify-center gap-0.5 xl:flex" aria-label={t("nav.label")}>
@@ -216,8 +227,13 @@ export function SiteShell({children, visualStyle = "default"}: {children: ReactN
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.35fr_0.8fr_0.8fr_0.8fr] lg:px-8">
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[var(--primary)] font-heading text-lg font-bold text-white">{t("brand.initials")}</span>
-              <p className="font-heading text-xl font-bold text-[var(--primary)]">{t("brand.name")}</p>
+              <Image
+                src={brandLogo.src}
+                alt={t("brand.name")}
+                width={brandLogo.width}
+                height={brandLogo.height}
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="mt-5 max-w-sm text-base leading-7 text-[var(--secondary-text)]">{t("footer.description")}</p>
           </div>
