@@ -23,6 +23,16 @@ export function TemporaryLanding() {
         <p className="tl-wait">The Wait Begins...</p>
         <p className="tl-soon">बहुत जल्द आपके शहर में...</p>
         <p className="tl-city">मथुरा&nbsp; • &nbsp;वृन्दावन</p>
+        <div className="tl-socials" aria-label="Bharosa Hai social links">
+          <a href="https://www.instagram.com/bharosahai.india?igsh=MThuNnRrend6eTNlMw==" target="_blank" rel="noreferrer" className="tl-social-link">
+            <InstagramIcon />
+            <span>@bharosahai.india</span>
+          </a>
+          <a href="https://www.facebook.com/share/1FBmLdJ44S/" target="_blank" rel="noreferrer" className="tl-social-link">
+            <FacebookIcon />
+            <span>Bharosa Hai</span>
+          </a>
+        </div>
       </section>
 
       <svg className="tl-scene" viewBox="0 0 1440 430" preserveAspectRatio="none" aria-hidden="true">
@@ -55,6 +65,7 @@ export function TemporaryLanding() {
       </svg>
 
       <div className="tl-mist" aria-hidden="true" />
+     
 
       <style>{`
         .temporary-landing {
@@ -183,6 +194,48 @@ export function TemporaryLanding() {
           transform: rotate(-45deg);
         }
 
+        .tl-socials {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin: 24px auto 0;
+          position: relative;
+          z-index: 4;
+        }
+
+        .tl-social-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 9px;
+          min-height: 44px;
+          padding: 10px 16px;
+          border-radius: 999px;
+          border: 1px solid rgba(7, 63, 158, .16);
+          background: rgba(255, 255, 255, .74);
+          color: var(--deep-blue);
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 800;
+          box-shadow: 0 10px 26px rgba(6, 47, 120, .08);
+          backdrop-filter: blur(10px);
+          transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+        }
+
+        .tl-social-link:hover {
+          transform: translateY(-2px);
+          border-color: rgba(17, 170, 168, .36);
+          box-shadow: 0 16px 32px rgba(6, 47, 120, .12);
+        }
+
+        .tl-social-link svg {
+          width: 18px;
+          height: 18px;
+          flex: 0 0 auto;
+        }
+
         .tl-scene {
           position: absolute;
           inset: auto 0 0;
@@ -261,6 +314,17 @@ export function TemporaryLanding() {
           .tl-city {
             letter-spacing: .06em;
           }
+
+          .tl-socials {
+            gap: 8px;
+            margin-top: 18px;
+          }
+
+          .tl-social-link {
+            min-height: 40px;
+            padding: 9px 12px;
+            font-size: 12px;
+          }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -270,7 +334,29 @@ export function TemporaryLanding() {
             animation: none !important;
           }
         }
+
       `}</style>
     </main>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" strokeWidth="2" />
+      <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" strokeWidth="2" />
+      <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path
+        d="M14.2 8.3V6.9c0-.7.4-1.1 1.2-1.1h1.4V3.3c-.7-.1-1.4-.2-2.2-.2-2.3 0-3.9 1.4-3.9 3.9v1.3H8.3v2.8h2.4v9.8h3.1v-9.8h2.4l.5-2.8h-2.5Z"
+        fill="currentColor"
+      />
+    </svg>
   );
 }

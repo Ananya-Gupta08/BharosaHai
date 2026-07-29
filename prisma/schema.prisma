@@ -37,70 +37,79 @@ enum Role {
 }
 
 model Provider {
-  id                   String                @id @default(cuid())
-  userId               String                @unique
-  user                 User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
-  name                 String
-  mobile               String?
-  email                String
-  profilePhotoUrl      String?
-  fatherOrHusbandName  String?
-  dateOfBirth          DateTime?
-  gender               String?
-  profileType          String?
-  address              String?
-  state                String?
-  district             String?
-  tehsil               String?
-  city                 String?
-  area                 String?
-  pincode              String?
-  categoryId           String?
-  category             Category?             @relation(fields: [categoryId], references: [id])
-  subCategoryId        String?
-  subCategory          SubCategory?          @relation(fields: [subCategoryId], references: [id])
-  specialization       String?
-  services             String[]              @default([])
-  highestQualification String?
+  id                        String                      @id @default(cuid())
+  userId                    String                      @unique
+  user                      User                        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name                      String
+  mobile                    String?
+  email                     String
+  profilePhotoUrl           String?
+  fatherOrHusbandName       String?
+  dateOfBirth               DateTime?
+  gender                    String?
+  profileType               String?
+  address                   String?
+  state                     String?
+  district                  String?
+  tehsil                    String?
+  city                      String?
+  area                      String?
+  pincode                   String?
+  categoryId                String?
+  category                  Category?                   @relation(fields: [categoryId], references: [id])
+  subCategoryId             String?
+  subCategory               SubCategory?                @relation(fields: [subCategoryId], references: [id])
+  specialization            String?
+  services                  String[]                    @default([])
+  highestQualification      String?
   professionalQualification String?
-  professionalMembership String?
-  awards               String?
-  industriesServed     String?
-  experienceYears      Int?
-  languages            String[]              @default([])
-  availability         String[]              @default([])
-  workingDays          String[]              @default([])
-  officeTiming         String?
-  officeName           String?
-  officeAddress        String?
-  officeLandmark       String?
-  googleMapLocation    String?
-  registrationNumber   String?
-  registrationAuthority String?
-  registrationValidity String?
-  serviceAreas         String[]              @default([])
-  feeType              String?
-  minimumFee           Int?
-  maximumFee           Int?
-  bankName             String?
-  bankAccountNumber    String?
-  bankIfsc             String?
-  upiId                String?
-  websiteUrl           String?
-  googleBusinessUrl    String?
-  facebookUrl          String?
-  instagramUrl         String?
-  linkedinUrl          String?
-  youtubeUrl           String?
-  bio                  String?
-  declarationAcceptedAt DateTime?
-  status               ProviderStatus        @default(DRAFT)
-  verificationLevel    VerificationLevel     @default(NOT_VERIFIED)
-  verifiedAt           DateTime?
-  createdAt            DateTime              @default(now())
-  updatedAt            DateTime              @updatedAt
-  documents            ProviderDocument[]
-  verificationRequests VerificationRequest[]
+  professionalMembership    String?
+  awards                    String?
+  industriesServed          String?
+  experienceYears           Int?
+  languages                 String[]                    @default([])
+  availability              String[]                    @default([])
+  workingDays               String[]                    @default([])
+  officeTiming              String?
+  officeName                String?
+  officeAddress             String?
+  officeLandmark            String?
+  googleMapLocation         String?
+  registrationNumber        String?
+  registrationAuthority     String?
+  registrationValidity      String?
+  serviceAreas              String[]                    @default([])
+  feeType                   String?
+  minimumFee                Int?
+  maximumFee                Int?
+  bankName                  String?
+  bankAccountNumber         String?
+  bankIfsc                  String?
+  upiId                     String?
+  websiteUrl                String?
+  googleBusinessUrl         String?
+  facebookUrl               String?
+  instagramUrl              String?
+  linkedinUrl               String?
+  youtubeUrl                String?
+  bio                       String?
+  declarationAcceptedAt     DateTime?
+  status                    ProviderStatus              @default(DRAFT)
+  verificationLevel         VerificationLevel           @default(NOT_VERIFIED)
+  verifiedAt                DateTime?
+  createdAt                 DateTime                    @default(now())
+  updatedAt                 DateTime                    @updatedAt
+  documents                 ProviderDocument[]
+  verificationRequests      VerificationRequest[]
+  serviceOfferings          ProviderServiceOffering[]
+  leads                     Lead[]
+  bookings                  Booking[]
+  messageThreads            MessageThread[]
+  notifications             ProviderNotification[]
+  reviews                   ProviderReview[]
+  subscriptions             ProviderSubscription[]
+  analyticsSnapshots        ProviderAnalyticsSnapshot[]
+  supportTickets            SupportTicket[]
 
   @@index([status])
   @@index([city])
@@ -159,15 +168,16 @@ model SubCategory {
 }
 
 model Service {
-  id            String       @id @default(cuid())
+  id            String                    @id @default(cuid())
   name          String
   slug          String
   categoryId    String
-  category      Category     @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  category      Category                  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
   subCategoryId String?
-  subCategory   SubCategory? @relation(fields: [subCategoryId], references: [id], onDelete: Cascade)
-  createdAt     DateTime     @default(now())
-  updatedAt     DateTime     @updatedAt
+  subCategory   SubCategory?              @relation(fields: [subCategoryId], references: [id], onDelete: Cascade)
+  createdAt     DateTime                  @default(now())
+  updatedAt     DateTime                  @updatedAt
+  offerings     ProviderServiceOffering[]
 
   @@unique([categoryId, slug])
   @@index([slug])
@@ -175,19 +185,19 @@ model Service {
 }
 
 model ProviderDocument {
-  id           String         @id @default(cuid())
-  providerId   String
-  provider     Provider       @relation(fields: [providerId], references: [id], onDelete: Cascade)
-  documentType String
-  fileName     String
+  id               String         @id @default(cuid())
+  providerId       String
+  provider         Provider       @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  documentType     String
+  fileName         String
   originalFileName String?
-  storagePath  String
-  fileSize     Int?
-  mimeType     String?
-  status       DocumentStatus @default(PENDING)
-  uploadedAt   DateTime       @default(now())
-  reviewedAt   DateTime?
-  verified     Boolean        @default(false)
+  storagePath      String
+  fileSize         Int?
+  mimeType         String?
+  status           DocumentStatus @default(PENDING)
+  uploadedAt       DateTime       @default(now())
+  reviewedAt       DateTime?
+  verified         Boolean        @default(false)
 
   @@index([providerId])
   @@index([documentType])
@@ -198,6 +208,259 @@ enum DocumentStatus {
   PENDING
   APPROVED
   REJECTED
+}
+
+model ProviderServiceOffering {
+  id              String                @id @default(cuid())
+  providerId      String
+  provider        Provider              @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  serviceId       String?
+  service         Service?              @relation(fields: [serviceId], references: [id], onDelete: SetNull)
+  title           String
+  slug            String
+  description     String?
+  pricingType     String?
+  minimumPrice    Int?
+  maximumPrice    Int?
+  experienceYears Int?
+  cities          String[]              @default([])
+  availability    String[]              @default([])
+  status          ServiceOfferingStatus @default(ENABLED)
+  createdAt       DateTime              @default(now())
+  updatedAt       DateTime              @updatedAt
+
+  @@unique([providerId, slug])
+  @@index([providerId, status])
+  @@index([serviceId])
+}
+
+enum ServiceOfferingStatus {
+  ENABLED
+  DISABLED
+}
+
+model Lead {
+  id             String           @id @default(cuid())
+  providerId     String
+  provider       Provider         @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  customerName   String
+  customerEmail  String?
+  customerMobile String?
+  serviceTitle   String
+  budgetMin      Int?
+  budgetMax      Int?
+  location       String?
+  message        String?
+  source         String           @default("customer-portal")
+  status         LeadStatus       @default(NEW)
+  lastActionAt   DateTime?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  bookings       Booking[]
+  messageThreads MessageThread[]
+  reviews        ProviderReview[]
+
+  @@index([providerId, status])
+  @@index([providerId, createdAt])
+}
+
+enum LeadStatus {
+  NEW
+  ACCEPTED
+  REJECTED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+model Booking {
+  id             String           @id @default(cuid())
+  providerId     String
+  provider       Provider         @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  leadId         String?
+  lead           Lead?            @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  customerName   String
+  customerMobile String?
+  serviceTitle   String
+  address        String?
+  notes          String?
+  status         BookingStatus    @default(UPCOMING)
+  scheduledAt    DateTime?
+  completedAt    DateTime?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  messageThreads MessageThread[]
+  reviews        ProviderReview[]
+
+  @@index([providerId, status])
+  @@index([providerId, scheduledAt])
+  @@index([leadId])
+}
+
+enum BookingStatus {
+  UPCOMING
+  ONGOING
+  COMPLETED
+  CANCELLED
+  RESCHEDULED
+}
+
+model MessageThread {
+  id             String              @id @default(cuid())
+  providerId     String
+  provider       Provider            @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  leadId         String?
+  lead           Lead?               @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  bookingId      String?
+  booking        Booking?            @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+  customerName   String
+  customerMobile String?
+  subject        String
+  status         MessageThreadStatus @default(OPEN)
+  unreadCount    Int                 @default(0)
+  lastMessageAt  DateTime?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  messages       Message[]
+
+  @@index([providerId, status])
+  @@index([providerId, lastMessageAt])
+  @@index([leadId])
+  @@index([bookingId])
+}
+
+enum MessageThreadStatus {
+  OPEN
+  CLOSED
+}
+
+model Message {
+  id            String        @id @default(cuid())
+  threadId      String
+  thread        MessageThread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  senderRole    String
+  body          String
+  attachmentUrl String?
+  readAt        DateTime?
+  createdAt     DateTime      @default(now())
+
+  @@index([threadId, createdAt])
+}
+
+model ProviderNotification {
+  id         String           @id @default(cuid())
+  providerId String
+  provider   Provider         @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  type       NotificationType @default(INFO)
+  title      String
+  body       String
+  href       String?
+  readAt     DateTime?
+  createdAt  DateTime         @default(now())
+
+  @@index([providerId, readAt])
+  @@index([providerId, createdAt])
+}
+
+enum NotificationType {
+  INFO
+  SUCCESS
+  WARNING
+  ERROR
+}
+
+model ProviderReview {
+  id           String       @id @default(cuid())
+  providerId   String
+  provider     Provider     @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  leadId       String?
+  lead         Lead?        @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  bookingId    String?
+  booking      Booking?     @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+  customerName String
+  rating       Int
+  comment      String?
+  response     String?
+  responseAt   DateTime?
+  status       ReviewStatus @default(PUBLISHED)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@index([providerId, status])
+  @@index([providerId, rating])
+  @@index([leadId])
+  @@index([bookingId])
+}
+
+enum ReviewStatus {
+  PUBLISHED
+  HIDDEN
+  REPORTED
+}
+
+model ProviderSubscription {
+  id           String             @id @default(cuid())
+  providerId   String
+  provider     Provider           @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  planName     String
+  status       SubscriptionStatus @default(ACTIVE)
+  priceMonthly Int?
+  benefits     Json?
+  startedAt    DateTime           @default(now())
+  renewsAt     DateTime?
+  expiresAt    DateTime?
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+
+  @@index([providerId, status])
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  TRIALING
+  PAST_DUE
+  CANCELLED
+  EXPIRED
+}
+
+model ProviderAnalyticsSnapshot {
+  id                  String   @id @default(cuid())
+  providerId          String
+  provider            Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  date                DateTime
+  profileViews        Int      @default(0)
+  searchAppearances   Int      @default(0)
+  leadConversionRate  Int      @default(0)
+  responseTimeMinutes Int      @default(0)
+  revenueAmount       Int      @default(0)
+  completedJobs       Int      @default(0)
+  createdAt           DateTime @default(now())
+
+  @@unique([providerId, date])
+  @@index([providerId, date])
+}
+
+model SupportTicket {
+  id         String              @id @default(cuid())
+  providerId String
+  provider   Provider            @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  subject    String
+  category   String?
+  priority   String              @default("NORMAL")
+  status     SupportTicketStatus @default(OPEN)
+  message    String
+  createdAt  DateTime            @default(now())
+  updatedAt  DateTime            @updatedAt
+
+  @@index([providerId, status])
+  @@index([providerId, createdAt])
+}
+
+enum SupportTicketStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
 }
 
 model VerificationRequest {

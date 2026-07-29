@@ -2,6 +2,6 @@
 
 type Props = {params: Promise<{locale: string}>};
 
-export default async function ProviderProfilePage({params}: Props) {
-  return <ProviderPortalFeatureRoute params={params} feature="profile" />;
+export default async function ProviderSupportPage({params}: Props) {
+  return <ProviderPortalFeatureRoute params={params} feature="support" />;
 }

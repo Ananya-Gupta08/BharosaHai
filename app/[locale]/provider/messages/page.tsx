@@ -1,11 +1,7 @@
-import {ProviderFeaturePage} from "@/components/provider-feature-page";
-import {requireProviderWorkspace} from "@/lib/auth/provider-workspace";
+﻿import {ProviderPortalFeatureRoute} from "@/components/provider-portal-feature-route";
 
 type Props = {params: Promise<{locale: string}>};
 
 export default async function ProviderMessagesPage({params}: Props) {
-  const {locale} = await params;
-  const account = await requireProviderWorkspace(locale);
-
-  return <ProviderFeaturePage status={account.provider.status} providerName={account.provider.name} provider={account.provider} featureKey="messages" href="/provider/messages" />;
+  return <ProviderPortalFeatureRoute params={params} feature="messages" />;
 }
