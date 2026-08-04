@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import {getTranslations} from "next-intl/server";
+import {redirect} from "next/navigation";
 import {ProviderPortalDashboard} from "@/components/provider-portal-workspace";
 import {requireProviderWorkspace} from "@/lib/auth/provider-workspace";
 import {getProviderPortalData} from "@/lib/services/provider-portal-service";
@@ -23,6 +24,11 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 export default async function ProviderDashboardPage({params}: Props) {
   const {locale} = await params;
   const account = await requireProviderWorkspace(locale);
+
+  if (account.provider.status === "DRAFT") {
+    redirect(`/${locale}/provider/register`);
+  }
+
   const data = await getProviderPortalData(account.provider.id);
 
   return <ProviderPortalDashboard data={data} />;

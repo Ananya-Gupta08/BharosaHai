@@ -7,6 +7,7 @@
     "completed": "Completed",
     "pending": "Pending",
     "locked": "Locked",
+    "progress": {"step": "Step {step} of {total}", "complete": "{progress}% Complete", "copy": "Progress is browser mein automatically save hota hai. Final submission se pehle aap resume kar sakte hain.", "saveDraft": "Draft Save Karein", "saved": "Draft save ho gaya"},
     "steps": ["Personal", "Professional", "Office", "Working details", "Bank & social", "Documents"],
     "personal": {"title": "व्यक्तिगत जानकारी", "copy": "Verification ke liye clear identity record banayein.", "name": "पूरा नाम", "mobile": "Mobile number", "email": "Email address", "father": "Father/Husband name", "dob": "Date of birth", "gender": "Gender", "genderOptions": [{"value": "Male", "label": "पुरुष"}, {"value": "Female", "label": "महिला"}, {"value": "Other", "label": "अन्य"}], "profileType": "Profile type", "profileTypeOptions": [{"value": "Individual", "label": "Individual"}, {"value": "Firm", "label": "Firm"}, {"value": "Company", "label": "Company"}, {"value": "Partnership", "label": "Partnership"}, {"value": "LLP", "label": "LLP"}, {"value": "NGO", "label": "NGO"}, {"value": "Trust", "label": "Trust"}], "city": "City", "address": "Residential address"},
     "professional": {"title": "Professional information", "copy": "Category, specialization aur services select karein jinke liye customers aapko dhoondhenge.", "category": "Provider category", "subcategory": "Specialization", "specialization": "Additional specialization", "services": "Services offered", "experience": "Experience in years", "highestQualification": "Highest qualification", "professionalQualification": "Professional qualification", "languages": "Languages spoken", "office": "Office address", "bio": "Apne professional work ke baare mein"},
@@ -17,7 +18,7 @@
     "declaration": {"eyebrow": "Declaration", "title": "Admin review se pehle confirm karein.", "copy": "Submit karne se pehle verify karein ki details accurate hain.", "checkbox": "Main confirm karta/karti hoon ki submitted information aur documents meri jaankari ke hisaab se sahi hain.", "submit": "Application submit karein"},
     "errors": {"name": "Full name required hai.", "mobile": "Valid mobile number enter karein.", "email": "Valid email enter karein.", "profileType": "Profile type select karein.", "category": "Category select karein.", "services": "Kam se kam ek service select karein.", "experience": "Experience required hai.", "highestQualification": "Highest qualification required hai.", "professionalQualification": "Professional qualification required hai.", "languages": "Languages required hain.", "bio": "Apne work ke baare mein kam se kam 20 characters likhein.", "state": "State required hai.", "district": "District required hai.", "city": "City required hai.", "pincode": "Pincode required hai.", "officeName": "Office name required hai.", "officeTiming": "Office timing required hai.", "address": "Residential address required hai.", "officeAddress": "Office address required hai.", "availability": "Availability required hai.", "workingDays": "Working days required hain.", "serviceAreas": "Service areas required hain.", "feeType": "Fee type select karein.", "declaration": "Declaration accept karein."},
     "submission": {"pending": "Submit ho raha hai...", "success": "Application submit ho gayi. Admin team ab ise review kar sakti hai.", "validationError": "Required fields complete karein aur declaration accept karein.", "verificationRequired": "Application submit karne se pehle email verify karein aur mobile number add karein.", "error": "Application submit nahi ho payi. Dobara try karein."},
-    "next": {"eyebrow": "Aage kya hoga", "title": "Registration ke baad clear path.", "items": [{"title": "Application review", "copy": "Admin team profile details aur category documents review karti hai."}, {"title": "Status update", "copy": "Account approved, rejected ya more documents required ho sakta hai."}, {"title": "Profile readiness", "copy": "Approved providers future customer visibility ke liye ready hote hain."}]}
+    "next": {"eyebrow": "Aage kya hoga", "title": "Registration ke baad clear path.", "copy": "Submission ke baad application simple review path se guzarti hai.", "estimateLabel": "Estimated review", "estimateValue": "24-48 hours", "estimateCopy": "Complete aur readable documents admin team ko faster review mein help karte hain.", "items": [{"title": "Application review", "copy": "Admin team profile details aur category documents review karti hai."}, {"title": "Status update", "copy": "Account approved, rejected ya more documents required ho sakta hai."}, {"title": "Profile readiness", "copy": "Approved providers future customer visibility ke liye ready hote hain."}]}
   },
   "dashboard": {
     "metadata": {"title": "Provider Dashboard", "description": "Apna Bharosa Hai provider verification status manage karein."},
@@ -95,12 +96,22 @@
       "hero": {"eyebrow": "Provider signup", "title": "Apna permanent provider account banayein.", "copy": "Secure account banayein, email verify karein, phir professional profile submit karne se pehle mobile number add karein.", "imageAlt": "Secure account banata provider"}
     }
   },
+  "setupError": {
+    "metadata": {"title": "Provider Setup Me Dhyan Chahiye", "description": "Provider workspace database se connect nahi ho paya."},
+    "eyebrow": "Setup me dikkat",
+    "title": "Provider dashboard database access ka wait kar raha hai.",
+    "copy": "Aapka Clerk login ho gaya, lekin Bharosa Hai provider record create ya load nahi kar paya kyunki database connection reject ho gaya.",
+    "database": {"title": "Database connection reject hua", "copy": "Configured PostgreSQL pooler connection ke liye Supabase ne tenant ya user lookup error diya."},
+    "next": {"title": "Kya check karein", "copy": "Supabase Project Settings se exact pooled connection string copy karein, DATABASE_URL update karein, dev server restart karein, phir login karein."},
+    "actions": {"provider": "Provider Page Par Wapas", "login": "Login Dobara Try Karein"}
+  },
   "onboarding": {
     "metadata": {"title": "Provider Account Onboarding", "description": "Apne provider account details complete karein."},
     "hero": {"eyebrow": "Account onboarding", "title": "Apna provider account setup complete karein.", "copy": "Aapka account ban gaya hai. Dashboard kholne ke liye mobile number add karein aur chahein to profile photo lagayein.", "imageAlt": "Secure provider account setup"},
     "card": {"eyebrow": "Account details", "title": "Email, mobile aur profile photo", "copy": "Email verification pehle Clerk se hoti hai. Mobile number provider profile mein future contact ke liye save hota hai."},
     "loading": "Account load ho raha hai...",
     "signedOut": "Continue karne ke liye dobara login karein.",
+    "accountFallback": "Provider",
     "saving": "Save ho raha hai...",
     "logout": "Logout",
     "photoSaved": "Profile photo save ho gayi.",

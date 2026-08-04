@@ -1,11 +1,190 @@
 {
-  "metadata": {"title": "हमारे बारे में", "description": "जानें कि Bharosa Hai भारतीय professional services में trust infrastructure क्यों बना रहा है।"},
-  "hero": {"eyebrow": "Bharosa Hai के बारे में", "title": "हम everyday professional services के लिए भरोसे की नींव बना रहे हैं।", "copy": "Legal, property, compliance और documentation जैसे जरूरी कामों के लिए dependable help मिलना uncertain या informal नहीं होना चाहिए।", "imageAlt": "Service platform plan करती professional team"},
-  "story": {"eyebrow": "हमारी कहानी", "title": "Local problem, serious product.", "copy": "कई Indian cities में trusted professionals references, WhatsApp forwards या trial and error से मिलते हैं। इससे customers credentials, timeline और documents को लेकर unsure रहते हैं।", "imageAlt": "Office में growth roadmap discuss करते founders", "items": ["Professional discovery को credible बनाना", "Providers को verified expertise दिखाने में मदद", "Document-heavy services में structure लाना", "Responsible expansion से पहले local launch"]},
-  "problem": {"eyebrow": "Problem", "title": "Sensitive काम share करने से पहले customer confidence चाहता है।", "copy": "Legal papers, property information, tax details और government documents generic listings से ज्यादा care मांगते हैं।", "items": [{"title": "Credentials unclear", "copy": "Customer जल्दी verify नहीं कर पाता कि provider काम के लिए qualified है या नहीं।"}, {"title": "Communication scattered", "copy": "Instructions, documents और expectations calls और messages में खो जाते हैं।"}, {"title": "Accountability कम", "copy": "Structured profile और review workflow के बिना risk customer पर आ जाता है।"}]},
-  "mission": {"title": "Mission", "copy": "Indian customers को verified professionals और clear expectations के साथ जरूरी काम शुरू करने में मदद करना।", "visionTitle": "Vision", "visionCopy": "भारत में high-trust local professional services की trusted operating layer बनना।"},
-  "values": {"eyebrow": "Core values", "title": "MVP को guide करने वाले product principles.", "items": [{"title": "Growth से पहले trust", "copy": "Unverified profiles भरने से बेहतर है कम लेकिन serious professionals onboard करना।"}, {"title": "Customers के लिए clarity", "copy": "हर workflow बताए कि क्या चाहिए, आगे क्या होगा और जिम्मेदारी किसकी है।"}, {"title": "Local work का सम्मान", "copy": "India की service needs local, relationship-driven और document-heavy हैं।"}, {"title": "Operational discipline", "copy": "Verification, admin review और audit trails MVP stage से core हैं।"}, {"title": "Premium लेकिन practical", "copy": "Experience polished लगे, लेकिन Indian customers की directness बनी रहे।"}, {"title": "Expansion-ready", "copy": "Tier 1 MVP focused है, लेकिन future customer workflows के लिए जगह रखता है।"}]},
-  "philosophy": {"eyebrow": "Verification philosophy", "title": "Verification visible होना चाहिए, mysterious नहीं।", "copy": "Badge तभी meaningful है जब उसके पीछे process साफ हो। First release में provider status, document checks और admin decisions core system का हिस्सा हैं।", "imageAlt": "Desk पर credentials और documents", "items": [{"title": "Right details collect करें", "copy": "Customer decision के लिए useful professional information ली जाती है।"}, {"title": "Documents review करें", "copy": "Lawyers, CAs, GST consultants और property advisors के लिए category-specific requirements।"}, {"title": "Status clear रखें", "copy": "Pending, approved, rejected और needs-more-documents states model में हैं।"}, {"title": "Audit trail रखें", "copy": "Product mature होने पर admin decisions explainable होने चाहिए।"}]},
-  "roadmap": {"eyebrow": "Roadmap", "title": "Tier 1 से broader marketplace तक focused path.", "items": [{"title": "Tier 1 MVP", "copy": "Public website, provider registration, provider dashboard, admin dashboard और client access coming-soon surface."}, {"title": "Verified network", "copy": "पहले serious providers approve करना और onboarding quality मजबूत करना।"}, {"title": "Customer workflow", "copy": "Provider quality मजबूत होने के बाद request intake और matching launch करना।"}, {"title": "City expansion", "copy": "Operational playbooks repeatable होने के बाद नए शहर जोड़ना।"}]},
-  "founder": {"eyebrow": "Founder message", "title": "Founding team की तरफ से.", "quote": "Bharosa Hai ऐसे कामों के लिए बन रहा है जिन्हें लोग गलत afford नहीं कर सकते। पहला version focused है: trusted provider base बनाना, premium experience देना और customer workflows expand करने से पहले confidence कमाना।"}
+  "metadata": {
+    "title": "Bharosa Hai ke baare mein",
+    "description": "Janiye Bharosa Hai customers aur verified Indian service professionals ke beech trust kaise banata hai."
+  },
+  "schema": {
+    "home": "Home",
+    "about": "Bharosa Hai ke baare mein"
+  },
+  "hero": {
+    "eyebrow": "About Bharosa Hai",
+    "title": "Customers aur Verified Professionals ke beech bharosa banana",
+    "subtitle": "Bharosa Hai logon ko apne shehar mein legal, business, government aur zaroori services ke liye verified professionals dhoondhne mein madad karta hai.",
+    "copy": "Platform ka maksad service discovery ko simple, transparent aur dependable banana hai, saath hi serious professionals ko apna business badhane ke liye trusted jagah dena hai.",
+    "primary": "Services Dekhein",
+    "secondary": "Provider Banein",
+    "chips": ["Verified providers", "Trusted services", "Easy discovery", "Business growth"],
+    "visual": {
+      "eyebrow": "Trust network",
+      "title": "Important service decisions ke liye ek platform",
+      "items": [
+        {"title": "Customers", "copy": "Sahi expert ko clearer information ke saath dhoondhein."},
+        {"title": "Verified providers", "copy": "Professional identity aur documents dikhayein."},
+        {"title": "Service categories", "copy": "Legal, GST, property, documents aur aur bhi."},
+        {"title": "Guided support", "copy": "Kaam shuru karne se pehle next step samjhein."}
+      ]
+    }
+  },
+  "story": {
+    "eyebrow": "Hamari Story",
+    "title": "Local trust problem ka practical jawab.",
+    "copy": "Kai Indian cities mein log abhi bhi professionals ko references, calls, shop boards ya scattered online listings se dhoondhte hain. Yeh tareeka kabhi kaam karta hai, lekin customers ko credentials, process, documents aur reliability par clarity nahi milti.",
+    "items": [
+      {"title": "Problem", "copy": "Legal help, GST, property papers aur government documentation jaise important kaam random contact number se zyada confidence maangte hain."},
+      {"title": "Hum kyun hain", "copy": "Bharosa Hai verified professionals, structured profiles aur simple discovery ko ek trusted experience mein laane ke liye banaya gaya."},
+      {"title": "Customers ke liye", "copy": "Customers providers compare kar sakein, service categories samajh sakein aur zyada clarity ke saath shuru kar sakein."},
+      {"title": "Providers ke liye", "copy": "Professionals ko credible digital presence, verification status aur future enquiries manage karne ke tools mil sakein."}
+    ]
+  },
+  "mission": {
+    "missionEyebrow": "Hamari Mission",
+    "missionTitle": "Trusted service discovery ko easy banana.",
+    "missionCopy": "Indian customers ko verified professionals, clear expectations aur organized experience ke saath important service work shuru karne mein madad karna.",
+    "visionEyebrow": "Hamari Vision",
+    "visionTitle": "India ka trusted local service network banana.",
+    "visionCopy": "Ek dependable platform banana jahan customers serious professionals discover kar sakein aur providers credibility, transparency aur better digital tools ke saath grow kar sakein."
+  },
+  "values": {
+    "eyebrow": "Hum Kya Maante Hain",
+    "title": "Bharosa Hai ke product principles.",
+    "copy": "Product trust, simplicity aur responsible growth ke around built hai.",
+    "items": [
+      {"title": "Trust", "copy": "Provider profile customer ko personal ya business information share karne se pehle confidence deni chahiye."},
+      {"title": "Transparency", "copy": "Logon ko samajhna chahiye ki woh kisse contact kar rahe hain, kaunsi service mil rahi hai aur aage kya hoga."},
+      {"title": "Verification", "copy": "Provider ko verified treat karne se pehle identity, documents aur professional details review hone chahiye."},
+      {"title": "Customer First", "copy": "Experience Tier 2 aur Tier 3 cities ke users ke liye bhi simple aur clear hona chahiye."},
+      {"title": "Provider Growth", "copy": "Serious professionals ko better visibility, profile quality aur digital business tools ki zaroorat hoti hai."},
+      {"title": "Continuous Improvement", "copy": "Bharosa Hai verification, support aur operations strong hone ke baad carefully expand karega."}
+    ]
+  },
+  "difference": {
+    "eyebrow": "Bharosa Hai Alag Kaise Hai",
+    "title": "Scattered search se structured trust tak.",
+    "copy": "Bharosa Hai generic listing page nahi hai. Platform verified profiles, clear categories aur professional service journey ke around design hai.",
+    "withoutTitle": "Bharosa Hai ke bina",
+    "withTitle": "Bharosa Hai ke saath",
+    "comparison": {
+      "without": ["Professionals manually dhoondhna", "Unverified businesses", "Limited transparency", "Digital profile nahi", "Structured reviews nahi"],
+      "with": ["Verified providers", "Professional profiles", "Transparent reviews", "Easy comparison", "Secure platform"]
+    }
+  },
+  "journeys": {
+    "eyebrow": "Bharosa Hai Kaise Kaam Karta Hai",
+    "title": "Ek trusted platform par do simple journeys.",
+    "copy": "Customer journey aur provider journey ek dusre ko support karne ke liye design ki gayi hain.",
+    "customerTitle": "Customer Journey",
+    "providerTitle": "Provider Journey",
+    "customer": [
+      {"title": "Service Search", "copy": "Apne kaam ke hisaab se service category chunein."},
+      {"title": "Providers Compare", "copy": "Verified profiles aur service details dekhein."},
+      {"title": "Connect", "copy": "Sahi professional se communication shuru karein."},
+      {"title": "Service Receive", "copy": "Clear expectations ke saath aage badhein."},
+      {"title": "Experience Rate", "copy": "Reviews future trust ko improve karne mein madad karenge."}
+    ],
+    "provider": [
+      {"title": "Register", "copy": "Secure provider account banayein."},
+      {"title": "Profile Complete", "copy": "Professional aur office details add karein."},
+      {"title": "Documents Upload", "copy": "Identity aur category documents submit karein."},
+      {"title": "Verification", "copy": "Admin application review karta hai."},
+      {"title": "Leads Receive", "copy": "Verified providers customer enquiries ke liye ready hote hain."},
+      {"title": "Business Grow", "copy": "Future work manage karne ke liye dashboard use karein."}
+    ]
+  },
+  "verification": {
+    "eyebrow": "Verification Process",
+    "title": "Verification platform ka core hissa hai.",
+    "copy": "Bharosa Hai verification ko end mein lagne wale badge ki tarah nahi, balki core product workflow ki tarah treat karta hai.",
+    "note": "Complete documents submit hone ke baad provider verification usually 24-48 hours mein complete hota hai.",
+    "items": [
+      {"title": "Registration", "copy": "Provider secure account banata hai aur application start karta hai."},
+      {"title": "Document Verification", "copy": "Identity, PAN, certificates aur business documents review hote hain."},
+      {"title": "Identity Verification", "copy": "Contact aur profile details consistency ke liye check hoti hain."},
+      {"title": "Professional Review", "copy": "Category, specialization aur experience details assess hoti hain."},
+      {"title": "Approval", "copy": "Approved providers verified workspace unlock karte hain."},
+      {"title": "Verified Provider Badge", "copy": "Customer access launch hone par profile verified status dikha sakti hai."}
+    ]
+  },
+  "serve": {
+    "eyebrow": "Hum Kiske Liye Hain",
+    "title": "Customers aur professionals dono ke liye built.",
+    "copy": "Bharosa Hai tabhi kaam karta hai jab dono sides ko better experience mile.",
+    "customers": {
+      "title": "Customers",
+      "copy": "Customers legal, GST, property, government documentation, electricity, insurance aur aur bhi important services ke liye trusted providers clearly discover kar sakte hain.",
+      "cta": "Services Dekhein"
+    },
+    "providers": {
+      "title": "Professionals",
+      "copy": "Providers ko verified business identity, structured profile, dashboard access aur future customer enquiries ka pathway milta hai.",
+      "cta": "Provider Banein"
+    }
+  },
+  "network": {
+    "eyebrow": "Service Network",
+    "title": "Multiple categories, ek trust standard.",
+    "copy": "Network local services ke liye design hai jahan verification, documents aur professional credibility matter karte hain.",
+    "cta": "Explore",
+    "fallback": "Important local service work ke liye verified professionals.",
+    "items": [
+      {"id": "legal-services", "copy": "Lawyers aur legal service professionals."},
+      {"id": "gst-taxation", "copy": "GST, taxation aur compliance support."},
+      {"id": "business-registration", "copy": "Business setup aur registration help."},
+      {"id": "property-documentation", "copy": "Property paperwork aur documentation."},
+      {"id": "police-verification", "copy": "Verification aur police-related support."},
+      {"id": "electricity", "copy": "Electricity connection aur service help."},
+      {"id": "insurance", "copy": "Insurance advisory aur documentation."},
+      {"id": "municipal-services", "copy": "Municipal aur local body services."},
+      {"id": "government-schemes", "copy": "Government scheme guidance."},
+      {"id": "licenses-permits", "copy": "Licenses, permits aur approvals."},
+      {"id": "documentation", "copy": "Forms, affidavits aur document work."},
+      {"id": "labour-compliance", "copy": "Labour aur contractor compliance."}
+    ]
+  },
+  "trust": {
+    "eyebrow": "Log Bharosa Hai Par Trust Kyun Karte Hain",
+    "title": "Har step mein trust design kiya gaya hai.",
+    "copy": "Yeh platform principles customer-side workflows launch hone se pehle confidence build karte hain.",
+    "items": [
+      {"title": "Identity Verification", "copy": "Provider identity details collect aur review hoti hain."},
+      {"title": "Professional Verification", "copy": "Category-specific documents professional credibility support karte hain."},
+      {"title": "Transparent Profiles", "copy": "Profiles structured hoti hain taaki customers provider ko clearly samajh sakein."},
+      {"title": "Customer Reviews", "copy": "Reviews future customers ko responsibly compare karne mein madad karenge."},
+      {"title": "Secure Platform", "copy": "Sensitive records aur document workflows server-side handle hote hain."},
+      {"title": "Dedicated Support", "copy": "Customers aur verified providers ke liye support workflows prepared hain."}
+    ]
+  },
+  "promise": {
+    "eyebrow": "Bharosa Hai Promise",
+    "title": "Important kaam shuru karne ka zyada dependable tareeka.",
+    "copy": "Promise simple hai: logon ke liye trusted help dhoondhna easy banana aur serious professionals ko discoverable banana.",
+    "items": [
+      {"title": "Har provider verified", "copy": "Full provider access se pehle verification hoti hai."},
+      {"title": "Transparent service experience", "copy": "Customers ko journey start karne se pehle samajh aani chahiye."},
+      {"title": "Dedicated customer support", "copy": "Complex decisions mein support users ko guide karega."},
+      {"title": "Community trust", "copy": "Local customers aur professionals zyada confidence ke saath connect kar sakein."}
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Bharosa Hai ke common questions.",
+    "copy": "Customers aur professionals ke liye clear answers.",
+    "items": [
+      {"question": "Bharosa Hai kya hai?", "answer": "Bharosa Hai ek trusted service marketplace hai jo customers ko legal, GST, property, documentation, government aur essential service categories mein verified professionals discover karne mein madad karta hai."},
+      {"question": "Providers verify kaise hote hain?", "answer": "Providers profile information aur required documents submit karte hain. Admin team identity, professional details aur documents review karne ke baad approval deti hai."},
+      {"question": "Provider kaun ban sakta hai?", "answer": "Lawyers, CAs, GST consultants, property consultants, documentation experts, insurance advisors, electricians, government consultants aur serious service professionals apply kar sakte hain."},
+      {"question": "Customers connect kaise karenge?", "answer": "Customer-side access prepare ho raha hai. Public site abhi services explain karta hai jab verified provider network build ho raha hai."},
+      {"question": "Registration free hai?", "answer": "Provider account creation onboarding ke liye available hai. Future paid plans ya upgrades activation se pehle clearly dikhaye jayenge."},
+      {"question": "Kya providers multiple services offer kar sakte hain?", "answer": "Haan. Providers registration ke time relevant categories aur services select kar sakte hain, jo verification aur admin review ke subject hain."},
+      {"question": "Verification mein kitna time lagta hai?", "answer": "Complete aur readable documents submit hone ke baad verification usually 24-48 hours mein complete hota hai."},
+      {"question": "Kya profile update kar sakte hain?", "answer": "Haan. Account onboarding ke baad providers dashboard se profile details update kar sakte hain."}
+    ]
+  },
+  "cta": {
+    "eyebrow": "Next Step",
+    "title": "Trusted Services Experience Karne Ke Liye Ready?",
+    "copy": "Bharosa Hai services explore karein ya verified provider ke roop mein trusted local service network ka hissa banein.",
+    "primary": "Services Dekhein",
+    "secondary": "Provider Banein"
+  }
 }

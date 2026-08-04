@@ -3,6 +3,7 @@ import type {
   LeadStatus,
   Prisma,
   ProviderStatus,
+  TaskStatus,
   VerificationLevel
 } from "@prisma/client";
 
@@ -58,7 +59,9 @@ export async function getProviderPortalData(providerId: string) {
     reviews,
     subscription,
     analyticsSnapshots,
-    supportTickets
+    supportTickets,
+    tasks,
+    taskStatusCounts
   ] = await Promise.all([
     prisma.provider.findUniqueOrThrow({
       where: {id: providerId},
@@ -131,6 +134,16 @@ export async function getProviderPortalData(providerId: string) {
       where: {providerId},
       orderBy: {createdAt: "desc"},
       take: 20
+    }),
+    prisma.providerTask.findMany({
+      where: {providerId, deletedAt: null},
+      orderBy: [{dueAt: "asc"}, {createdAt: "desc"}],
+      take: 10
+    }),
+    prisma.providerTask.groupBy({
+      by: ["status"],
+      where: {providerId, deletedAt: null},
+      _count: {_all: true}
     })
   ]);
 
@@ -149,6 +162,8 @@ export async function getProviderPortalData(providerId: string) {
     subscription,
     analyticsSnapshots,
     supportTickets,
+    tasks,
+    taskStatusCounts: toCountMap<TaskStatus>(taskStatusCounts),
     metrics: buildMetrics({
       provider,
       documents,
@@ -161,7 +176,9 @@ export async function getProviderPortalData(providerId: string) {
       notifications,
       reviews,
       subscription,
-      analyticsSnapshots
+      analyticsSnapshots,
+      tasks,
+      taskStatusCounts: toCountMap<TaskStatus>(taskStatusCounts)
     })
   };
 }
@@ -202,6 +219,8 @@ function buildMetrics(input: {
     completedJobs: number;
     responseTimeMinutes: number;
   }>;
+  tasks: Array<{status: TaskStatus; dueAt: Date | null}>;
+  taskStatusCounts: Partial<Record<TaskStatus, number>>;
 }) {
   const profileChecklist = [
     Boolean(input.provider.bio && input.provider.bio.length >= 40),
@@ -237,6 +256,9 @@ function buildMetrics(input: {
     completedJobs,
     unreadMessages: input.messageThreads.reduce((sum, thread) => sum + thread.unreadCount, 0),
     unreadNotifications: input.notifications.filter((notification) => !notification.readAt).length,
+    pendingTasks: input.taskStatusCounts.PENDING ?? 0,
+    completedTasks: input.taskStatusCounts.COMPLETED ?? 0,
+    dueTodayTasks: input.tasks.filter((task) => task.status === "PENDING" && isToday(task.dueAt)).length,
     thisMonthEarnings: revenue,
     activeServices: input.serviceOfferings.filter((service) => service.status === "ENABLED").length,
     subscriptionLabel: input.subscription ? `${input.subscription.planName} (${input.subscription.status})` : "Launch Access",
@@ -252,4 +274,13 @@ function buildMetrics(input: {
       {label: "Experience", done: profileChecklist[6]}
     ]
   };
+}
+
+function isToday(date: Date | null) {
+  if (!date) {
+    return false;
+  }
+
+  const today = new Date();
+  return date.getFullYear() === today.getFullYear() && date.getMonth() === today.getMonth() && date.getDate() === today.getDate();
 }

@@ -13,7 +13,7 @@ import type {AppLocale} from "@/i18n/routing";
 const navLinks = [
   {href: "/", label: "home"},
   {href: "/services", label: "services"},
-  {href: "/become-a-partner", label: "partner"},
+  {href: "/provider", label: "partner"},
   {href: "/about", label: "about"},
   {href: "/faq", label: "faq"},
   {href: "/contact", label: "contact"}
@@ -238,7 +238,7 @@ export function SiteShell({children, visualStyle = "default"}: {children: ReactN
             <p className="mt-5 max-w-sm text-base leading-7 text-[var(--secondary-text)]">{t("footer.description")}</p>
           </div>
           <FooterColumn title={t("footer.company")} links={[[t("footer.about"), "/about"], [t("footer.services"), "/services"], [t("footer.faq"), "/faq"]]} />
-          <FooterColumn title={t("footer.providers")} links={[[t("footer.becomePartner"), "/become-a-partner"], [t("footer.registration"), "/provider/register"], [t("footer.providerDashboard"), "/provider/dashboard"]]} />
+          <FooterColumn title={t("footer.providers")} links={[[t("footer.becomePartner"), "/provider"], [t("footer.registration"), "/provider/register"], [t("footer.providerDashboard"), "/provider/dashboard"]]} />
           <FooterColumn title={t("footer.support")} links={[[t("footer.contact"), "/contact"], [t("footer.customerPortal"), "/customer"], [t("footer.admin"), "/admin"]]} />
         </div>
       </footer>

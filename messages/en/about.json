@@ -1,11 +1,190 @@
 {
-  "metadata": {"title": "About", "description": "Learn why Bharosa Hai is building trust infrastructure for Indian professional services."},
-  "hero": {"eyebrow": "About Bharosa Hai", "title": "We are building trust infrastructure for everyday professional services.", "copy": "Bharosa Hai exists because finding dependable help for important legal, property, compliance and documentation work should not feel uncertain or informal.", "imageAlt": "Professional team planning a service platform"},
-  "story": {"eyebrow": "Our story", "title": "A local problem that deserves a serious product.", "copy": "In many Indian cities, trusted professionals are found through references, WhatsApp forwards or trial and error. That leaves many customers unsure about credentials, timelines and documents.", "imageAlt": "Founders discussing growth roadmap in an office", "items": ["Make professional discovery more credible", "Help providers show verified expertise", "Bring structure to document-heavy service categories", "Launch locally before expanding responsibly"]},
-  "problem": {"eyebrow": "The problem", "title": "Customers need confidence before they share sensitive work.", "copy": "Legal papers, property information, tax details and government documents require a different level of care than generic service listings.", "items": [{"title": "Unclear credentials", "copy": "Customers often cannot quickly verify whether a provider is qualified for the work."}, {"title": "Scattered communication", "copy": "Important instructions, documents and expectations get lost across calls and messages."}, {"title": "Low accountability", "copy": "Without a structured profile and review workflow, customers carry too much risk."}]},
-  "mission": {"title": "Mission", "copy": "Help Indian customers start important work with verified professionals and clear expectations.", "visionTitle": "Vision", "visionCopy": "Become the trusted operating layer for high-trust local professional services across India."},
-  "values": {"eyebrow": "Core values", "title": "The product principles guiding the MVP.", "items": [{"title": "Trust before growth", "copy": "We would rather onboard fewer serious professionals than fill the platform with unverified profiles."}, {"title": "Clarity for customers", "copy": "Every workflow should explain what is needed, what happens next and who is responsible."}, {"title": "Respect for local work", "copy": "India’s service needs are local, relationship-driven and document-heavy."}, {"title": "Operational discipline", "copy": "Verification, admin review and audit trails are core product surfaces from the MVP stage."}, {"title": "Premium but practical", "copy": "The experience should feel polished without losing the directness Indian customers expect."}, {"title": "Built for expansion", "copy": "The Tier 1 MVP stays focused while leaving room for future customer workflows."}]},
-  "philosophy": {"eyebrow": "Verification philosophy", "title": "Verification should feel visible, not mysterious.", "copy": "A badge only matters when the process behind it is clear. The first release makes provider status, document checks and admin decisions part of the system.", "imageAlt": "Documents and credentials on a professional desk", "items": [{"title": "Collect the right details", "copy": "Ask for professional information that matters to a customer decision."}, {"title": "Review documents", "copy": "Use category-specific requirements for lawyers, CAs, GST consultants and property advisors."}, {"title": "Make status explicit", "copy": "Pending, approved, rejected and needs-more-documents states are built into the model."}, {"title": "Keep an audit trail", "copy": "Admin decisions should be explainable as the product matures."}]},
-  "roadmap": {"eyebrow": "Roadmap", "title": "A focused path from Tier 1 to a broader marketplace.", "items": [{"title": "Tier 1 MVP", "copy": "Public website, provider registration, provider dashboard, admin dashboard and client access coming-soon surface."}, {"title": "Verified network", "copy": "Approve the first serious providers and tighten onboarding quality."}, {"title": "Customer workflow", "copy": "Launch request intake and matching after provider quality is strong enough."}, {"title": "City expansion", "copy": "Add more cities only after operational playbooks are repeatable."}]},
-  "founder": {"eyebrow": "Founder message", "title": "A note from the founding team.", "quote": "Bharosa Hai is being built for the kind of work people cannot afford to get wrong. The first version is intentionally focused: create a trusted provider base, make the experience feel premium and earn confidence before expanding customer workflows."}
+  "metadata": {
+    "title": "About Bharosa Hai",
+    "description": "Learn how Bharosa Hai builds trust between customers and verified Indian service professionals."
+  },
+  "schema": {
+    "home": "Home",
+    "about": "About Bharosa Hai"
+  },
+  "hero": {
+    "eyebrow": "About Bharosa Hai",
+    "title": "Building Trust Between Customers and Verified Professionals",
+    "subtitle": "Bharosa Hai helps people find verified professionals for legal, business, government and essential services in their city.",
+    "copy": "The platform is being built to make service discovery simpler, more transparent and more dependable while giving serious professionals a trusted place to grow their business.",
+    "primary": "Explore Services",
+    "secondary": "Become a Provider",
+    "chips": ["Verified providers", "Trusted services", "Easy discovery", "Business growth"],
+    "visual": {
+      "eyebrow": "Trust network",
+      "title": "One platform for important service decisions",
+      "items": [
+        {"title": "Customers", "copy": "Find the right expert with clearer information."},
+        {"title": "Verified providers", "copy": "Show professional identity and documents."},
+        {"title": "Service categories", "copy": "Legal, GST, property, documents and more."},
+        {"title": "Guided support", "copy": "Understand the next step before starting work."}
+      ]
+    }
+  },
+  "story": {
+    "eyebrow": "Our Story",
+    "title": "A practical answer to a local trust problem.",
+    "copy": "In many Indian cities, people still find professionals through references, calls, shop boards or scattered online listings. That can work, but it often leaves customers unsure about credentials, process, documents and reliability.",
+    "items": [
+      {"title": "The problem", "copy": "Important work like legal help, GST, property papers and government documentation needs more confidence than a random contact number."},
+      {"title": "Why we exist", "copy": "Bharosa Hai was created to bring verified professionals, structured profiles and simple discovery into one trusted experience."},
+      {"title": "For customers", "copy": "Customers should be able to compare providers, understand service categories and begin with more clarity."},
+      {"title": "For providers", "copy": "Professionals should get a credible digital presence, verification status and tools to manage future enquiries."}
+    ]
+  },
+  "mission": {
+    "missionEyebrow": "Our Mission",
+    "missionTitle": "Make trusted service discovery easier.",
+    "missionCopy": "Help Indian customers start important service work with verified professionals, clearer expectations and a more organized experience.",
+    "visionEyebrow": "Our Vision",
+    "visionTitle": "Build India's trusted local service network.",
+    "visionCopy": "Create a dependable platform where customers can discover serious professionals and providers can grow with credibility, transparency and better digital tools."
+  },
+  "values": {
+    "eyebrow": "What We Believe",
+    "title": "The principles behind Bharosa Hai.",
+    "copy": "The product is built around trust, simplicity and responsible growth.",
+    "items": [
+      {"title": "Trust", "copy": "A provider profile should give customers confidence before they share personal or business information."},
+      {"title": "Transparency", "copy": "People should understand who they are contacting, what service is offered and what happens next."},
+      {"title": "Verification", "copy": "Identity, documents and professional details should be reviewed before a provider is treated as verified."},
+      {"title": "Customer First", "copy": "The experience should be simple enough for users in Tier 2 and Tier 3 cities to navigate without confusion."},
+      {"title": "Provider Growth", "copy": "Serious professionals need better visibility, profile quality and digital business tools."},
+      {"title": "Continuous Improvement", "copy": "Bharosa Hai will expand carefully as verification, support and operational quality become stronger."}
+    ]
+  },
+  "difference": {
+    "eyebrow": "What Makes Us Different",
+    "title": "From scattered search to structured trust.",
+    "copy": "Bharosa Hai is not a generic listing page. The platform is designed around verified profiles, clearer categories and a professional service journey.",
+    "withoutTitle": "Without Bharosa Hai",
+    "withTitle": "With Bharosa Hai",
+    "comparison": {
+      "without": ["Finding professionals manually", "Unverified businesses", "Limited transparency", "No digital profile", "No structured reviews"],
+      "with": ["Verified providers", "Professional profiles", "Transparent reviews", "Easy comparison", "Secure platform"]
+    }
+  },
+  "journeys": {
+    "eyebrow": "How Bharosa Hai Works",
+    "title": "Two simple journeys on one trusted platform.",
+    "copy": "The customer journey and provider journey are designed to support each other as the marketplace grows.",
+    "customerTitle": "Customer Journey",
+    "providerTitle": "Provider Journey",
+    "customer": [
+      {"title": "Search Service", "copy": "Choose the service category that matches the work."},
+      {"title": "Compare Providers", "copy": "Review verified profiles and service details."},
+      {"title": "Connect", "copy": "Start communication with the right professional."},
+      {"title": "Receive Service", "copy": "Move ahead with clearer expectations."},
+      {"title": "Rate Experience", "copy": "Reviews will help improve future trust."}
+    ],
+    "provider": [
+      {"title": "Register", "copy": "Create a secure provider account."},
+      {"title": "Complete Profile", "copy": "Add professional and office details."},
+      {"title": "Upload Documents", "copy": "Submit identity and category documents."},
+      {"title": "Verification", "copy": "Admin reviews the application."},
+      {"title": "Receive Leads", "copy": "Verified providers become ready for customer enquiries."},
+      {"title": "Grow Business", "copy": "Use the dashboard to manage future work."}
+    ]
+  },
+  "verification": {
+    "eyebrow": "Our Verification Process",
+    "title": "Verification is built into the platform.",
+    "copy": "Bharosa Hai treats verification as a core product workflow, not a badge added at the end.",
+    "note": "Provider verification usually completes within 24-48 hours after complete documents are submitted.",
+    "items": [
+      {"title": "Registration", "copy": "The provider creates a secure account and starts the application."},
+      {"title": "Document Verification", "copy": "Identity, PAN, certificates and business documents are reviewed."},
+      {"title": "Identity Verification", "copy": "Contact and profile details are checked for consistency."},
+      {"title": "Professional Review", "copy": "Category, specialization and experience details are assessed."},
+      {"title": "Approval", "copy": "Approved providers unlock the verified workspace."},
+      {"title": "Verified Provider Badge", "copy": "The profile can display verified status when customer access launches."}
+    ]
+  },
+  "serve": {
+    "eyebrow": "Who We Serve",
+    "title": "Built for customers and professionals.",
+    "copy": "Bharosa Hai works only when both sides get a better experience.",
+    "customers": {
+      "title": "Customers",
+      "copy": "Customers get a clearer way to discover trusted providers for important services such as legal, GST, property, government documentation, electricity, insurance and more.",
+      "cta": "Explore Services"
+    },
+    "providers": {
+      "title": "Professionals",
+      "copy": "Providers get a verified business identity, structured profile, dashboard access and a pathway to future customer enquiries.",
+      "cta": "Become a Provider"
+    }
+  },
+  "network": {
+    "eyebrow": "Our Service Network",
+    "title": "Multiple categories, one trust standard.",
+    "copy": "The network is designed for local services where verification, documents and professional credibility matter.",
+    "cta": "Explore",
+    "fallback": "Verified professionals for important local service work.",
+    "items": [
+      {"id": "legal-services", "copy": "Lawyers and legal service professionals."},
+      {"id": "gst-taxation", "copy": "GST, taxation and compliance support."},
+      {"id": "business-registration", "copy": "Business setup and registration help."},
+      {"id": "property-documentation", "copy": "Property paperwork and documentation."},
+      {"id": "police-verification", "copy": "Verification and police-related support."},
+      {"id": "electricity", "copy": "Electricity connection and service help."},
+      {"id": "insurance", "copy": "Insurance advisory and documentation."},
+      {"id": "municipal-services", "copy": "Municipal and local body services."},
+      {"id": "government-schemes", "copy": "Government scheme guidance."},
+      {"id": "licenses-permits", "copy": "Licenses, permits and approvals."},
+      {"id": "documentation", "copy": "Forms, affidavits and document work."},
+      {"id": "labour-compliance", "copy": "Labour and contractor compliance."}
+    ]
+  },
+  "trust": {
+    "eyebrow": "Why People Trust Bharosa Hai",
+    "title": "Trust is designed into every step.",
+    "copy": "These are platform principles for building confidence before customer-side workflows launch.",
+    "items": [
+      {"title": "Identity Verification", "copy": "Provider identity details are collected and reviewed."},
+      {"title": "Professional Verification", "copy": "Category-specific documents support professional credibility."},
+      {"title": "Transparent Profiles", "copy": "Profiles are structured so customers can understand the provider clearly."},
+      {"title": "Customer Reviews", "copy": "Reviews will help future customers compare experiences responsibly."},
+      {"title": "Secure Platform", "copy": "Sensitive records and document workflows are handled server-side."},
+      {"title": "Dedicated Support", "copy": "Support workflows are prepared for customers and verified providers."}
+    ]
+  },
+  "promise": {
+    "eyebrow": "The Bharosa Hai Promise",
+    "title": "A more dependable way to start important work.",
+    "copy": "The promise is simple: make it easier for people to find trusted help and easier for serious professionals to be discovered.",
+    "items": [
+      {"title": "Every provider is verified", "copy": "Verification comes before full provider access."},
+      {"title": "Transparent service experience", "copy": "Customers should understand the journey before starting."},
+      {"title": "Dedicated customer support", "copy": "Support will guide users when decisions feel complex."},
+      {"title": "Community trust", "copy": "Local customers and professionals should connect with more confidence."}
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Common questions about Bharosa Hai.",
+    "copy": "Clear answers for customers and professionals.",
+    "items": [
+      {"question": "What is Bharosa Hai?", "answer": "Bharosa Hai is a trusted service marketplace that helps customers discover verified professionals across legal, GST, property, documentation, government and essential service categories."},
+      {"question": "How are providers verified?", "answer": "Providers submit profile information and required documents. The admin team reviews identity, professional details and documents before approval."},
+      {"question": "Who can become a provider?", "answer": "Lawyers, CAs, GST consultants, property consultants, documentation experts, insurance advisors, electricians, government consultants and other serious service professionals can apply."},
+      {"question": "How do customers connect?", "answer": "Customer-side access is being prepared. The public site currently helps users understand services while the verified provider network is built."},
+      {"question": "Is registration free?", "answer": "Provider account creation is available for onboarding. Any future paid plans or upgrades will be shown clearly before activation."},
+      {"question": "Can providers offer multiple services?", "answer": "Yes. Providers can select relevant categories and services during registration, subject to verification and admin review."},
+      {"question": "How long does verification take?", "answer": "Verification usually completes within 24-48 hours after complete and readable documents are submitted."},
+      {"question": "Can I update my profile?", "answer": "Yes. Providers can update profile details from the dashboard after account onboarding."}
+    ]
+  },
+  "cta": {
+    "eyebrow": "Next Step",
+    "title": "Ready to Experience Trusted Services?",
+    "copy": "Explore Bharosa Hai services or join as a verified provider and become part of a trusted local service network.",
+    "primary": "Explore Services",
+    "secondary": "Become a Provider"
+  }
 }

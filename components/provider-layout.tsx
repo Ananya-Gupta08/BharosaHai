@@ -21,6 +21,7 @@ import {
   PanelLeftOpen,
   Search,
   Settings,
+  ShieldCheck,
   Star,
   UserRound,
   Users,
@@ -49,6 +50,7 @@ const navItems = [
   {href: "/provider/bookings", label: "Bookings", icon: CalendarCheck, always: false},
   {href: "/provider/messages", label: "Messages", icon: MessageSquare, always: false},
   {href: "/provider/documents", label: "Documents", icon: FileText, always: true},
+  {href: "/provider/verification", label: "Verification Status", icon: ShieldCheck, always: true},
   {href: "/provider/subscription", label: "Subscription", icon: CreditCard, always: false},
   {href: "/provider/analytics", label: "Analytics", icon: BarChart3, always: false},
   {href: "/provider/reviews", label: "Reviews", icon: Star, always: false},
@@ -115,7 +117,7 @@ export function ProviderLayout({children, status, providerName, breadcrumb, noti
 
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-[#e4e8f0] bg-white px-2 py-2 shadow-[0_-12px_35px_rgba(15,23,42,0.08)] lg:hidden" aria-label="Provider bottom navigation">
         <div className="grid grid-cols-5 gap-1">
-          {bottomItems.map((item) => <BottomNavItem key={item.href} item={item} pathname={pathname} />)}
+          {bottomItems.map((item) => <BottomNavItem key={item.href} item={item} pathname={pathname} approved={approved} />)}
           <button type="button" onClick={() => setDrawerOpen(true)} className="flex flex-col items-center gap-1 rounded-2xl px-2 py-2 text-[11px] font-bold text-[#4b5563]">
             <Menu size={18} aria-hidden />
             More
@@ -196,14 +198,26 @@ function SidebarItem({item, approved, collapsed, pathname, onClick}: {item: (typ
   const Icon = item.icon;
   const active = pathname.includes(item.href);
   const locked = !approved && !item.always;
+  const unavailable = locked;
+  const className = `group relative flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-bold transition ${
+    active ? "bg-white text-[#0e355f]" : unavailable ? "cursor-not-allowed text-[#8aa0ba]" : "text-[#dbe7f5] hover:bg-white/10 hover:text-white"
+  } ${collapsed ? "justify-center" : ""}`;
+
+  if (unavailable) {
+    return (
+      <span className={className} title="Available after verification." aria-disabled="true">
+        <Icon size={19} aria-hidden />
+        {!collapsed && <span className="flex-1">{item.label}</span>}
+        <Lock size={14} className="text-[#8aa0ba]" aria-label="Available after verification" />
+      </span>
+    );
+  }
 
   return (
     <Link
       href={item.href}
       onClick={onClick}
-      className={`group relative flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-bold transition ${
-        active ? "bg-white text-[#0e355f]" : "text-[#dbe7f5] hover:bg-white/10 hover:text-white"
-      } ${collapsed ? "justify-center" : ""}`}
+      className={className}
       title={collapsed ? item.label : undefined}
     >
       <Icon size={19} aria-hidden />
@@ -213,9 +227,19 @@ function SidebarItem({item, approved, collapsed, pathname, onClick}: {item: (typ
   );
 }
 
-function BottomNavItem({item, pathname}: {item: (typeof bottomItems)[number]; pathname: string}) {
+function BottomNavItem({item, pathname, approved}: {item: (typeof bottomItems)[number]; pathname: string; approved: boolean}) {
   const Icon = item.icon;
   const active = pathname.includes(item.href);
+  const locked = !approved && !["/provider/dashboard", "/provider/profile"].includes(item.href);
+
+  if (locked) {
+    return (
+      <span className="flex cursor-not-allowed flex-col items-center gap-1 rounded-2xl px-2 py-2 text-[11px] font-bold text-[#9ca3af]" title="Available after verification." aria-disabled="true">
+        <Lock size={18} aria-hidden />
+        {item.label}
+      </span>
+    );
+  }
 
   return (
     <Link href={item.href} className={`flex flex-col items-center gap-1 rounded-2xl px-2 py-2 text-[11px] font-bold ${active ? "bg-[#EAF4FF] text-[#005BAC]" : "text-[#4b5563]"}`}>

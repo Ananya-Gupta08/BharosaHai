@@ -1,10 +1,10 @@
 "use client";
 
 import type {ProviderStatus} from "@prisma/client";
-import {BarChart3, BadgeCheck, Bell, BriefcaseBusiness, CalendarCheck, CheckCircle2, Clock3, CreditCard, Download, Eye, FileText, LifeBuoy, MessageSquare, Search, ShieldCheck, Star, TrendingUp, UserRound, Users} from "lucide-react";
+import {BarChart3, BadgeCheck, Bell, BriefcaseBusiness, CalendarCheck, CheckCircle2, Clock3, CreditCard, Download, Eye, FileText, LifeBuoy, Lock, Mail, MessageSquare, RefreshCw, Search, ShieldCheck, Star, TrendingUp, UserRound, Users} from "lucide-react";
 import {useLocale} from "next-intl";
 
-import {createSupportTicket, toggleServiceOffering, updateBookingStatus, updateLeadStatus} from "@/lib/actions/provider-portal-actions";
+import {createProviderTask, createSupportTicket, deleteProviderTask, duplicateProviderTask, toggleServiceOffering, updateBookingStatus, updateLeadStatus, updateProviderTaskStatus} from "@/lib/actions/provider-portal-actions";
 import type {ProviderPortalData} from "@/lib/services/provider-portal-service";
 import {Link} from "@/i18n/navigation";
 import {ProviderLayout} from "@/components/provider-layout";
@@ -21,13 +21,17 @@ export function ProviderPortalDashboard({data}: {data: PortalData}) {
   const date = new Intl.DateTimeFormat(locale, {dateStyle: "medium"});
   const provider = data.provider;
   const approved = provider.status === "APPROVED";
+  const underReview = provider.status === "PENDING";
   const leadCounts = data.leadStatusCounts;
   const kpis = [
-    ["New Leads", String(leadCounts.NEW ?? 0), Users],
-    ["Pending Leads", String((leadCounts.NEW ?? 0) + (leadCounts.ACCEPTED ?? 0)), Clock3],
-    ["Completed Jobs", String(data.metrics.completedJobs), CheckCircle2],
-    ["Unread Messages", String(data.metrics.unreadMessages), MessageSquare],
-    ["This Month Earnings", rupees(data.metrics.thisMonthEarnings), TrendingUp]
+    ["New Leads", String(leadCounts.NEW ?? 0), Users, "/provider/leads"],
+    ["Pending Leads", String((leadCounts.NEW ?? 0) + (leadCounts.ACCEPTED ?? 0)), Clock3, "/provider/leads"],
+    ["Accepted Leads", String(leadCounts.ACCEPTED ?? 0), CheckCircle2, "/provider/leads"],
+    ["Completed Jobs", String(data.metrics.completedJobs), BadgeCheck, "/provider/bookings"],
+    ["Unread Messages", String(data.metrics.unreadMessages), MessageSquare, "/provider/messages"],
+    ["Monthly Earnings", rupees(data.metrics.thisMonthEarnings), TrendingUp, "/provider/analytics"],
+    ["Profile Views", String(sum(data.analyticsSnapshots, "profileViews")), Eye, "/provider/analytics"],
+    ["Average Rating", data.metrics.averageRating ? data.metrics.averageRating.toFixed(1) : "0.0", Star, "/provider/reviews"]
   ] as const;
   const tasks = buildTasks(data);
   const activity = buildActivity(data, date);
@@ -35,6 +39,10 @@ export function ProviderPortalDashboard({data}: {data: PortalData}) {
   return (
     <ProviderLayout status={provider.status} providerName={provider.name} breadcrumb="Dashboard" notification={data.notifications[0]?.title ?? "Provider workspace is ready."} unreadNotifications={data.metrics.unreadNotifications}>
       <div className="grid gap-6">
+        {underReview && <UnderReviewStatusBanner data={data} />}
+        <div className={underReview ? "relative" : ""}>
+          {underReview && <UnderReviewOverlay data={data} />}
+          <div className={underReview ? "pointer-events-none opacity-40 grayscale" : ""}>
         <section className={`${card} overflow-hidden bg-[#0e355f] text-white`}>
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
@@ -57,20 +65,29 @@ export function ProviderPortalDashboard({data}: {data: PortalData}) {
           </div>
         </section>
 
-        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-          {kpis.map(([label, value, Icon]) => <KpiCard key={label} label={label} value={value} icon={Icon} />)}
+        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {kpis.map(([label, value, Icon, href]) => <KpiCard key={label} label={label} value={value} icon={Icon} href={href} />)}
         </section>
 
         <section className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
-          <Panel eyebrow="Today's tasks" title="Important actions" copy="Only real account tasks appear here. Completing them improves trust and discoverability.">
-            <div className="grid gap-3">
-              {tasks.map((task) => <ActionRow key={task.title} {...task} />)}
-            </div>
-          </Panel>
+          <TaskManagerPanel data={data} date={date} />
           <Panel eyebrow="Lead status" title="Pipeline health" copy="Customer enquiries will move through these stages as your business grows.">
             <div className="grid gap-5 md:grid-cols-[220px_1fr] md:items-center">
               <Donut counts={[leadCounts.NEW ?? 0, leadCounts.ACCEPTED ?? 0, leadCounts.IN_PROGRESS ?? 0, leadCounts.COMPLETED ?? 0, leadCounts.CANCELLED ?? 0]} />
-              <div className="grid gap-2">{["New", "Accepted", "In Progress", "Completed", "Cancelled"].map((label, index) => <PipelineLegend key={label} label={label} value={[leadCounts.NEW ?? 0, leadCounts.ACCEPTED ?? 0, leadCounts.IN_PROGRESS ?? 0, leadCounts.COMPLETED ?? 0, leadCounts.CANCELLED ?? 0][index]} />)}</div>
+              <div className="grid gap-2">{["New", "Accepted", "In Progress", "Completed", "Cancelled"].map((label, index) => <PipelineLegend key={label} label={label} value={[leadCounts.NEW ?? 0, leadCounts.ACCEPTED ?? 0, leadCounts.IN_PROGRESS ?? 0, leadCounts.COMPLETED ?? 0, leadCounts.CANCELLED ?? 0][index]} href={`/provider/leads?status=${label.toUpperCase().replaceAll(" ", "_")}`} />)}</div>
+            </div>
+          </Panel>
+        </section>
+
+        <section className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+          <Panel eyebrow="Recent enquiries" title="Latest customer enquiries" copy="Respond quickly to improve response rate and visibility score.">
+            <ListEmpty items={data.leads.slice(0, 5)} emptyTitle="No recent enquiries" emptyCopy="New customer enquiries will appear here after customer launch.">
+              {(lead) => <RecentLeadRow lead={lead} />}
+            </ListEmpty>
+          </Panel>
+          <Panel eyebrow="Business attention" title="What needs action today" copy="A combined view of tasks, unread messages, new enquiries and scheduled bookings.">
+            <div className="grid gap-3">
+              {tasks.slice(0, 5).map((task) => <ActionRow key={task.title} {...task} />)}
             </div>
           </Panel>
         </section>
@@ -119,6 +136,8 @@ export function ProviderPortalDashboard({data}: {data: PortalData}) {
             <div className="mt-6 rounded-2xl bg-[#EAF4FF] p-4 text-sm leading-6 text-[#005BAC]"><strong>Visibility score:</strong> {data.metrics.visibilityScore}/100. Response rate, reviews, verification, subscription and profile completion all improve discoverability.</div>
           </Panel>
         </section>
+          </div>
+        </div>
       </div>
     </ProviderLayout>
   );
@@ -128,7 +147,7 @@ export function ProviderPortalFeaturePage({data, feature}: {data: PortalData; fe
   const locale = useLocale();
   const date = new Intl.DateTimeFormat(locale, {dateStyle: "medium"});
   const approved = data.provider.status === "APPROVED";
-  const locked = !approved && !["documents", "support", "settings", "profile"].includes(feature);
+  const locked = !approved && !["documents", "support", "settings", "profile", "verification"].includes(feature);
 
   if (locked) {
     return (
@@ -158,6 +177,77 @@ export function ProviderPortalFeaturePage({data, feature}: {data: PortalData; fe
   );
 }
 
+function UnderReviewStatusBanner({data}: {data: PortalData}) {
+  return (
+    <section className="rounded-[28px] border border-[#fde68a] bg-[#fffbeb] p-5 shadow-[0_14px_45px_rgba(245,158,11,0.12)] sm:p-6">
+      <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="flex gap-4">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#fef3c7] text-[#b45309]">
+            <ShieldCheck size={24} aria-hidden />
+          </span>
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <h2 className="font-heading text-2xl font-bold text-[#92400e]">Your Verification is in Progress</h2>
+              <Badge label="Under Review" tone="warning" />
+            </div>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-7 text-[#78350f]">
+              Thank you for submitting your application. Our verification team is currently reviewing your documents.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 text-xs font-bold uppercase tracking-[0.12em] text-[#92400e]">
+              <span>Estimated Review Time: 24-48 Hours</span>
+              <span>Application ID: {applicationReference(data.provider.id)}</span>
+            </div>
+          </div>
+        </div>
+        <Link href="/provider/verification" className={secondaryButton}>View Verification Status</Link>
+      </div>
+    </section>
+  );
+}
+
+function UnderReviewOverlay({data}: {data: PortalData}) {
+  return (
+    <div className="absolute inset-x-0 top-16 z-20 mx-auto max-w-3xl px-2 sm:px-4">
+      <div className="rounded-[32px] border border-[#e4e8f0] bg-white p-5 text-center shadow-[0_28px_90px_rgba(15,23,42,0.18)] sm:p-8">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-3xl bg-[#EAF4FF] text-[#005BAC]">
+          <Lock size={26} aria-hidden />
+        </span>
+        <p className="mt-5 text-xs font-bold uppercase tracking-[0.18em] text-[#F4A300]">Verification In Progress</p>
+        <h2 className="mt-2 font-heading text-3xl font-bold text-[#111827]">Thank you for completing your registration.</h2>
+        <p className="mx-auto mt-3 max-w-2xl text-sm font-semibold leading-7 text-[#64748b]">
+          Your documents have been submitted successfully. Our verification specialists are reviewing your application. Once approved, your complete Provider Dashboard will unlock automatically.
+        </p>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <div className="rounded-2xl bg-[#f8fafc] p-4">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#64748b]">Estimated Verification</p>
+            <p className="mt-2 font-heading text-2xl font-bold text-[#005BAC]">24-48 Hours</p>
+          </div>
+          <div className="rounded-2xl bg-[#f8fafc] p-4">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#64748b]">Current Status</p>
+            <p className="mt-2 font-heading text-2xl font-bold text-[#005BAC]">UNDER REVIEW</p>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Link href="/provider/verification" className={primaryButton}>View Application Status</Link>
+          <button type="button" onClick={() => window.location.reload()} className={secondaryButton}><RefreshCw size={16} aria-hidden />Refresh Status</button>
+        </div>
+        <div className="mt-6 rounded-[24px] border border-[#e4e8f0] bg-[#f8fafc] p-5 text-left">
+          <div className="flex gap-3">
+            <Mail className="mt-1 shrink-0 text-[#005BAC]" size={20} aria-hidden />
+            <div>
+              <h3 className="font-heading text-lg font-bold text-[#111827]">Need Assistance?</h3>
+              <p className="mt-2 text-sm leading-6 text-[#64748b]">If you have questions regarding your verification, please contact our support team.</p>
+              <a href="mailto:bharosahai.india@gmail.com" className="mt-2 inline-flex text-sm font-bold text-[#005BAC]">bharosahai.india@gmail.com</a>
+              <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-[#64748b]">Average response time: Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <p className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-[#64748b]">Application ID: {applicationReference(data.provider.id)}</p>
+      </div>
+    </div>
+  );
+}
+
 function ProfilePage({data}: {data: PortalData}) {
   const provider = data.provider;
   const rows = [
@@ -173,6 +263,96 @@ function ProfilePage({data}: {data: PortalData}) {
   ];
 
   return <PageScaffold icon={UserRound} eyebrow="My Profile" title="Professional profile" copy="Keep your provider identity, business details and trust assets ready for customer discovery."><CardGrid rows={rows} /></PageScaffold>;
+}
+
+function TaskManagerPanel({data, date}: {data: PortalData; date: Intl.DateTimeFormat}) {
+  return (
+    <Panel eyebrow="Today's tasks" title="Task manager" copy="Add, complete, duplicate or remove provider tasks. Latest 10 active tasks appear here.">
+      <form action={createProviderTask} className="grid gap-3 rounded-2xl bg-[#f8fafc] p-4">
+        <input name="title" required maxLength={120} className="rounded-2xl border border-[#dbe3ef] bg-white px-4 py-3 text-sm font-semibold outline-none focus:border-[#005BAC]" placeholder="Add a task" />
+        <textarea name="notes" maxLength={600} className="min-h-20 rounded-2xl border border-[#dbe3ef] bg-white px-4 py-3 text-sm font-semibold outline-none focus:border-[#005BAC]" placeholder="Notes" />
+        <div className="grid gap-3 sm:grid-cols-3">
+          <select name="priority" className="rounded-2xl border border-[#dbe3ef] bg-white px-4 py-3 text-sm font-semibold outline-none focus:border-[#005BAC]" defaultValue="MEDIUM" aria-label="Priority">
+            {["LOW", "MEDIUM", "HIGH", "URGENT"].map((item) => <option key={item} value={item}>{item}</option>)}
+          </select>
+          <input name="dueDate" type="date" className="rounded-2xl border border-[#dbe3ef] bg-white px-4 py-3 text-sm font-semibold outline-none focus:border-[#005BAC]" aria-label="Due date" />
+          <input name="dueTime" type="time" className="rounded-2xl border border-[#dbe3ef] bg-white px-4 py-3 text-sm font-semibold outline-none focus:border-[#005BAC]" aria-label="Due time" />
+        </div>
+        <button className={primaryButton}>Add Task</button>
+      </form>
+
+      <div className="mt-5 grid gap-3">
+        {data.tasks.length === 0 ? (
+          <EmptyState title="No tasks yet" copy="Add a task to plan follow-ups, profile improvements or customer work." />
+        ) : (
+          data.tasks.map((task) => <TaskCard key={task.id} task={task} date={date} />)
+        )}
+      </div>
+      <div className="mt-5 grid grid-cols-3 gap-2 text-center">
+        <MiniStat light label="Pending" value={String(data.metrics.pendingTasks)} />
+        <MiniStat light label="Due Today" value={String(data.metrics.dueTodayTasks)} />
+        <MiniStat light label="Completed" value={String(data.metrics.completedTasks)} />
+      </div>
+    </Panel>
+  );
+}
+
+function TaskCard({task, date}: {task: PortalData["tasks"][number]; date: Intl.DateTimeFormat}) {
+  const complete = task.status === "COMPLETED";
+
+  return (
+    <div className="rounded-2xl border border-[#e4e8f0] bg-white p-4">
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <div className="flex flex-wrap items-center gap-2">
+            <h4 className="font-heading text-base font-bold text-[#111827]">{task.title}</h4>
+            <Badge label={task.priority} tone={task.priority === "HIGH" || task.priority === "URGENT" ? "warning" : undefined} />
+            {complete && <Badge label="Completed" tone="success" />}
+          </div>
+          {task.notes && <p className="mt-2 text-sm leading-6 text-[#64748b]">{task.notes}</p>}
+          <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-[#64748b]">{task.dueAt ? `Due ${date.format(task.dueAt)}` : "No due date"}</p>
+        </div>
+        <div className="flex shrink-0 flex-wrap justify-end gap-2">
+          <form action={updateProviderTaskStatus}>
+            <input type="hidden" name="taskId" value={task.id} />
+            <input type="hidden" name="status" value={complete ? "PENDING" : "COMPLETED"} />
+            <button className={secondaryButton}>{complete ? "Reopen" : "Complete"}</button>
+          </form>
+          <form action={duplicateProviderTask}>
+            <input type="hidden" name="taskId" value={task.id} />
+            <button className={secondaryButton}>Duplicate</button>
+          </form>
+          <form action={deleteProviderTask}>
+            <input type="hidden" name="taskId" value={task.id} />
+            <button className="inline-flex items-center justify-center rounded-2xl border border-[#fecaca] bg-white px-4 py-2.5 text-sm font-bold text-[#DC2626] transition hover:bg-[#fff1f2]">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RecentLeadRow({lead}: {lead: PortalData["leads"][number]}) {
+  return (
+    <div className={mutedCard}>
+      <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div>
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="font-heading text-lg font-bold text-[#111827]">{lead.customerName}</p>
+            <Badge label={lead.status} />
+          </div>
+          <p className="mt-1 text-sm font-semibold leading-6 text-[#64748b]">{lead.serviceTitle} • {lead.location ?? "City not shared"} • {budget(lead.budgetMin, lead.budgetMax)}</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {lead.status === "NEW" && <LeadButton id={lead.id} status="ACCEPTED" label="Accept" />}
+          {lead.status === "NEW" && <LeadButton id={lead.id} status="REJECTED" label="Reject" secondary />}
+          <Link href="/provider/leads" className={secondaryButton}>View Details</Link>
+          {lead.customerMobile && <a href={`tel:${lead.customerMobile}`} className={secondaryButton}>Call</a>}
+          <Link href="/provider/messages" className={secondaryButton}>Message</Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function ServicesPage({data}: {data: PortalData}) {
@@ -226,7 +406,8 @@ function SettingsPage() {
 }
 
 function VerificationPage({data, date}: {data: PortalData; date: Intl.DateTimeFormat}) {
-  return <PageScaffold icon={BadgeCheck} eyebrow="Verification" title="Trust badge lifecycle" copy="Track admin review, document status, verification history and current badge."><section className="grid gap-4 md:grid-cols-4"><KpiCard label="Current Badge" value={data.provider.verificationLevel} icon={BadgeCheck} /><KpiCard label="Approved Docs" value={String(data.documents.filter((item) => item.status === "APPROVED").length)} icon={FileText} /><KpiCard label="Admin Reviews" value={String(data.verificationRequests.length)} icon={ShieldCheck} /><KpiCard label="Approved At" value={data.provider.verifiedAt ? date.format(data.provider.verifiedAt) : "Pending"} icon={Clock3} /></section><Panel eyebrow="Verification history" title="Admin review timeline" copy="Every admin decision is retained for auditability.">{data.verificationRequests.length === 0 ? <p className="text-sm font-semibold text-[#6b7280]">No verification history yet.</p> : <div className="grid gap-3">{data.verificationRequests.map((request) => <div key={request.id} className={mutedCard}><p className="font-bold">{request.status}</p><p className="mt-1 text-sm text-[#6b7280]">{request.message ?? "No admin remarks"} • {date.format(request.createdAt)}</p></div>)}</div>}</Panel></PageScaffold>;
+  const approved = data.provider.status === "APPROVED";
+  return <PageScaffold icon={BadgeCheck} eyebrow={approved ? "Verification" : "Application Status"} title={approved ? "Trust badge lifecycle" : "Your application is under review"} copy={approved ? "Track admin review, document status, verification history and current badge." : "You will see dashboard access after approval. Track documents, remarks and next steps here."}><section className="grid gap-4 md:grid-cols-4"><KpiCard label="Current Status" value={data.provider.status.replaceAll("_", " ")} icon={BadgeCheck} /><KpiCard label="Documents Uploaded" value={String(data.documents.length)} icon={FileText} /><KpiCard label="Admin Reviews" value={String(data.verificationRequests.length)} icon={ShieldCheck} /><KpiCard label="Expected Completion" value={approved ? (data.provider.verifiedAt ? date.format(data.provider.verifiedAt) : "Approved") : "24-48 Hours"} icon={Clock3} /></section><Panel eyebrow="Review timeline" title={approved ? "Admin review timeline" : "Application progress"} copy="Every admin decision is retained for auditability.">{data.verificationRequests.length === 0 ? <p className="text-sm font-semibold text-[#6b7280]">No verification history yet.</p> : <div className="grid gap-3">{data.verificationRequests.map((request) => <div key={request.id} className={mutedCard}><p className="font-bold">{request.status}</p><p className="mt-1 text-sm text-[#6b7280]">{request.message ?? "No admin remarks"} • {date.format(request.createdAt)}</p></div>)}</div>}</Panel><Panel eyebrow="Next steps" title={approved ? "Dashboard access is active" : "What happens next"} copy={approved ? "You can now use the full provider dashboard." : "Documents are checked, your identity and professional details are reviewed, and admin remarks will appear here if anything is missing."}><div className="grid gap-3 md:grid-cols-4">{["Application Submitted", "Documents Uploaded", "Under Review", approved ? "Approved" : "Approval Pending"].map((item, index) => <ChecklistItem key={item} label={item} done={approved || index < 3} />)}</div></Panel></PageScaffold>;
 }
 
 function PageScaffold({icon: Icon, eyebrow, title, copy, children}: {icon: typeof Users; eyebrow: string; title: string; copy: string; children: React.ReactNode}) {
@@ -237,8 +418,9 @@ function Panel({eyebrow, title, copy, children}: {eyebrow: string; title: string
   return <section className={card}><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#F4A300]">{eyebrow}</p><h3 className="mt-2 font-heading text-2xl font-bold text-[#111827]">{title}</h3>{copy && <p className="mt-2 text-sm leading-6 text-[#6b7280]">{copy}</p>}<div className="mt-6">{children}</div></section>;
 }
 
-function KpiCard({label, value, icon: Icon}: {label: string; value: string; icon: typeof Users}) {
-  return <div className={card}><Icon className="text-[#005BAC]" size={24} aria-hidden /><p className="mt-4 text-sm font-semibold text-[#64748b]">{label}</p><h3 className="mt-2 font-heading text-2xl font-bold text-[#111827]">{value}</h3></div>;
+function KpiCard({label, value, icon: Icon, href}: {label: string; value: string; icon: typeof Users; href?: string}) {
+  const content = <><Icon className="text-[#005BAC]" size={24} aria-hidden /><p className="mt-4 text-sm font-semibold text-[#64748b]">{label}</p><h3 className="mt-2 font-heading text-2xl font-bold text-[#111827]">{value}</h3></>;
+  return href ? <Link href={href} className={`${card} block transition hover:-translate-y-1 hover:border-[#005BAC] hover:bg-[#fbfdff]`}>{content}</Link> : <div className={card}>{content}</div>;
 }
 
 function MiniStat({label, value, light}: {label: string; value: string; light?: boolean}) {
@@ -272,8 +454,9 @@ function Donut({counts}: {counts: number[]}) {
   return <div className="relative mx-auto flex h-48 w-48 items-center justify-center rounded-full" style={{background: total ? "conic-gradient(#005BAC 0 30%, #F4A300 30% 48%, #22C55E 48% 68%, #7c3aed 68% 86%, #DC2626 86% 100%)" : "#e2e8f0"}}><div className="flex h-32 w-32 items-center justify-center rounded-full bg-white text-center"><span><strong className="block font-heading text-3xl">{total}</strong><span className="text-xs font-bold text-[#64748b]">Total Leads</span></span></div></div>;
 }
 
-function PipelineLegend({label, value}: {label: string; value: number}) {
-  return <div className="flex items-center justify-between rounded-2xl bg-[#f8fafc] px-4 py-3 text-sm font-bold"><span>{label}</span><span className="text-[#005BAC]">{value}</span></div>;
+function PipelineLegend({label, value, href}: {label: string; value: number; href?: string}) {
+  const content = <><span>{label}</span><span className="text-[#005BAC]">{value}</span></>;
+  return href ? <Link href={href} className="flex items-center justify-between rounded-2xl bg-[#f8fafc] px-4 py-3 text-sm font-bold transition hover:bg-[#EAF4FF]">{content}</Link> : <div className="flex items-center justify-between rounded-2xl bg-[#f8fafc] px-4 py-3 text-sm font-bold">{content}</div>;
 }
 
 function ResponsiveTable({headers, rows, empty}: {headers: string[]; rows: string[][]; empty: string}) {
@@ -337,6 +520,10 @@ function featureTitle(feature: string) {
 
 function statusLabel(status: ProviderStatus) {
   return status.replaceAll("_", " ");
+}
+
+function applicationReference(providerId: string) {
+  return `BH-${providerId.slice(-8).toUpperCase()}`;
 }
 
 function rupees(value: number) {

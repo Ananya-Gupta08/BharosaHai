@@ -5,6 +5,7 @@ import {redirect} from "next/navigation";
 import ProviderRegisterPage from "@/components/provider-registration-view";
 import {requireProviderAccount} from "@/lib/auth/provider-account";
 import {prisma} from "@/lib/db/prisma";
+import {isDatabaseConnectionError} from "@/lib/db/errors";
 
 export const dynamic = "force-dynamic";
 
@@ -24,13 +25,27 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
 
 export default async function ProtectedProviderRegisterPage({params}: Props) {
   const {locale} = await params;
-  const account = await requireProviderAccount();
+  let account;
+
+  try {
+    account = await requireProviderAccount();
+  } catch (error) {
+    if (isDatabaseConnectionError(error)) {
+      redirect(`/${locale}/provider/setup-error`);
+    }
+
+    throw error;
+  }
 
   if (!account.user.emailVerified || !account.user.mobile) {
     redirect(`/${locale}/provider/onboarding`);
   }
 
-  if (account.provider.status === "PENDING" || account.provider.status === "APPROVED") {
+  if (account.provider.status === "PENDING" || account.provider.status === "NEEDS_MORE_DOCUMENTS" || account.provider.status === "REJECTED") {
+    redirect(`/${locale}/provider/verification`);
+  }
+
+  if (account.provider.status === "APPROVED") {
     redirect(`/${locale}/provider/dashboard`);
   }
 

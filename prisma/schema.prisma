@@ -110,6 +110,7 @@ model Provider {
   subscriptions             ProviderSubscription[]
   analyticsSnapshots        ProviderAnalyticsSnapshot[]
   supportTickets            SupportTicket[]
+  tasks                     ProviderTask[]
 
   @@index([status])
   @@index([city])
@@ -438,6 +439,37 @@ model ProviderAnalyticsSnapshot {
 
   @@unique([providerId, date])
   @@index([providerId, date])
+}
+
+model ProviderTask {
+  id          String       @id @default(cuid())
+  providerId  String
+  provider    Provider     @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  title       String
+  notes       String?
+  priority    TaskPriority @default(MEDIUM)
+  status      TaskStatus   @default(PENDING)
+  dueAt       DateTime?
+  completedAt DateTime?
+  deletedAt   DateTime?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  @@index([providerId, status])
+  @@index([providerId, dueAt])
+  @@index([providerId, deletedAt])
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+enum TaskStatus {
+  PENDING
+  COMPLETED
 }
 
 model SupportTicket {

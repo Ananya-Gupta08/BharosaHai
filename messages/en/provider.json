@@ -7,7 +7,7 @@
     "completed": "Completed",
     "pending": "Pending",
     "locked": "Locked",
-    "locked": "Locked",
+    "progress": {"step": "Step {step} of {total}", "complete": "{progress}% Complete", "copy": "Your progress is saved in this browser automatically. You can resume later before final submission.", "saveDraft": "Save Draft", "saved": "Draft saved"},
     "steps": ["Personal", "Professional", "Office", "Working details", "Bank & social", "Documents"],
     "personal": {"title": "Personal information", "copy": "Create a clear identity record for verification.", "name": "Full name", "mobile": "Mobile number", "email": "Email address", "father": "Father/Husband name", "dob": "Date of birth", "gender": "Gender", "genderOptions": [{"value": "Male", "label": "Male"}, {"value": "Female", "label": "Female"}, {"value": "Other", "label": "Other"}], "profileType": "Profile type", "profileTypeOptions": [{"value": "Individual", "label": "Individual"}, {"value": "Firm", "label": "Firm"}, {"value": "Company", "label": "Company"}, {"value": "Partnership", "label": "Partnership"}, {"value": "LLP", "label": "LLP"}, {"value": "NGO", "label": "NGO"}, {"value": "Trust", "label": "Trust"}], "city": "City", "address": "Residential address"},
     "professional": {"title": "Professional information", "copy": "Select the category, specialization and services customers should find you for.", "category": "Provider category", "subcategory": "Specialization", "specialization": "Additional specialization", "services": "Services offered", "experience": "Experience in years", "highestQualification": "Highest qualification", "professionalQualification": "Professional qualification", "languages": "Languages spoken", "office": "Office address", "bio": "About your professional work"},
@@ -18,7 +18,7 @@
     "declaration": {"eyebrow": "Declaration", "title": "Confirm before admin review.", "copy": "Please verify that your details are accurate before submitting your application.", "checkbox": "I confirm that the submitted information and documents are accurate to the best of my knowledge.", "submit": "Submit application"},
     "errors": {"name": "Full name is required.", "mobile": "Please enter a valid mobile number.", "email": "Please enter a valid email.", "profileType": "Please select a profile type.", "category": "Please select a category.", "services": "Please select at least one service.", "experience": "Experience is required.", "highestQualification": "Highest qualification is required.", "professionalQualification": "Professional qualification is required.", "languages": "Languages are required.", "bio": "Please add at least 20 characters about your work.", "state": "State is required.", "district": "District is required.", "city": "City is required.", "pincode": "Pincode is required.", "officeName": "Office name is required.", "officeTiming": "Office timing is required.", "address": "Residential address is required.", "officeAddress": "Office address is required.", "availability": "Availability is required.", "workingDays": "Working days are required.", "serviceAreas": "Service areas are required.", "feeType": "Please select a fee type.", "declaration": "Please accept the declaration."},
     "submission": {"pending": "Submitting...", "success": "Application submitted. The admin team can now review it.", "validationError": "Please complete all required fields and accept the declaration.", "verificationRequired": "Please verify your email and add your mobile number before submitting the application.", "error": "Something went wrong while submitting the application. Please try again."},
-    "next": {"eyebrow": "What happens next", "title": "A clear path after registration.", "items": [{"title": "Application review", "copy": "The admin team reviews profile details and category documents."}, {"title": "Status update", "copy": "Your account can be approved, rejected or marked as needing more documents."}, {"title": "Profile readiness", "copy": "Approved providers are prepared for future customer visibility."}]}
+    "next": {"eyebrow": "What happens next", "title": "A clear path after registration.", "copy": "Your application moves through a simple review path after submission.", "estimateLabel": "Estimated review", "estimateValue": "24-48 hours", "estimateCopy": "Complete and readable documents help the admin team review faster.", "items": [{"title": "Application review", "copy": "The admin team reviews profile details and category documents."}, {"title": "Status update", "copy": "Your account can be approved, rejected or marked as needing more documents."}, {"title": "Profile readiness", "copy": "Approved providers are prepared for future customer visibility."}]}
   },
   "dashboard": {
     "metadata": {"title": "Provider Dashboard", "description": "Manage your Bharosa Hai provider verification status."},
@@ -96,12 +96,22 @@
       "hero": {"eyebrow": "Provider signup", "title": "Create your permanent provider account.", "copy": "Start with a secure account, verify your email, then add your mobile number before submitting your professional profile.", "imageAlt": "Provider creating a secure account"}
     }
   },
+  "setupError": {
+    "metadata": {"title": "Provider Setup Needs Attention", "description": "The provider workspace could not connect to the database."},
+    "eyebrow": "Setup needs attention",
+    "title": "Provider dashboard is waiting for database access.",
+    "copy": "Your Clerk login worked, but Bharosa Hai could not create or load your provider record because the database connection was rejected.",
+    "database": {"title": "Database connection rejected", "copy": "Supabase returned a tenant or user lookup error for the configured PostgreSQL pooler connection."},
+    "next": {"title": "What to check", "copy": "Copy the exact pooled connection string from Supabase Project Settings, update DATABASE_URL, restart the dev server, then login again."},
+    "actions": {"provider": "Back to Provider Page", "login": "Try Login Again"}
+  },
   "onboarding": {
     "metadata": {"title": "Provider Account Onboarding", "description": "Complete your provider account details."},
     "hero": {"eyebrow": "Account onboarding", "title": "Finish your provider account setup.", "copy": "Your account is created. Add your mobile number and optional profile photo to open the dashboard.", "imageAlt": "Secure provider account setup"},
     "card": {"eyebrow": "Account details", "title": "Email, mobile and profile photo", "copy": "Email verification is handled first. Your mobile number is saved to your provider profile for future contact."},
     "loading": "Loading account...",
     "signedOut": "Please login again to continue.",
+    "accountFallback": "Provider",
     "saving": "Saving...",
     "logout": "Logout",
     "photoSaved": "Profile photo saved.",
