@@ -125,14 +125,16 @@ export function SiteShell({children, visualStyle = "default"}: {children: ReactN
                     </button>
 
                     {servicesOpen && (
-                      <motion.div initial={{opacity: 0, y: 8}} animate={{opacity: 1, y: 0}} transition={{duration: 0.16}} className="absolute left-1/2 top-full z-50 mt-3 w-[680px] -translate-x-1/2 rounded-[22px] border border-[var(--border)] bg-white p-4 shadow-[var(--shadow-lift)]" role="menu">
-                        <div className="grid grid-cols-3 gap-2">
-                          {serviceCategories.map(({id, label, icon: Icon}) => (
-                            <Link key={id} href={`/services#${id}`} onClick={() => setServicesOpen(false)} className="flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-semibold text-[var(--foreground)] transition hover:bg-[var(--hover-bg)] hover:text-[var(--primary)]" role="menuitem">
-                              <Icon className="shrink-0 text-[var(--primary)]" size={20} strokeWidth={1.8} aria-hidden />
-                              <span>{label}</span>
-                            </Link>
-                          ))}
+                      <motion.div initial={{opacity: 0, y: 8}} animate={{opacity: 1, y: 0}} transition={{duration: 0.16}} className="absolute left-1/2 top-full z-50 w-[680px] -translate-x-1/2 pt-3" role="menu">
+                        <div className="rounded-[22px] border border-[var(--border)] bg-white p-4 shadow-[var(--shadow-lift)]">
+                          <div className="grid grid-cols-3 gap-2">
+                            {serviceCategories.map(({id, label, icon: Icon}) => (
+                              <Link key={id} href={`/services#${id}`} onClick={() => setServicesOpen(false)} className="flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-semibold text-[var(--foreground)] transition hover:bg-[var(--hover-bg)] hover:text-[var(--primary)]" role="menuitem">
+                                <Icon className="shrink-0 text-[var(--primary)]" size={20} strokeWidth={1.8} aria-hidden />
+                                <span>{label}</span>
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       </motion.div>
                     )}
