@@ -1,6 +1,6 @@
 {
   "register": {
-    "metadata": {"title": "Provider Registration", "description": "Bharosa Hai par verified professional provider banne ke liye apply karein."},
+    "metadata": {"title": "Provider Registration", "description": "KaunBatayega par verified professional provider banne ke liye apply karein."},
     "hero": {"eyebrow": "Provider registration", "title": "Verified provider network se judne ke liye apply karein.", "copy": "Apni professional details admin review ke liye submit karein. Future customer visibility se pehle team profile verify karegi.", "imageAlt": "Professional onboarding complete karta provider"},
     "stepsLabel": "Application steps",
     "active": "Active",
@@ -21,7 +21,7 @@
     "next": {"eyebrow": "Aage kya hoga", "title": "Registration ke baad clear path.", "copy": "Submission ke baad application simple review path se guzarti hai.", "estimateLabel": "Estimated review", "estimateValue": "24-48 hours", "estimateCopy": "Complete aur readable documents admin team ko faster review mein help karte hain.", "items": [{"title": "Application review", "copy": "Admin team profile details aur category documents review karti hai."}, {"title": "Status update", "copy": "Account approved, rejected ya more documents required ho sakta hai."}, {"title": "Profile readiness", "copy": "Approved providers future customer visibility ke liye ready hote hain."}]}
   },
   "dashboard": {
-    "metadata": {"title": "Provider Dashboard", "description": "Apna Bharosa Hai provider verification status manage karein."},
+    "metadata": {"title": "Provider Dashboard", "description": "Apna KaunBatayega provider verification status manage karein."},
     "logout": "Logout",
     "hero": {"eyebrow": "Provider dashboard", "title": "Welcome {name}", "copy": "Apna account status track karein, required details aur documents submit karein, aur admin approval complete hone par status dekhein.", "imageAlt": "Provider dashboard workspace"},
     "stats": {"verification": "Verification", "profile": "Profile", "documents": "Documents", "access": "Access"},
@@ -88,11 +88,11 @@
   },
   "auth": {
     "signIn": {
-      "metadata": {"title": "Provider Login", "description": "Apne Bharosa Hai provider account mein secure login karein."},
+      "metadata": {"title": "Provider Login", "description": "Apne KaunBatayega provider account mein secure login karein."},
       "hero": {"eyebrow": "Provider login", "title": "Apne provider account mein login karein.", "copy": "Provider onboarding continue karne ke liye verified email aur password use karein.", "imageAlt": "Secure account mein login karta professional"}
     },
     "signUp": {
-      "metadata": {"title": "Provider Signup", "description": "Secure Bharosa Hai provider account banayein."},
+      "metadata": {"title": "Provider Signup", "description": "Secure KaunBatayega provider account banayein."},
       "hero": {"eyebrow": "Provider signup", "title": "Apna permanent provider account banayein.", "copy": "Secure account banayein, email verify karein, phir professional profile submit karne se pehle mobile number add karein.", "imageAlt": "Secure account banata provider"}
     }
   },
@@ -100,7 +100,7 @@
     "metadata": {"title": "Provider Setup Me Dhyan Chahiye", "description": "Provider workspace database se connect nahi ho paya."},
     "eyebrow": "Setup me dikkat",
     "title": "Provider dashboard database access ka wait kar raha hai.",
-    "copy": "Aapka Clerk login ho gaya, lekin Bharosa Hai provider record create ya load nahi kar paya kyunki database connection reject ho gaya.",
+    "copy": "Aapka Clerk login ho gaya, lekin KaunBatayega provider record create ya load nahi kar paya kyunki database connection reject ho gaya.",
     "database": {"title": "Database connection reject hua", "copy": "Configured PostgreSQL pooler connection ke liye Supabase ne tenant ya user lookup error diya."},
     "next": {"title": "Kya check karein", "copy": "Supabase Project Settings se exact pooled connection string copy karein, DATABASE_URL update karein, dev server restart karein, phir login karein."},
     "actions": {"provider": "Provider Page Par Wapas", "login": "Login Dobara Try Karein"}
@@ -144,7 +144,7 @@
     }
   },
   "customerPortal": {
-    "metadata": {"title": "Customer Access", "description": "Bharosa Hai customer access jald aa raha hai."},
+    "metadata": {"title": "Customer Access", "description": "KaunBatayega customer access jald aa raha hai."},
     "hero": {"eyebrow": "Customer portal", "title": "Guided customer experience jald aa raha hai.", "copy": "Portal verified provider onboarding ready hone ke baad launch hoga. Tab tak yeh page planned experience explain karta hai.", "imageAlt": "Family aur professional paperwork discuss karte hue", "emailLabel": "Email address", "placeholder": "you@example.com", "button": "Notify me"},
     "coming": {"eyebrow": "Kya aane wala hai", "title": "Zaroori kaam shuru karne ka calm tareeka.", "copy": "Portal customers ko uncertainty se clear next step tak le jayega.", "items": [{"title": "Guided category selection", "copy": "Bina guess kiye sahi professional service chunein."}, {"title": "Verified provider visibility", "copy": "Providers onboarding review pass karne ke baad hi dikhayi denge."}, {"title": "Document readiness", "copy": "Kaam shuru hone se pehle kaunsi information ya files chahiye, yeh samjhein."}, {"title": "Clear communication", "copy": "Future workflows expectations, timelines aur messages organized rakhenge."}, {"title": "Launch notifications", "copy": "Public workflow khulne se pehle customers interest register kar sakte hain."}, {"title": "Timeline clarity", "copy": "Portal batayega ki abhi kya available hai aur aage kya aayega."}]},
     "features": {"eyebrow": "Expected features", "title": "Planned customer experience.", "panelTitle": "Future portal features", "items": ["Service category discovery", "City aur requirement intake", "Verified provider matching", "Document checklist guidance", "Support-led status updates"], "timeline": [{"title": "Now", "copy": "Provider onboarding aur public website readiness."}, {"title": "Next", "copy": "Admin review aur pehla verified professional network."}, {"title": "Then", "copy": "Selected categories aur cities ke liye controlled client access launch."}, {"title": "Later", "copy": "Tier 1 MVP stable hone ke baad broader workflows."}]}

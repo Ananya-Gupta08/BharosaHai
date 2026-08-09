@@ -1,10 +1,10 @@
 {
-  "metadata": {"title": "Bharosa Hai | Apne Shehar Mein Verified Services", "description": "Legal, business, government aur essential services ke liye verified professionals dhoondhein."},
+  "metadata": {"title": "KaunBatayega | Apne Shehar Mein Verified Services", "description": "Legal, business, government aur essential services ke liye verified professionals dhoondhein."},
   "hero": {
     "eyebrow": "Trusted service marketplace",
-    "title": "Har Seva Ka Ek Hi Bharosa.",
+    "title": "Trusted Services. Right Around You.",
     "subheading": "Apne shehar mein legal, business, government aur essential services ke liye verified professionals dhoondhein.",
-    "copy": "Bharosa Hai customers ko trusted aur verified service providers se jodta hai, taaki har zaroori kaam ke liye sahi expert dhoondhna simple ho.",
+    "copy": "KaunBatayega customers ko trusted aur verified service providers se jodta hai, taaki har zaroori kaam ke liye sahi expert dhoondhna simple ho.",
     "primary": "Verified Service Dhoondhein",
     "secondary": "Service Provider Banein",
     "searchLabel": "Services search karein",
@@ -16,7 +16,7 @@
   "popular": {
     "eyebrow": "Popular services",
     "title": "Jis service ki zaroorat hai, wahi se start karein.",
-    "copy": "Sabse zyada requested Bharosa Hai categories pehle dikhai gayi hain taaki customers jaldi action le saken.",
+    "copy": "Sabse zyada requested KaunBatayega categories pehle dikhai gayi hain taaki customers jaldi action le saken.",
     "items": {
       "legal": {"title": "Legal Services", "copy": "Notices, agreements aur case guidance ke liye lawyers."},
       "gst": {"title": "GST & Taxation", "copy": "GST registration, filing, notices aur tax support."},
@@ -35,7 +35,7 @@
   "categories": {
     "eyebrow": "All service categories",
     "title": "Zaroori services ko clearly grouped kiya gaya hai.",
-    "copy": "Bharosa Hai un Indian service needs ke liye bana hai jahan trust, documents aur local process knowledge important hote hain.",
+    "copy": "KaunBatayega un Indian service needs ke liye bana hai jahan trust, documents aur local process knowledge important hote hain.",
     "badge": "Coming Soon",
     "items": {
       "business": {"title": "Business & Tax", "copy": "GST, taxation, business registration, accounting, licenses aur compliance work.", "cta": "Explore Services"},
@@ -49,7 +49,7 @@
   "cities": {
     "eyebrow": "Cities we serve",
     "title": "Apne shehar mein trusted help dhoondhein.",
-    "copy": "Bharosa Hai city by city launch ho raha hai taaki service quality practical aur local rahe.",
+    "copy": "KaunBatayega city by city launch ho raha hai taaki service quality practical aur local rahe.",
     "searchLabel": "City search karein",
     "searchPlaceholder": "Apna shehar search karein",
     "items": {
@@ -65,7 +65,7 @@
     }
   },
   "why": {
-    "eyebrow": "Why Bharosa Hai",
+    "eyebrow": "Why KaunBatayega",
     "title": "Transaction se pehle trust.",
     "copy": "Customer ko documents, money ya personal details share karne se pehle pata hona chahiye ki woh kisse baat kar raha hai.",
     "items": {
@@ -91,7 +91,7 @@
   "providers": {
     "eyebrow": "Featured providers",
     "title": "Verified professionals jinko customer easily samajh sake.",
-    "copy": "Sample featured cards dikhate hain ki verification ke baad Bharosa Hai providers ko clearly kaise present karega.",
+    "copy": "Sample featured cards dikhate hain ki verification ke baad KaunBatayega providers ko clearly kaise present karega.",
     "badge": "Verified",
     "cta": "View Profile",
     "items": {
@@ -106,7 +106,7 @@
   "testimonials": {
     "eyebrow": "Testimonials",
     "title": "Trust se pehle clarity zaroori hai.",
-    "copy": "Ye sample launch stories wahi confidence dikhati hain jo Bharosa Hai create karna chahta hai.",
+    "copy": "Ye sample launch stories wahi confidence dikhati hain jo KaunBatayega create karna chahta hai.",
     "items": {
       "customerOne": {"label": "Customer", "quote": "Mujhe property documents review karwane the aur reliable professional chahiye tha. Verified provider profile first call easy bana deti hai.", "credit": "Saurabh Gupta, Mathura"},
       "customerTwo": {"label": "Business Owner", "quote": "GST aur license work ke liye random numbers nahi chahiye. Mujhe professional background visible chahiye.", "credit": "Priya Jain, Agra"},
@@ -129,8 +129,8 @@
     "title": "Common questions.",
     "copy": "Customers aur service providers ke liye clear answers.",
     "items": {
-      "providerVerification": {"question": "Bharosa Hai providers ko kaise verify karta hai?", "answer": "Providers profile details aur documents submit karte hain. Admin team identity, category fit, credentials aur profile quality review karti hai."},
-      "free": {"question": "Kya Bharosa Hai use karna free hai?", "answer": "Customer access prepare ho raha hai. Launch phase mein provider onboarding free hai."},
+      "providerVerification": {"question": "KaunBatayega providers ko kaise verify karta hai?", "answer": "Providers profile details aur documents submit karte hain. Admin team identity, category fit, credentials aur profile quality review karti hai."},
+      "free": {"question": "Kya KaunBatayega use karna free hai?", "answer": "Customer access prepare ho raha hai. Launch phase mein provider onboarding free hai."},
       "compare": {"question": "Kya main multiple providers compare kar sakta hoon?", "answer": "Homepage discovery first ke liye prepare hai. Customer features launch hone par comparison workflows add honge."},
       "becomeProvider": {"question": "Verified provider kaise banun?", "answer": "Provider account banayein, profile complete karein, required documents upload karein aur admin review ka wait karein."},
       "cities": {"question": "Currently kaun se cities supported hain?", "answer": "Launch focus Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad aur Sonipat par hai."}

@@ -97,7 +97,7 @@ const stepFields: Record<number, FieldName[]> = {
   6: ["declaration"]
 };
 
-const draftStorageKey = "bharosa-provider-registration-draft";
+const draftStorageKey = "kaunbatayega-provider-registration-draft";
 
 function readRegistrationDraft() {
   if (typeof window === "undefined") {

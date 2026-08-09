@@ -57,12 +57,12 @@ async function main() {
       where: {slug: slugify(name)},
       update: {
         name,
-        description: `${name} services for verified Bharosa Hai providers.`
+        description: `${name} services for verified KaunBatayega providers.`
       },
       create: {
         name,
         slug: slugify(name),
-        description: `${name} services for verified Bharosa Hai providers.`
+        description: `${name} services for verified KaunBatayega providers.`
       }
     });
 

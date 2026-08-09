@@ -1,6 +1,6 @@
 {
   "register": {
-    "metadata": {"title": "Provider Registration", "description": "Apply to join Bharosa Hai as a verified professional provider."},
+    "metadata": {"title": "Provider Registration", "description": "Apply to join KaunBatayega as a verified professional provider."},
     "hero": {"eyebrow": "Provider registration", "title": "Apply to join the verified provider network.", "copy": "Submit your professional details for admin review. The team will verify your profile before future customer visibility.", "imageAlt": "Provider completing professional onboarding"},
     "stepsLabel": "Application steps",
     "active": "Active",
@@ -21,7 +21,7 @@
     "next": {"eyebrow": "What happens next", "title": "A clear path after registration.", "copy": "Your application moves through a simple review path after submission.", "estimateLabel": "Estimated review", "estimateValue": "24-48 hours", "estimateCopy": "Complete and readable documents help the admin team review faster.", "items": [{"title": "Application review", "copy": "The admin team reviews profile details and category documents."}, {"title": "Status update", "copy": "Your account can be approved, rejected or marked as needing more documents."}, {"title": "Profile readiness", "copy": "Approved providers are prepared for future customer visibility."}]}
   },
   "dashboard": {
-    "metadata": {"title": "Provider Dashboard", "description": "Manage your Bharosa Hai provider verification status."},
+    "metadata": {"title": "Provider Dashboard", "description": "Manage your KaunBatayega provider verification status."},
     "logout": "Logout",
     "hero": {"eyebrow": "Provider dashboard", "title": "Welcome {name}", "copy": "Track your account status, submit required details and documents, and see when admin approval is complete.", "imageAlt": "Provider dashboard workspace"},
     "stats": {"verification": "Verification", "profile": "Profile", "documents": "Documents", "access": "Access"},
@@ -88,11 +88,11 @@
   },
   "auth": {
     "signIn": {
-      "metadata": {"title": "Provider Login", "description": "Login securely to your Bharosa Hai provider account."},
+      "metadata": {"title": "Provider Login", "description": "Login securely to your KaunBatayega provider account."},
       "hero": {"eyebrow": "Provider login", "title": "Login to your provider account.", "copy": "Use your verified email and password to continue your provider onboarding.", "imageAlt": "Professional logging into a secure account"}
     },
     "signUp": {
-      "metadata": {"title": "Provider Signup", "description": "Create a secure Bharosa Hai provider account."},
+      "metadata": {"title": "Provider Signup", "description": "Create a secure KaunBatayega provider account."},
       "hero": {"eyebrow": "Provider signup", "title": "Create your permanent provider account.", "copy": "Start with a secure account, verify your email, then add your mobile number before submitting your professional profile.", "imageAlt": "Provider creating a secure account"}
     }
   },
@@ -100,7 +100,7 @@
     "metadata": {"title": "Provider Setup Needs Attention", "description": "The provider workspace could not connect to the database."},
     "eyebrow": "Setup needs attention",
     "title": "Provider dashboard is waiting for database access.",
-    "copy": "Your Clerk login worked, but Bharosa Hai could not create or load your provider record because the database connection was rejected.",
+    "copy": "Your Clerk login worked, but KaunBatayega could not create or load your provider record because the database connection was rejected.",
     "database": {"title": "Database connection rejected", "copy": "Supabase returned a tenant or user lookup error for the configured PostgreSQL pooler connection."},
     "next": {"title": "What to check", "copy": "Copy the exact pooled connection string from Supabase Project Settings, update DATABASE_URL, restart the dev server, then login again."},
     "actions": {"provider": "Back to Provider Page", "login": "Try Login Again"}
@@ -144,7 +144,7 @@
     }
   },
   "customerPortal": {
-    "metadata": {"title": "Customer Access", "description": "The Bharosa Hai customer access is being prepared for verified providers."},
+    "metadata": {"title": "Customer Access", "description": "The KaunBatayega customer access is being prepared for verified providers."},
     "hero": {"eyebrow": "Customer portal", "title": "A guided customer experience is being prepared for verified providers.", "copy": "The portal will launch after verified provider onboarding is ready. Until then, this page explains the planned experience without enabling customer requests yet.", "imageAlt": "Family and professional discussing paperwork", "emailLabel": "Email address", "placeholder": "you@example.com", "button": "Notify me"},
     "coming": {"eyebrow": "What’s coming", "title": "A calm way to start important work.", "copy": "The portal will help customers move from uncertainty to a clear next step.", "items": [{"title": "Guided category selection", "copy": "Choose the right professional service without guessing where to begin."}, {"title": "Verified provider visibility", "copy": "See professionals only after they pass onboarding review."}, {"title": "Document readiness", "copy": "Understand what information or files may be needed before work begins."}, {"title": "Clear communication", "copy": "Future workflows can keep expectations, timelines and messages organized."}, {"title": "Launch notifications", "copy": "Customers can register interest before the public workflow opens."}, {"title": "Timeline clarity", "copy": "The portal will communicate what is available now and what comes next."}]},
     "features": {"eyebrow": "Expected features", "title": "The planned customer experience.", "panelTitle": "Future portal features", "items": ["Service category discovery", "City and requirement intake", "Verified provider matching", "Document checklist guidance", "Support-led status updates"], "timeline": [{"title": "Now", "copy": "Provider onboarding and public website readiness."}, {"title": "Next", "copy": "Admin review and first verified professional network."}, {"title": "Then", "copy": "Controlled client access launch for selected categories and cities."}, {"title": "Later", "copy": "Broader workflows after the Tier 1 MVP is stable."}]}

@@ -134,7 +134,7 @@ function DesktopSidebar({collapsed, approved, pathname, status, onToggle}: {coll
       <div className="flex items-center justify-between gap-3">
         <Link href="/provider/dashboard" className="flex min-w-0 items-center gap-3" aria-label="Provider portal home">
           <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white">
-            <Image src="/brand/bharosa-hai-logo.png" alt="Bharosa Hai" width={735} height={385} className="h-10 w-10 object-contain" />
+            <Image src="/brand/kaunbatayega-logo.png" alt="KaunBatayega" width={735} height={385} className="h-10 w-10 object-contain" />
           </span>
           {!collapsed && (
             <span className="min-w-0">

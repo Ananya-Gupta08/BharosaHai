@@ -237,7 +237,7 @@ function UnderReviewOverlay({data}: {data: PortalData}) {
             <div>
               <h3 className="font-heading text-lg font-bold text-[#111827]">Need Assistance?</h3>
               <p className="mt-2 text-sm leading-6 text-[#64748b]">If you have questions regarding your verification, please contact our support team.</p>
-              <a href="mailto:bharosahai.india@gmail.com" className="mt-2 inline-flex text-sm font-bold text-[#005BAC]">bharosahai.india@gmail.com</a>
+              <a href="mailto:kaunbatayega.india@gmail.com" className="mt-2 inline-flex text-sm font-bold text-[#005BAC]">kaunbatayega.india@gmail.com</a>
               <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-[#64748b]">Average response time: Within 24 hours</p>
             </div>
           </div>

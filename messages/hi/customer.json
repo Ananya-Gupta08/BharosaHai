@@ -1,5 +1,5 @@
 {
-  "metadata": {"title": "Customer Experience Coming Soon", "description": "Bharosa Hai customer experience ka premium preview."},
+  "metadata": {"title": "Customer Experience Coming Soon", "description": "KaunBatayega customer experience ka premium preview."},
   "commonBadge": "Coming Soon",
   "hero": {
     "badge": "Launching Soon",
@@ -20,10 +20,10 @@
   },
   "features": {
     "eyebrow": "Customer support",
-    "title": "HOW BHAROSA HAI WILL HELP YOU",
+    "title": "HOW KAUNBATAYEGA WILL HELP YOU",
     "copy": "Making it easier to find trusted professionals and manage your service journey.",
     "items": {
-      "find": {"title": "Find Verified Professionals", "copy": "Bharosa Hai verification complete kar chuke providers discover karein."},
+      "find": {"title": "Find Verified Professionals", "copy": "KaunBatayega verification complete kar chuke providers discover karein."},
       "compare": {"title": "Compare Trusted Providers", "copy": "Choose karne se pehle city, service focus, experience aur profile details dekhein."},
       "track": {"title": "Track Service Requests", "copy": "Request se completion tak apni service journey follow karein."},
       "save": {"title": "Save Favourite Professionals", "copy": "Future work ke liye trusted providers save rakhein."},
@@ -66,7 +66,7 @@
     }
   },
   "why": {
-    "eyebrow": "Customers ko Bharosa Hai kyun pasand aayega",
+    "eyebrow": "Customers ko KaunBatayega kyun pasand aayega",
     "title": "Trust, clarity aur simplicity ke around designed.",
     "copy": "Customer product un logon ke liye ban raha hai jo random listings ya confusing calls ke bina reliable guidance chahte hain.",
     "items": {
@@ -81,8 +81,8 @@
     "title": "Frequently Asked Questions",
     "copy": "Upcoming customer experience ke baare mein clear answers.",
     "items": {
-      "launch": {"question": "Customer experience kab launch hoga?", "answer": "Customer experience currently prepare ho raha hai. Bharosa Hai pehle verified provider network city by city build kar raha hai."},
-      "free": {"question": "Kya Bharosa Hai use karna free hoga?", "answer": "Customer access details launch se pehle announce hongi. Provider onboarding launch phase mein currently free hai."},
+      "launch": {"question": "Customer experience kab launch hoga?", "answer": "Customer experience currently prepare ho raha hai. KaunBatayega pehle verified provider network city by city build kar raha hai."},
+      "free": {"question": "Kya KaunBatayega use karna free hoga?", "answer": "Customer access details launch se pehle announce hongi. Provider onboarding launch phase mein currently free hai."},
       "verified": {"question": "Professionals kaise verify hote hain?", "answer": "Providers profile details aur documents submit karte hain. Admin team identity, service category, credentials aur profile quality review karti hai."},
       "cities": {"question": "Pehle kaun se cities available honge?", "answer": "Initial city focus Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad aur Sonipat par hai."},
       "provider": {"question": "Kya main aaj provider ke roop mein register kar sakta hoon?", "answer": "Haan. Service providers account create karke verification process complete kar sakte hain."}

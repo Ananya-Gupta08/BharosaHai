@@ -3,7 +3,7 @@
   "hero": {"eyebrow": "FAQ", "title": "Early customers और providers के जरूरी सवाल।", "copy": "Provider onboarding, verification, customer launch, admin review और Tier 1 MVP boundaries के जवाब।", "imageAlt": "FAQ document review करती professional team"},
   "section": {"eyebrow": "Questions", "title": "Clear answers, बिना overpromise.", "copy": "यह FAQ current scope साफ रखता है: provider onboarding और dashboard surfaces शामिल हैं; customer requests, leads, payments और subscriptions नहीं।"},
   "items": [
-    {"question": "Bharosa Hai क्या है?", "answer": "Bharosa Hai high-trust professional services जैसे legal, CA, GST, property, documentation और government-service support के लिए verification-first platform है।"},
+    {"question": "KaunBatayega क्या है?", "answer": "KaunBatayega high-trust professional services जैसे legal, CA, GST, property, documentation और government-service support के लिए verification-first platform है।"},
     {"question": "क्या client access live है?", "answer": "अभी नहीं। Provider onboarding prepare होने तक client access coming-soon experience है।"},
     {"question": "क्या customer अभी service requests submit कर सकते हैं?", "answer": "नहीं। Customer requests और lead management current Tier 1 MVP scope से बाहर हैं।"},
     {"question": "Provider कौन बन सकता है?", "answer": "Lawyers, CAs, GST consultants, property advisors, documentation experts और local service professionals apply कर सकते हैं।"},
@@ -12,7 +12,7 @@
     {"question": "कौन से documents required हैं?", "answer": "Requirements provider category पर depend करती हैं। Examples में Aadhaar, PAN, Bar Council Certificate, ICAI Certificate, business registration और professional credentials शामिल हैं।"},
     {"question": "Verification क्यों जरूरी है?", "answer": "Supported categories में sensitive documents, money, property या legal decisions शामिल होते हैं। Verification customer की शुरुआत बेहतर बनाता है।"},
     {"question": "पहले कौन से शहर cover होंगे?", "answer": "Launch focus Mathura, Vrindavan और nearby districts पर है।"},
-    {"question": "क्या Bharosa Hai दूसरे शहरों में expand करेगा?", "answer": "हां। पहला provider network और operating model stable होने के बाद expansion planned है।"},
+    {"question": "क्या KaunBatayega दूसरे शहरों में expand करेगा?", "answer": "हां। पहला provider network और operating model stable होने के बाद expansion planned है।"},
     {"question": "क्या मैं city suggest कर सकता हूं?", "answer": "हां। Contact page से city या category suggestion भेज सकते हैं।"},
     {"question": "Provider registration के बाद क्या होता है?", "answer": "Profile और documents admin review करते हैं। Provider dashboard current verification status दिखा सकता है।"},
     {"question": "क्या providers profile edit कर पाएंगे?", "answer": "Dashboard planned profile-management surface दिखाता है। Full backend editing इस frontend-only scope में नहीं है।"},

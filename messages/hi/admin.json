@@ -1,6 +1,6 @@
 {
   "dashboard": {
-    "metadata": {"title": "Admin Dashboard", "description": "Bharosa Hai admins ke liye provider governance dashboard."},
+    "metadata": {"title": "Admin Dashboard", "description": "KaunBatayega admins ke liye provider governance dashboard."},
     "hero": {"eyebrow": "Admin dashboard", "title": "Provider review ke liye clear operational dashboard.", "copy": "Admin team yahan live provider applications, status aur review actions dekh sakti hai.", "imageAlt": "Provider governance review karti operations team"},
     "stats": {"pending": "Pending providers", "approved": "Approved", "rejected": "Rejected", "total": "Total providers"},
     "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Approved", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
@@ -10,7 +10,7 @@
     "timeline": [{"title": "Application kholein", "copy": "Identity, profile, category, experience aur city review karein."}, {"title": "Documents check karein", "copy": "Document records ko category requirements se compare karein."}, {"title": "Decision chunein", "copy": "Approve, reject ya more documents request karein."}, {"title": "Audit trail record karein", "copy": "Admin decisions system mein traceable record ke saath save hote hain."}]
   },
   "detail": {
-    "metadata": {"title": "Provider Review", "description": "Bharosa Hai admin dashboard mein provider application review karein."},
+    "metadata": {"title": "Provider Review", "description": "KaunBatayega admin dashboard mein provider application review karein."},
     "hero": {"eyebrow": "Provider review", "title": "Onboarding aur documents review karein.", "copy": "Live provider application, document records aur verification status review karein.", "imageAlt": "Provider documents review karta admin", "back": "Admin par wapas"},
     "status": {"DRAFT": "Draft", "PENDING": "Pending", "APPROVED": "Approved", "REJECTED": "Rejected", "NEEDS_MORE_DOCUMENTS": "Needs documents"},
     "profile": {"eyebrow": "Profile summary", "notProvided": "Abhi nahi diya", "years": "{count, plural, one {# year} other {# years}}", "fields": {"category": "Category", "experience": "Experience", "city": "City", "status": "Status", "languages": "Languages", "office": "Office"}},
@@ -19,7 +19,7 @@
     "checklist": {"eyebrow": "Review checklist", "title": "Admins ke liye structured review flow.", "items": [{"title": "Identity confirm karein", "copy": "Name, city, phone aur email consistency check karein."}, {"title": "Credentials review karein", "copy": "Document records ko category requirements se compare karein."}, {"title": "Profile quality assess karein", "copy": "Bio, experience, languages aur office details customer-ready honi chahiye."}, {"title": "Decision record karein", "copy": "Decision system mein status aur audit trail ke saath save hota hai."}]}
   },
   "login": {
-    "metadata": {"title": "Admin Login", "description": "Bharosa Hai admins ke liye secure access."},
+    "metadata": {"title": "Admin Login", "description": "KaunBatayega admins ke liye secure access."},
     "hero": {"eyebrow": "Admin access", "title": "Providers review karne ke liye sign in karein.", "copy": "Protected provider operations kholne ke liye admin access token enter karein.", "imageAlt": "Provider governance review karti operations team"},
     "tokenLabel": "Admin access token",
     "placeholder": "Access token enter karein",

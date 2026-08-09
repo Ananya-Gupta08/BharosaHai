@@ -43,7 +43,7 @@ export function ProviderAuthShell({mode, children}: ProviderAuthShellProps) {
         <div className="grid gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-center">
           <motion.div initial={{opacity: 0, y: 18}} animate={{opacity: 1, y: 0}} transition={{duration: 0.34}}>
             <span className="inline-flex rounded-full border border-[var(--border)] bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[var(--primary)] shadow-[var(--shadow-soft)]">
-              Bharosa Hai Provider Network
+              KaunBatayega Provider Network
             </span>
             <h1 className="mt-5 max-w-3xl font-heading text-4xl font-bold leading-tight text-[var(--primary)] sm:text-5xl lg:text-[54px]">
               {signIn ? "Welcome Back" : "Start Your Provider Journey"}
@@ -63,7 +63,7 @@ export function ProviderAuthShell({mode, children}: ProviderAuthShellProps) {
             <div className="mb-5">
               <p className="font-heading text-sm font-bold uppercase tracking-[0.16em] text-[var(--accent)]">{signIn ? "Secure login" : "Provider registration"}</p>
               <h2 className="mt-2 font-heading text-2xl font-bold text-[var(--primary)]">{signIn ? "Sign in to your dashboard" : "Create your provider account"}</h2>
-              <p className="mt-2 text-sm leading-6 text-[var(--secondary-text)]">{signIn ? "Use the email and password linked to your Bharosa Hai account." : "Email verification is handled securely before profile onboarding."}</p>
+              <p className="mt-2 text-sm leading-6 text-[var(--secondary-text)]">{signIn ? "Use the email and password linked to your KaunBatayega account." : "Email verification is handled securely before profile onboarding."}</p>
             </div>
             <div className="provider-clerk-card">{children}</div>
             <div className="mt-5 rounded-2xl bg-[var(--background)] p-4 text-sm font-semibold text-[var(--secondary-text)]">

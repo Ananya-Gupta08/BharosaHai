@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export function TemporaryLanding() {
   return (
-    <main className="temporary-landing" aria-label="BHAROSA HAI coming soon">
+    <main className="temporary-landing" aria-label="KAUNBATAYEGA coming soon">
       <div className="tl-sunburst" aria-hidden="true" />
       <div className="tl-glow" aria-hidden="true" />
       <div className="tl-accent-left" aria-hidden="true" />
       <div className="tl-accent-right" aria-hidden="true" />
 
-      <section className="tl-content" aria-label="BHAROSA HAI coming soon">
+      <section className="tl-content" aria-label="KAUNBATAYEGA coming soon">
         <Image
           className="tl-logo"
-          src="/campaign/bharosa-hai-official-logo-transparent.png"
-          alt="BHAROSA HAI - आपका भरोसा, हमारा प्रयास"
+          src="/campaign/kaunbatayega-logo.png"
+          alt="KAUNBATAYEGA"
           width={735}
           height={385}
           priority
@@ -21,16 +21,16 @@ export function TemporaryLanding() {
         <hr className="tl-divider" />
 
         <p className="tl-wait">The Wait Begins...</p>
-        <p className="tl-soon">बहुत जल्द आपके शहर में...</p>
-        <p className="tl-city">मथुरा&nbsp; • &nbsp;वृन्दावन</p>
-        <div className="tl-socials" aria-label="Bharosa Hai social links">
-          <a href="https://www.instagram.com/bharosahai.india?igsh=MThuNnRrend6eTNlMw==" target="_blank" rel="noreferrer" className="tl-social-link">
+        <p className="tl-soon">Bahut jald aapke shahar mein...</p>
+        <p className="tl-city">Mathura&nbsp; • &nbsp;Vrindavan</p>
+        <div className="tl-socials" aria-label="KaunBatayega social links">
+          <a href="https://www.instagram.com/kaunbatayega.india?igsh=MThuNnRrend6eTNlMw==" target="_blank" rel="noreferrer" className="tl-social-link">
             <InstagramIcon />
-            <span>@bharosahai.india</span>
+            <span>@kaunbatayega.india</span>
           </a>
           <a href="https://www.facebook.com/share/1FBmLdJ44S/" target="_blank" rel="noreferrer" className="tl-social-link">
             <FacebookIcon />
-            <span>Bharosa Hai</span>
+            <span>KaunBatayega</span>
           </a>
         </div>
       </section>

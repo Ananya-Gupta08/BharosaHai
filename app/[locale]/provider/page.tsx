@@ -14,8 +14,8 @@ type Props = {
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const {locale} = await params;
   const path = `/${locale}/provider`;
-  const title = "Become a Bharosa Hai Provider";
-  const description = "Register as a verified Bharosa Hai Provider to grow your business, receive customer enquiries and manage leads, documents, bookings and analytics from a secure dashboard.";
+  const title = "Become a KaunBatayega Provider";
+  const description = "Register as a verified KaunBatayega Provider to grow your business, receive customer enquiries and manage leads, documents, bookings and analytics from a secure dashboard.";
 
   return {
     title,
@@ -31,15 +31,15 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
       title,
       description,
       url: path,
-      siteName: "Bharosa Hai",
+      siteName: "KaunBatayega",
       type: "website",
-      images: [{url: "/brand/bharosa-hai-logo.png", width: 735, height: 385, alt: "Bharosa Hai"}]
+      images: [{url: "/brand/kaunbatayega-logo.png", width: 735, height: 385, alt: "KaunBatayega"}]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/brand/bharosa-hai-logo.png"]
+      images: ["/brand/kaunbatayega-logo.png"]
     }
   };
 }
@@ -53,8 +53,8 @@ export default async function ProviderLandingRoute() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Become a Bharosa Hai Provider",
-    description: "Provider registration landing page for Bharosa Hai verified professionals.",
+    name: "Become a KaunBatayega Provider",
+    description: "Provider registration landing page for KaunBatayega verified professionals.",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -64,8 +64,8 @@ export default async function ProviderLandingRoute() {
     },
     publisher: {
       "@type": "Organization",
-      name: "Bharosa Hai",
-      logo: "/brand/bharosa-hai-logo.png"
+      name: "KaunBatayega",
+      logo: "/brand/kaunbatayega-logo.png"
     }
   };
 

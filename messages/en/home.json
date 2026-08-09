@@ -1,10 +1,10 @@
 {
-  "metadata": {"title": "Bharosa Hai | Verified Services in Your City", "description": "Find verified professionals for legal, business, government and essential services in your city."},
+  "metadata": {"title": "KaunBatayega | Verified Services in Your City", "description": "Find verified professionals for legal, business, government and essential services in your city."},
   "hero": {
     "eyebrow": "Trusted service marketplace",
-    "title": "Har Seva Ka Ek Hi Bharosa.",
+    "title": "Trusted Services. Right Around You.",
     "subheading": "Find verified professionals for legal, business, government and essential services in your city.",
-    "copy": "Bharosa Hai connects customers with trusted and verified service providers, making it simple to find the right expert for every important task.",
+    "copy": "KaunBatayega connects customers with trusted and verified service providers, making it simple to find the right expert for every important task.",
     "primary": "Find a Verified Service",
     "secondary": "Become a Service Provider",
     "searchLabel": "Search services",
@@ -16,7 +16,7 @@
   "popular": {
     "eyebrow": "Popular services",
     "title": "Start with the service you need.",
-    "copy": "The most requested Bharosa Hai categories are visible first so customers can act quickly.",
+    "copy": "The most requested KaunBatayega categories are visible first so customers can act quickly.",
     "items": {
       "legal": {"title": "Legal Services", "copy": "Lawyers for notices, agreements and case guidance."},
       "gst": {"title": "GST & Taxation", "copy": "GST registration, filing, notices and tax support."},
@@ -35,7 +35,7 @@
   "categories": {
     "eyebrow": "All service categories",
     "title": "Everything important, grouped clearly.",
-    "copy": "Bharosa Hai is built for everyday Indian service needs where trust, documents and local process knowledge matter.",
+    "copy": "KaunBatayega is built for everyday Indian service needs where trust, documents and local process knowledge matter.",
     "badge": "Coming Soon",
     "items": {
       "business": {"title": "Business & Tax", "copy": "GST, taxation, business registration, accounting, licenses and compliance work.", "cta": "Explore Services"},
@@ -49,7 +49,7 @@
   "cities": {
     "eyebrow": "Cities we serve",
     "title": "Find trusted help in your city.",
-    "copy": "Bharosa Hai is launching city by city so service quality stays practical and local.",
+    "copy": "KaunBatayega is launching city by city so service quality stays practical and local.",
     "searchLabel": "Search city",
     "searchPlaceholder": "Search your city",
     "items": {
@@ -65,7 +65,7 @@
     }
   },
   "why": {
-    "eyebrow": "Why Bharosa Hai",
+    "eyebrow": "Why KaunBatayega",
     "title": "Built for trust before transactions.",
     "copy": "Customers should know who they are speaking to before sharing documents, money or personal details.",
     "items": {
@@ -91,7 +91,7 @@
   "providers": {
     "eyebrow": "Featured providers",
     "title": "Verified professionals customers can understand.",
-    "copy": "Sample featured cards show how Bharosa Hai will present providers clearly after verification.",
+    "copy": "Sample featured cards show how KaunBatayega will present providers clearly after verification.",
     "badge": "Verified",
     "cta": "View Profile",
     "items": {
@@ -106,7 +106,7 @@
   "testimonials": {
     "eyebrow": "Testimonials",
     "title": "People want clarity before they trust.",
-    "copy": "These sample launch stories reflect the kind of confidence Bharosa Hai is built to create.",
+    "copy": "These sample launch stories reflect the kind of confidence KaunBatayega is built to create.",
     "items": {
       "customerOne": {"label": "Customer", "quote": "I needed property documents reviewed and wanted someone reliable. A verified provider profile makes the first call easier.", "credit": "Saurabh Gupta, Mathura"},
       "customerTwo": {"label": "Business Owner", "quote": "For GST and license work, I do not want random numbers. I want a professional whose background is visible.", "credit": "Priya Jain, Agra"},
@@ -129,8 +129,8 @@
     "title": "Common questions.",
     "copy": "Clear answers for customers and service providers.",
     "items": {
-      "providerVerification": {"question": "How does Bharosa Hai verify providers?", "answer": "Providers submit profile details and documents. The admin team reviews identity, category fit, credentials and profile quality before approval."},
-      "free": {"question": "Is Bharosa Hai free to use?", "answer": "Customer access is being prepared. Provider onboarding is free during the launch phase."},
+      "providerVerification": {"question": "How does KaunBatayega verify providers?", "answer": "Providers submit profile details and documents. The admin team reviews identity, category fit, credentials and profile quality before approval."},
+      "free": {"question": "Is KaunBatayega free to use?", "answer": "Customer access is being prepared. Provider onboarding is free during the launch phase."},
       "compare": {"question": "Can I compare multiple providers?", "answer": "The homepage is being prepared for discovery first. Comparison workflows will be added as customer features launch."},
       "becomeProvider": {"question": "How do I become a verified provider?", "answer": "Create a provider account, complete your profile, upload required documents and wait for admin review."},
       "cities": {"question": "Which cities are currently supported?", "answer": "The launch focus includes Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad and Sonipat."}

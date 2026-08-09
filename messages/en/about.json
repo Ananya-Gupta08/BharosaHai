@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "About Bharosa Hai",
-    "description": "Learn how Bharosa Hai builds trust between customers and verified Indian service professionals."
+    "title": "About KaunBatayega",
+    "description": "Learn how KaunBatayega builds trust between customers and verified Indian service professionals."
   },
   "schema": {
     "home": "Home",
-    "about": "About Bharosa Hai"
+    "about": "About KaunBatayega"
   },
   "hero": {
-    "eyebrow": "About Bharosa Hai",
+    "eyebrow": "About KaunBatayega",
     "title": "Building Trust Between Customers and Verified Professionals",
-    "subtitle": "Bharosa Hai helps people find verified professionals for legal, business, government and essential services in their city.",
+    "subtitle": "KaunBatayega helps people find verified professionals for legal, business, government and essential services in their city.",
     "copy": "The platform is being built to make service discovery simpler, more transparent and more dependable while giving serious professionals a trusted place to grow their business.",
     "primary": "Explore Services",
     "secondary": "Become a Provider",
@@ -32,7 +32,7 @@
     "copy": "In many Indian cities, people still find professionals through references, calls, shop boards or scattered online listings. That can work, but it often leaves customers unsure about credentials, process, documents and reliability.",
     "items": [
       {"title": "The problem", "copy": "Important work like legal help, GST, property papers and government documentation needs more confidence than a random contact number."},
-      {"title": "Why we exist", "copy": "Bharosa Hai was created to bring verified professionals, structured profiles and simple discovery into one trusted experience."},
+      {"title": "Why we exist", "copy": "KaunBatayega was created to bring verified professionals, structured profiles and simple discovery into one trusted experience."},
       {"title": "For customers", "copy": "Customers should be able to compare providers, understand service categories and begin with more clarity."},
       {"title": "For providers", "copy": "Professionals should get a credible digital presence, verification status and tools to manage future enquiries."}
     ]
@@ -47,7 +47,7 @@
   },
   "values": {
     "eyebrow": "What We Believe",
-    "title": "The principles behind Bharosa Hai.",
+    "title": "The principles behind KaunBatayega.",
     "copy": "The product is built around trust, simplicity and responsible growth.",
     "items": [
       {"title": "Trust", "copy": "A provider profile should give customers confidence before they share personal or business information."},
@@ -55,22 +55,22 @@
       {"title": "Verification", "copy": "Identity, documents and professional details should be reviewed before a provider is treated as verified."},
       {"title": "Customer First", "copy": "The experience should be simple enough for users in Tier 2 and Tier 3 cities to navigate without confusion."},
       {"title": "Provider Growth", "copy": "Serious professionals need better visibility, profile quality and digital business tools."},
-      {"title": "Continuous Improvement", "copy": "Bharosa Hai will expand carefully as verification, support and operational quality become stronger."}
+      {"title": "Continuous Improvement", "copy": "KaunBatayega will expand carefully as verification, support and operational quality become stronger."}
     ]
   },
   "difference": {
     "eyebrow": "What Makes Us Different",
     "title": "From scattered search to structured trust.",
-    "copy": "Bharosa Hai is not a generic listing page. The platform is designed around verified profiles, clearer categories and a professional service journey.",
-    "withoutTitle": "Without Bharosa Hai",
-    "withTitle": "With Bharosa Hai",
+    "copy": "KaunBatayega is not a generic listing page. The platform is designed around verified profiles, clearer categories and a professional service journey.",
+    "withoutTitle": "Without KaunBatayega",
+    "withTitle": "With KaunBatayega",
     "comparison": {
       "without": ["Finding professionals manually", "Unverified businesses", "Limited transparency", "No digital profile", "No structured reviews"],
       "with": ["Verified providers", "Professional profiles", "Transparent reviews", "Easy comparison", "Secure platform"]
     }
   },
   "journeys": {
-    "eyebrow": "How Bharosa Hai Works",
+    "eyebrow": "How KaunBatayega Works",
     "title": "Two simple journeys on one trusted platform.",
     "copy": "The customer journey and provider journey are designed to support each other as the marketplace grows.",
     "customerTitle": "Customer Journey",
@@ -94,7 +94,7 @@
   "verification": {
     "eyebrow": "Our Verification Process",
     "title": "Verification is built into the platform.",
-    "copy": "Bharosa Hai treats verification as a core product workflow, not a badge added at the end.",
+    "copy": "KaunBatayega treats verification as a core product workflow, not a badge added at the end.",
     "note": "Provider verification usually completes within 24-48 hours after complete documents are submitted.",
     "items": [
       {"title": "Registration", "copy": "The provider creates a secure account and starts the application."},
@@ -108,7 +108,7 @@
   "serve": {
     "eyebrow": "Who We Serve",
     "title": "Built for customers and professionals.",
-    "copy": "Bharosa Hai works only when both sides get a better experience.",
+    "copy": "KaunBatayega works only when both sides get a better experience.",
     "customers": {
       "title": "Customers",
       "copy": "Customers get a clearer way to discover trusted providers for important services such as legal, GST, property, government documentation, electricity, insurance and more.",
@@ -142,7 +142,7 @@
     ]
   },
   "trust": {
-    "eyebrow": "Why People Trust Bharosa Hai",
+    "eyebrow": "Why People Trust KaunBatayega",
     "title": "Trust is designed into every step.",
     "copy": "These are platform principles for building confidence before customer-side workflows launch.",
     "items": [
@@ -155,7 +155,7 @@
     ]
   },
   "promise": {
-    "eyebrow": "The Bharosa Hai Promise",
+    "eyebrow": "The KaunBatayega Promise",
     "title": "A more dependable way to start important work.",
     "copy": "The promise is simple: make it easier for people to find trusted help and easier for serious professionals to be discovered.",
     "items": [
@@ -167,10 +167,10 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Common questions about Bharosa Hai.",
+    "title": "Common questions about KaunBatayega.",
     "copy": "Clear answers for customers and professionals.",
     "items": [
-      {"question": "What is Bharosa Hai?", "answer": "Bharosa Hai is a trusted service marketplace that helps customers discover verified professionals across legal, GST, property, documentation, government and essential service categories."},
+      {"question": "What is KaunBatayega?", "answer": "KaunBatayega is a trusted service marketplace that helps customers discover verified professionals across legal, GST, property, documentation, government and essential service categories."},
       {"question": "How are providers verified?", "answer": "Providers submit profile information and required documents. The admin team reviews identity, professional details and documents before approval."},
       {"question": "Who can become a provider?", "answer": "Lawyers, CAs, GST consultants, property consultants, documentation experts, insurance advisors, electricians, government consultants and other serious service professionals can apply."},
       {"question": "How do customers connect?", "answer": "Customer-side access is being prepared. The public site currently helps users understand services while the verified provider network is built."},
@@ -183,7 +183,7 @@
   "cta": {
     "eyebrow": "Next Step",
     "title": "Ready to Experience Trusted Services?",
-    "copy": "Explore Bharosa Hai services or join as a verified provider and become part of a trusted local service network.",
+    "copy": "Explore KaunBatayega services or join as a verified provider and become part of a trusted local service network.",
     "primary": "Explore Services",
     "secondary": "Become a Provider"
   }

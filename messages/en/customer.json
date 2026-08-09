@@ -1,5 +1,5 @@
 {
-  "metadata": {"title": "Customer Experience Coming Soon", "description": "A premium preview of the upcoming Bharosa Hai customer experience."},
+  "metadata": {"title": "Customer Experience Coming Soon", "description": "A premium preview of the upcoming KaunBatayega customer experience."},
   "commonBadge": "Coming Soon",
   "hero": {
     "badge": "Launching Soon",
@@ -20,10 +20,10 @@
   },
   "features": {
     "eyebrow": "Customer support",
-    "title": "HOW BHAROSA HAI WILL HELP YOU",
+    "title": "HOW KAUNBATAYEGA WILL HELP YOU",
     "copy": "Making it easier to find trusted professionals and manage your service journey.",
     "items": {
-      "find": {"title": "Find Verified Professionals", "copy": "Discover providers who have completed the Bharosa Hai verification process."},
+      "find": {"title": "Find Verified Professionals", "copy": "Discover providers who have completed the KaunBatayega verification process."},
       "compare": {"title": "Compare Trusted Providers", "copy": "Review city, service focus, experience and profile details before choosing."},
       "track": {"title": "Track Service Requests", "copy": "Follow your service journey from request to completion."},
       "save": {"title": "Save Favourite Professionals", "copy": "Keep trusted providers ready for future work."},
@@ -66,7 +66,7 @@
     }
   },
   "why": {
-    "eyebrow": "Why customers will love Bharosa Hai",
+    "eyebrow": "Why customers will love KaunBatayega",
     "title": "Designed around trust, clarity and simplicity.",
     "copy": "The customer product is being built for people who want reliable guidance without confusing calls or random listings.",
     "items": {
@@ -81,8 +81,8 @@
     "title": "Frequently Asked Questions",
     "copy": "Clear answers about the upcoming customer experience.",
     "items": {
-      "launch": {"question": "When will the customer experience launch?", "answer": "The customer experience is currently being prepared. Bharosa Hai is first building a verified provider network city by city."},
-      "free": {"question": "Will Bharosa Hai be free to use?", "answer": "Customer access details will be announced before launch. Provider onboarding is currently free during the launch phase."},
+      "launch": {"question": "When will the customer experience launch?", "answer": "The customer experience is currently being prepared. KaunBatayega is first building a verified provider network city by city."},
+      "free": {"question": "Will KaunBatayega be free to use?", "answer": "Customer access details will be announced before launch. Provider onboarding is currently free during the launch phase."},
       "verified": {"question": "How are professionals verified?", "answer": "Providers submit profile details and documents. The admin team reviews identity, service category, credentials and profile quality."},
       "cities": {"question": "Which cities will be available first?", "answer": "The initial city focus includes Mathura, Vrindavan, Agra, Delhi, Noida, Gurugram, Faridabad and Sonipat."},
       "provider": {"question": "Can I register as a provider today?", "answer": "Yes. Service providers can create an account and complete the verification process now."}

@@ -46,8 +46,8 @@ const trustStrip = ["Verified Platform", "Transparent Verification", "Secure Das
 const features = [
   {title: "Verified Customer Leads", copy: "Receive enquiries from people looking for professional help in your city.", icon: Users},
   {title: "Business Dashboard", copy: "Track leads, bookings, messages, documents and performance from one workspace.", icon: BriefcaseBusiness},
-  {title: "Verified Trust Badge", copy: "Build credibility with a profile reviewed through Bharosa Hai verification.", icon: BadgeCheck},
-  {title: "Grow Local Visibility", copy: "Make your services easier to discover across local Bharosa Hai launch cities.", icon: TrendingUp},
+  {title: "Verified Trust Badge", copy: "Build credibility with a profile reviewed through KaunBatayega verification.", icon: BadgeCheck},
+  {title: "Grow Local Visibility", copy: "Make your services easier to discover across local KaunBatayega launch cities.", icon: TrendingUp},
   {title: "Simple Verification", copy: "Complete your profile, upload documents and follow a clear approval process.", icon: FileCheck2},
   {title: "Dedicated Support", copy: "Get platform guidance while setting up your profile and provider operations.", icon: Headphones}
 ];
@@ -104,13 +104,13 @@ export function ProviderLandingPage({stats, dashboardCtaVisible}: ProviderLandin
                 Trusted Professional Network
               </span>
               <h1 className="mt-5 max-w-3xl font-heading text-4xl font-bold leading-tight text-[var(--primary)] sm:text-5xl lg:text-[56px]">
-                Grow Your Business with Bharosa Hai
+                Grow Your Business with KaunBatayega
               </h1>
               <p className="mt-5 max-w-2xl text-lg font-semibold leading-8 text-[var(--foreground)]">
                 Join a verified multi-service platform built to help professionals earn trust, receive quality enquiries and manage work digitally.
               </p>
               <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--secondary-text)]">
-                Bharosa Hai gives providers a secure dashboard for profile verification, lead management, documents, messages, analytics and long-term business credibility.
+                KaunBatayega gives providers a secure dashboard for profile verification, lead management, documents, messages, analytics and long-term business credibility.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link href="/provider/sign-up" className={primaryButton}>Register as Provider</Link>
@@ -131,7 +131,7 @@ export function ProviderLandingPage({stats, dashboardCtaVisible}: ProviderLandin
         </HeroBackgroundCarousel>
       </section>
 
-      <Section eyebrow="Why join" title="Why Professionals Choose Bharosa Hai" copy="A provider workspace designed for trust, local growth and everyday business management.">
+      <Section eyebrow="Why join" title="Why Professionals Choose KaunBatayega" copy="A provider workspace designed for trust, local growth and everyday business management.">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {features.map((item) => <FeatureCard key={item.title} {...item} />)}
         </div>
@@ -143,16 +143,16 @@ export function ProviderLandingPage({stats, dashboardCtaVisible}: ProviderLandin
         </div>
       </Section>
 
-      <Section eyebrow="Eligibility" title="Who Can Join" copy="Bharosa Hai is built for verified professionals across essential local service categories.">
+      <Section eyebrow="Eligibility" title="Who Can Join" copy="KaunBatayega is built for verified professionals across essential local service categories.">
         <div className="grid grid-cols-2 gap-3 min-[430px]:grid-cols-3 md:grid-cols-4 xl:grid-cols-6">
           {serviceCategories.map(({id, providerAudience, icon}) => <ServiceAudienceCard key={id} title={providerAudience} icon={icon} />)}
         </div>
       </Section>
 
-      <Section eyebrow="Business advantage" title="Benefits of Joining Bharosa Hai" copy="Move from scattered manual work to a verified digital provider workspace.">
+      <Section eyebrow="Business advantage" title="Benefits of Joining KaunBatayega" copy="Move from scattered manual work to a verified digital provider workspace.">
         <div className="grid gap-5 lg:grid-cols-2">
-          <ComparisonCard title="Without Bharosa Hai" items={comparison.without} muted />
-          <ComparisonCard title="With Bharosa Hai" items={comparison.with} />
+          <ComparisonCard title="Without KaunBatayega" items={comparison.without} muted />
+          <ComparisonCard title="With KaunBatayega" items={comparison.with} />
         </div>
       </Section>
 
@@ -181,7 +181,7 @@ export function ProviderLandingPage({stats, dashboardCtaVisible}: ProviderLandin
         </div>
       </Section>
 
-      <Section eyebrow="Provider success" title="Built for a Growing Provider Community" copy="Real testimonials can be added later. Until then, Bharosa Hai focuses on measurable trust standards.">
+      <Section eyebrow="Provider success" title="Built for a Growing Provider Community" copy="Real testimonials can be added later. Until then, KaunBatayega focuses on measurable trust standards.">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {["Growing Provider Community", "High Verification Standards", "Quick Support", "Business Growth Focus"].map((item) => <div key={item} className={card}><h3 className="font-heading text-xl font-bold text-[var(--primary)]">{item}</h3><p className="mt-3 text-sm leading-7 text-[var(--secondary-text)]">A focused system to help professionals prepare for verified customer discovery.</p></div>)}
         </div>
@@ -196,7 +196,7 @@ export function ProviderLandingPage({stats, dashboardCtaVisible}: ProviderLandin
       <section className={`${container} pb-20`}>
         <div className="rounded-[32px] bg-[var(--primary)] px-6 py-12 text-center text-white shadow-[var(--shadow-lift)] sm:px-10">
           <h2 className="font-heading text-3xl font-bold sm:text-4xl">Ready to Grow Your Business?</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/86">Join Bharosa Hai and start connecting with verified customers through a trusted provider platform.</p>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/86">Join KaunBatayega and start connecting with verified customers through a trusted provider platform.</p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <Link href="/provider/sign-up" className="inline-flex min-h-12 items-center justify-center rounded-2xl bg-white px-5 py-3 text-sm font-bold text-[var(--primary)] transition hover:-translate-y-0.5">Register Now</Link>
             <Link href="/provider/sign-in" className="inline-flex min-h-12 items-center justify-center rounded-2xl border border-white/60 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-white/10">Already Registered? Login</Link>

@@ -25,7 +25,7 @@ const locales: Array<{value: AppLocale; short: string; labelKey: "hindi" | "engl
 ];
 
 const brandLogo = {
-  src: "/brand/bharosa-hai-logo.png",
+  src: "/brand/kaunbatayega-logo.png",
   width: 735,
   height: 385
 } as const;

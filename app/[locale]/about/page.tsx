@@ -27,15 +27,15 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
       title: t("title"),
       description: t("description"),
       url: path,
-      siteName: "Bharosa Hai",
+      siteName: "KaunBatayega",
       type: "website",
-      images: [{url: "/brand/bharosa-hai-logo.png", width: 735, height: 385, alt: "Bharosa Hai"}]
+      images: [{url: "/brand/kaunbatayega-logo.png", width: 735, height: 385, alt: "KaunBatayega"}]
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/brand/bharosa-hai-logo.png"]
+      images: ["/brand/kaunbatayega-logo.png"]
     }
   };
 }
@@ -57,8 +57,8 @@ export default async function AboutRoute({params}: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Bharosa Hai",
-      logo: "/brand/bharosa-hai-logo.png"
+      name: "KaunBatayega",
+      logo: "/brand/kaunbatayega-logo.png"
     }
   };
 

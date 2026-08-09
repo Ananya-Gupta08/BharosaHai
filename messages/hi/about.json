@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Bharosa Hai ke baare mein",
-    "description": "Janiye Bharosa Hai customers aur verified Indian service professionals ke beech trust kaise banata hai."
+    "title": "KaunBatayega ke baare mein",
+    "description": "Janiye KaunBatayega customers aur verified Indian service professionals ke beech trust kaise banata hai."
   },
   "schema": {
     "home": "Home",
-    "about": "Bharosa Hai ke baare mein"
+    "about": "KaunBatayega ke baare mein"
   },
   "hero": {
-    "eyebrow": "About Bharosa Hai",
+    "eyebrow": "About KaunBatayega",
     "title": "Customers aur Verified Professionals ke beech bharosa banana",
-    "subtitle": "Bharosa Hai logon ko apne shehar mein legal, business, government aur zaroori services ke liye verified professionals dhoondhne mein madad karta hai.",
+    "subtitle": "KaunBatayega logon ko apne shehar mein legal, business, government aur zaroori services ke liye verified professionals dhoondhne mein madad karta hai.",
     "copy": "Platform ka maksad service discovery ko simple, transparent aur dependable banana hai, saath hi serious professionals ko apna business badhane ke liye trusted jagah dena hai.",
     "primary": "Services Dekhein",
     "secondary": "Provider Banein",
@@ -32,7 +32,7 @@
     "copy": "Kai Indian cities mein log abhi bhi professionals ko references, calls, shop boards ya scattered online listings se dhoondhte hain. Yeh tareeka kabhi kaam karta hai, lekin customers ko credentials, process, documents aur reliability par clarity nahi milti.",
     "items": [
       {"title": "Problem", "copy": "Legal help, GST, property papers aur government documentation jaise important kaam random contact number se zyada confidence maangte hain."},
-      {"title": "Hum kyun hain", "copy": "Bharosa Hai verified professionals, structured profiles aur simple discovery ko ek trusted experience mein laane ke liye banaya gaya."},
+      {"title": "Hum kyun hain", "copy": "KaunBatayega verified professionals, structured profiles aur simple discovery ko ek trusted experience mein laane ke liye banaya gaya."},
       {"title": "Customers ke liye", "copy": "Customers providers compare kar sakein, service categories samajh sakein aur zyada clarity ke saath shuru kar sakein."},
       {"title": "Providers ke liye", "copy": "Professionals ko credible digital presence, verification status aur future enquiries manage karne ke tools mil sakein."}
     ]
@@ -47,7 +47,7 @@
   },
   "values": {
     "eyebrow": "Hum Kya Maante Hain",
-    "title": "Bharosa Hai ke product principles.",
+    "title": "KaunBatayega ke product principles.",
     "copy": "Product trust, simplicity aur responsible growth ke around built hai.",
     "items": [
       {"title": "Trust", "copy": "Provider profile customer ko personal ya business information share karne se pehle confidence deni chahiye."},
@@ -55,22 +55,22 @@
       {"title": "Verification", "copy": "Provider ko verified treat karne se pehle identity, documents aur professional details review hone chahiye."},
       {"title": "Customer First", "copy": "Experience Tier 2 aur Tier 3 cities ke users ke liye bhi simple aur clear hona chahiye."},
       {"title": "Provider Growth", "copy": "Serious professionals ko better visibility, profile quality aur digital business tools ki zaroorat hoti hai."},
-      {"title": "Continuous Improvement", "copy": "Bharosa Hai verification, support aur operations strong hone ke baad carefully expand karega."}
+      {"title": "Continuous Improvement", "copy": "KaunBatayega verification, support aur operations strong hone ke baad carefully expand karega."}
     ]
   },
   "difference": {
-    "eyebrow": "Bharosa Hai Alag Kaise Hai",
+    "eyebrow": "KaunBatayega Alag Kaise Hai",
     "title": "Scattered search se structured trust tak.",
-    "copy": "Bharosa Hai generic listing page nahi hai. Platform verified profiles, clear categories aur professional service journey ke around design hai.",
-    "withoutTitle": "Bharosa Hai ke bina",
-    "withTitle": "Bharosa Hai ke saath",
+    "copy": "KaunBatayega generic listing page nahi hai. Platform verified profiles, clear categories aur professional service journey ke around design hai.",
+    "withoutTitle": "KaunBatayega ke bina",
+    "withTitle": "KaunBatayega ke saath",
     "comparison": {
       "without": ["Professionals manually dhoondhna", "Unverified businesses", "Limited transparency", "Digital profile nahi", "Structured reviews nahi"],
       "with": ["Verified providers", "Professional profiles", "Transparent reviews", "Easy comparison", "Secure platform"]
     }
   },
   "journeys": {
-    "eyebrow": "Bharosa Hai Kaise Kaam Karta Hai",
+    "eyebrow": "KaunBatayega Kaise Kaam Karta Hai",
     "title": "Ek trusted platform par do simple journeys.",
     "copy": "Customer journey aur provider journey ek dusre ko support karne ke liye design ki gayi hain.",
     "customerTitle": "Customer Journey",
@@ -94,7 +94,7 @@
   "verification": {
     "eyebrow": "Verification Process",
     "title": "Verification platform ka core hissa hai.",
-    "copy": "Bharosa Hai verification ko end mein lagne wale badge ki tarah nahi, balki core product workflow ki tarah treat karta hai.",
+    "copy": "KaunBatayega verification ko end mein lagne wale badge ki tarah nahi, balki core product workflow ki tarah treat karta hai.",
     "note": "Complete documents submit hone ke baad provider verification usually 24-48 hours mein complete hota hai.",
     "items": [
       {"title": "Registration", "copy": "Provider secure account banata hai aur application start karta hai."},
@@ -108,7 +108,7 @@
   "serve": {
     "eyebrow": "Hum Kiske Liye Hain",
     "title": "Customers aur professionals dono ke liye built.",
-    "copy": "Bharosa Hai tabhi kaam karta hai jab dono sides ko better experience mile.",
+    "copy": "KaunBatayega tabhi kaam karta hai jab dono sides ko better experience mile.",
     "customers": {
       "title": "Customers",
       "copy": "Customers legal, GST, property, government documentation, electricity, insurance aur aur bhi important services ke liye trusted providers clearly discover kar sakte hain.",
@@ -142,7 +142,7 @@
     ]
   },
   "trust": {
-    "eyebrow": "Log Bharosa Hai Par Trust Kyun Karte Hain",
+    "eyebrow": "Log KaunBatayega Par Trust Kyun Karte Hain",
     "title": "Har step mein trust design kiya gaya hai.",
     "copy": "Yeh platform principles customer-side workflows launch hone se pehle confidence build karte hain.",
     "items": [
@@ -155,7 +155,7 @@
     ]
   },
   "promise": {
-    "eyebrow": "Bharosa Hai Promise",
+    "eyebrow": "KaunBatayega Promise",
     "title": "Important kaam shuru karne ka zyada dependable tareeka.",
     "copy": "Promise simple hai: logon ke liye trusted help dhoondhna easy banana aur serious professionals ko discoverable banana.",
     "items": [
@@ -167,10 +167,10 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Bharosa Hai ke common questions.",
+    "title": "KaunBatayega ke common questions.",
     "copy": "Customers aur professionals ke liye clear answers.",
     "items": [
-      {"question": "Bharosa Hai kya hai?", "answer": "Bharosa Hai ek trusted service marketplace hai jo customers ko legal, GST, property, documentation, government aur essential service categories mein verified professionals discover karne mein madad karta hai."},
+      {"question": "KaunBatayega kya hai?", "answer": "KaunBatayega ek trusted service marketplace hai jo customers ko legal, GST, property, documentation, government aur essential service categories mein verified professionals discover karne mein madad karta hai."},
       {"question": "Providers verify kaise hote hain?", "answer": "Providers profile information aur required documents submit karte hain. Admin team identity, professional details aur documents review karne ke baad approval deti hai."},
       {"question": "Provider kaun ban sakta hai?", "answer": "Lawyers, CAs, GST consultants, property consultants, documentation experts, insurance advisors, electricians, government consultants aur serious service professionals apply kar sakte hain."},
       {"question": "Customers connect kaise karenge?", "answer": "Customer-side access prepare ho raha hai. Public site abhi services explain karta hai jab verified provider network build ho raha hai."},
@@ -183,7 +183,7 @@
   "cta": {
     "eyebrow": "Next Step",
     "title": "Trusted Services Experience Karne Ke Liye Ready?",
-    "copy": "Bharosa Hai services explore karein ya verified provider ke roop mein trusted local service network ka hissa banein.",
+    "copy": "KaunBatayega services explore karein ya verified provider ke roop mein trusted local service network ka hissa banein.",
     "primary": "Services Dekhein",
     "secondary": "Provider Banein"
   }
