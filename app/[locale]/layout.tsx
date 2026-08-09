@@ -26,6 +26,10 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
       template: `%s | ${t("brand")}`,
     },
     description: t("description"),
+    icons: {
+      icon: "/icon.png",
+      apple: "/apple-icon.png",
+    },
     alternates: {
       languages: {
         en: "/en",
